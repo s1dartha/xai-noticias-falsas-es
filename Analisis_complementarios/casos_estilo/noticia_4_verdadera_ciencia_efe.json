@@ -1,0 +1,505 @@
+{
+ "titulo": "Caso 4 · índice 2 · Edds Fixed (España)",
+ "perfil": {
+  "dimensiones": {
+   "D1": 42.7,
+   "D2": 48.6,
+   "D3": 87.2,
+   "D4": 85.8,
+   "D5": 21.7
+  },
+  "iml": 57.2,
+  "estilo": "Estilo 1: Institucional / Técnico",
+  "lema_estilo": "Tono formal y factual, con ideas clave reiteradas y fuentes citadas.",
+  "indice_estilo": 0,
+  "pertenencia_estilo": 54.3,
+  "estilo_secundario": "Estilo 3: Alarmista / Viral",
+  "pertenencia_secundario": 24.1,
+  "pertenencias": {
+   "Estilo 1: Institucional / Técnico": 54.3,
+   "Estilo 2: Opinión / Crónica": 21.5,
+   "Estilo 3: Alarmista / Viral": 24.1
+  }
+ },
+ "variables_por_dimension": {
+  "D1": {
+   "nombre": "Sensacionalismo",
+   "variables": {
+    "sens_p_documento": {
+     "valor": 0.0088,
+     "percentil": 26.8,
+     "direccion": 1
+    },
+    "sens_p_media_oraciones": {
+     "valor": 0.3288,
+     "percentil": 39.2,
+     "direccion": 1
+    },
+    "sens_p_max_oraciones": {
+     "valor": 0.9678,
+     "percentil": 64.6,
+     "direccion": 1
+    }
+   }
+  },
+  "D2": {
+   "nombre": "Carga emocional",
+   "variables": {
+    "emo_intensidad_media": {
+     "valor": 0.0413,
+     "percentil": 48.2,
+     "direccion": 1
+    },
+    "emo_intensidad_max": {
+     "valor": 0.075,
+     "percentil": 42.5,
+     "direccion": 1
+    },
+    "emo_ira_media": {
+     "valor": 0.0012,
+     "percentil": 21.6,
+     "direccion": 1
+    },
+    "emo_ira_max": {
+     "valor": 0.0048,
+     "percentil": 34.0,
+     "direccion": 1
+    },
+    "emo_miedo_media": {
+     "valor": 0.0016,
+     "percentil": 39.5,
+     "direccion": 1
+    },
+    "emo_miedo_max": {
+     "valor": 0.0036,
+     "percentil": 42.4,
+     "direccion": 1
+    },
+    "emo_sorpresa_media": {
+     "valor": 0.0118,
+     "percentil": 86.8,
+     "direccion": 1
+    },
+    "emo_sorpresa_max": {
+     "valor": 0.0365,
+     "percentil": 88.6,
+     "direccion": 1
+    }
+   }
+  },
+  "D3": {
+   "nombre": "Reiteración",
+   "variables": {
+    "red_sim_max": {
+     "valor": 0.6873,
+     "percentil": 80.8,
+     "direccion": 1
+    },
+    "red_sim_media": {
+     "valor": 0.4232,
+     "percentil": 69.3,
+     "direccion": 1
+    },
+    "red_sim_top3": {
+     "valor": 0.6326,
+     "percentil": 81.3,
+     "direccion": 1
+    },
+    "red_consecutivas_media": {
+     "valor": 0.5027,
+     "percentil": 85.4,
+     "direccion": 1
+    }
+   }
+  },
+  "D4": {
+   "nombre": "Énfasis ortotipográfico",
+   "variables": {
+    "orto_mayusculas_sostenidas": {
+     "valor": 1.1905,
+     "percentil": 67.9,
+     "direccion": 1
+    },
+    "orto_proporcion_mayusculas": {
+     "valor": 0.0531,
+     "percentil": 81.5,
+     "direccion": 1
+    },
+    "orto_exclamaciones": {
+     "valor": 0.0,
+     "percentil": 48.5,
+     "direccion": 1
+    },
+    "orto_interrogaciones": {
+     "valor": 0.0,
+     "percentil": 46.8,
+     "direccion": 1
+    },
+    "orto_puntos_suspensivos": {
+     "valor": 0.0,
+     "percentil": 47.6,
+     "direccion": 1
+    },
+    "orto_comillas": {
+     "valor": 0.6667,
+     "percentil": 76.7,
+     "direccion": 1
+    }
+   }
+  },
+  "D5": {
+   "nombre": "Aserción sin respaldo",
+   "variables": {
+    "ling_intensificadores": {
+     "valor": 0.0,
+     "percentil": 47.6,
+     "direccion": 1
+    },
+    "ling_pronombres_1p": {
+     "valor": 0.0,
+     "percentil": 37.8,
+     "direccion": 1
+    },
+    "ling_adjetivos_sustantivos": {
+     "valor": 0.4286,
+     "percentil": 83.6,
+     "direccion": 1
+    },
+    "ling_atenuadores": {
+     "valor": 0.0,
+     "percentil": 42.4,
+     "direccion": -1
+    },
+    "ling_verbos_dicendi": {
+     "valor": 0.5952,
+     "percentil": 75.9,
+     "direccion": -1
+    },
+    "ling_cifras": {
+     "valor": 2.381,
+     "percentil": 78.9,
+     "direccion": -1
+    },
+    "ling_referencias_temporales": {
+     "valor": 0.5952,
+     "percentil": 78.0,
+     "direccion": -1
+    }
+   }
+  }
+ },
+ "oraciones": {
+  "n_oraciones": 6,
+  "mas_sensacionalista": {
+   "indice": 1,
+   "texto": "Rusia quiere recrear el comienzo del Universo.",
+   "probabilidad": 0.968
+  },
+  "mas_emotiva": {
+   "indice": 2,
+   "texto": "Redacción DUBNÁ EFE En Dubná, a unos 100 kilómetros al norte de Moscú, se comienza a vislumbrar lo que será un enorme complejo científico que albergará el \"supercolisionador\" NICA, un gran proyecto con participación internacional con el que Rusia aspira a recrear los primeros momentos del Universo.",
+   "intensidad": 0.075,
+   "emocion": "alegría",
+   "probabilidad_emocion": 0.066
+  },
+  "detalle": [
+   {
+    "indice": 1,
+    "texto": "Rusia quiere recrear el comienzo del Universo.",
+    "sensacionalismo": 0.968,
+    "intensidad_emocional": 0.043,
+    "emocion_principal": "sorpresa"
+   },
+   {
+    "indice": 2,
+    "texto": "Redacción DUBNÁ EFE En Dubná, a unos 100 kilómetros al norte de Moscú, se comienza a vislumbrar lo que será un enorme complejo científico que albergará el \"supercolisionador\" NICA, un gran proyecto con participación internacional con el que Rusia aspira a recrear los primeros momentos del Universo.",
+    "sensacionalismo": 0.174,
+    "intensidad_emocional": 0.075,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 3,
+    "texto": "La construcción del NICA (Nuclotron based Ion Collider Facility)en el Instituto Conjunto de Investigación Nuclear (JINR) comenzó en 2013 y está previsto que las obras concluyan a finales del próximo año, dijo a un grupo de periodistas extranjeros el científico Dmitri Driablov.",
+    "sensacionalismo": 0.009,
+    "intensidad_emocional": 0.009,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 4,
+    "texto": "El deseo de los aproximadamente mil científicos e ingenieros que trabajan en el proyecto es comenzar a operar el colisionador a partir de 2023.",
+    "sensacionalismo": 0.011,
+    "intensidad_emocional": 0.011,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 5,
+    "texto": "El objetivo es estudiar la transición de la materia ordinaria al plasma quark-gluón, una \"sopa\" muy caliente y densa que existía justo unas pocas millonésimas de segundo después del Big Bang, hace 13.700 millones de años.",
+    "sensacionalismo": 0.103,
+    "intensidad_emocional": 0.062,
+    "emocion_principal": "sorpresa"
+   },
+   {
+    "indice": 6,
+    "texto": "Para ello en Dubná se harán colisionar haces de iones de oro.",
+    "sensacionalismo": 0.708,
+    "intensidad_emocional": 0.048,
+    "emocion_principal": "alegría"
+   }
+  ],
+  "par_mas_parecido": {
+   "oracion_a": 2,
+   "texto_a": "Redacción DUBNÁ EFE En Dubná, a unos 100 kilómetros al norte de Moscú, se comienza a vislumbrar lo que será un enorme complejo científico que albergará el \"supercolisionador\" NICA, un gran proyecto con participación internacional con el que Rusia aspira a recrear los primeros momentos del Universo.",
+   "oracion_b": 3,
+   "texto_b": "La construcción del NICA (Nuclotron based Ion Collider Facility)en el Instituto Conjunto de Investigación Nuclear (JINR) comenzó en 2013 y está previsto que las obras concluyan a finales del próximo año, dijo a un grupo de periodistas extranjeros el científico Dmitri Driablov.",
+   "similitud": 0.687,
+   "repite_la_misma_afirmacion": false,
+   "tau_redundante": 0.7231543064117432
+  }
+ },
+ "marcadores": {
+  "mayusculas_sostenidas": [
+   "DUBNÁ",
+   "JINR"
+  ],
+  "exclamaciones": 0,
+  "interrogaciones": 0,
+  "puntos_suspensivos": 0,
+  "intensificadores": [],
+  "atenuadores": [],
+  "verbos_atribucion": [
+   "dijo"
+  ]
+ },
+ "modelo_sobre_variables": {
+  "p_falsa": 0.284,
+  "umbral": 0.47,
+  "prediccion": "real",
+  "principales_contribuciones": [
+   {
+    "variable": "ling_guiraud",
+    "valor": 8.8724,
+    "z": 1.02,
+    "contribucion_log_odds": 0.444,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "sens_p_max_oraciones",
+    "valor": 0.9678,
+    "z": 0.73,
+    "contribucion_log_odds": -0.405,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "sens_sd_oraciones",
+    "valor": 0.3719,
+    "z": 1.12,
+    "contribucion_log_odds": 0.307,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "red_sim_top3",
+    "valor": 0.6326,
+    "z": 0.92,
+    "contribucion_log_odds": -0.283,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "sens_p_media_oraciones",
+    "valor": 0.3288,
+    "z": -0.4,
+    "contribucion_log_odds": -0.24,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "red_consecutivas_media",
+    "valor": 0.5027,
+    "z": 1.07,
+    "contribucion_log_odds": 0.157,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "emo_sorpresa_media",
+    "valor": 0.0118,
+    "z": 0.34,
+    "contribucion_log_odds": -0.104,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "ling_verbos_dicendi",
+    "valor": 0.5952,
+    "z": 0.44,
+    "contribucion_log_odds": -0.102,
+    "empuja_hacia": "real"
+   }
+  ]
+ },
+ "mexgen": {
+  "aplica": true,
+  "segmentacion": "Punkt en español (xai_metodos.spans_oraciones)",
+  "n_oraciones": 6,
+  "iml_texto": 57.2,
+  "p_falsa_texto": 0.2843,
+  "oraciones": [
+   {
+    "indice": 1,
+    "texto": "Rusia quiere recrear el comienzo del Universo.",
+    "delta_iml": 3.36,
+    "delta_dimensiones": {
+     "D1": 18.37,
+     "D2": 1.98,
+     "D3": -2.02,
+     "D4": -1.46,
+     "D5": -0.07
+    },
+    "delta_p_falsa": -0.0005
+   },
+   {
+    "indice": 2,
+    "texto": "Redacción DUBNÁ EFE En Dubná, a unos 100 kilómetros al norte de Moscú, se comienza a vislumbrar lo que será un enorme complejo científico que albergará el \"supercolisionador\" NICA, un gran proyecto con participación internacional con el que Rusia aspira a recrear los primeros momentos del Universo.",
+    "delta_iml": 10.74,
+    "delta_dimensiones": {
+     "D1": -15.05,
+     "D2": -0.49,
+     "D3": 43.95,
+     "D4": 14.12,
+     "D5": 11.15
+    },
+    "delta_p_falsa": -0.0451
+   },
+   {
+    "indice": 3,
+    "texto": "La construcción del NICA (Nuclotron based Ion Collider Facility)en el Instituto Conjunto de Investigación Nuclear (JINR) comenzó en 2013 y está previsto que las obras concluyan a finales del próximo año, dijo a un grupo de periodistas extranjeros el científico Dmitri Driablov.",
+    "delta_iml": -2.08,
+    "delta_dimensiones": {
+     "D1": -9.02,
+     "D2": -2.02,
+     "D3": 11.34,
+     "D4": 9.3,
+     "D5": -20.0
+    },
+    "delta_p_falsa": -0.0603
+   },
+   {
+    "indice": 4,
+    "texto": "El deseo de los aproximadamente mil científicos e ingenieros que trabajan en el proyecto es comenzar a operar el colisionador a partir de 2023.",
+    "delta_iml": -5.86,
+    "delta_dimensiones": {
+     "D1": -5.0,
+     "D2": -2.2,
+     "D3": 5.85,
+     "D4": -4.49,
+     "D5": -23.49
+    },
+    "delta_p_falsa": -0.0568
+   },
+   {
+    "indice": 5,
+    "texto": "El objetivo es estudiar la transición de la materia ordinaria al plasma quark-gluón, una \"sopa\" muy caliente y densa que existía justo unas pocas millonésimas de segundo después del Big Bang, hace 13.700 millones de años.",
+    "delta_iml": 1.41,
+    "delta_dimensiones": {
+     "D1": -4.04,
+     "D2": 11.54,
+     "D3": -2.29,
+     "D4": -1.71,
+     "D5": 3.56
+    },
+    "delta_p_falsa": 0.0356
+   },
+   {
+    "indice": 6,
+    "texto": "Para ello en Dubná se harán colisionar haces de iones de oro.",
+    "delta_iml": -0.84,
+    "delta_dimensiones": {
+     "D1": 0.54,
+     "D2": -1.07,
+     "D3": -3.63,
+     "D4": -2.34,
+     "D5": 2.32
+    },
+    "delta_p_falsa": 0.0368
+   }
+  ],
+  "extremos": {
+   "sube_iml": {
+    "indice": 2,
+    "delta": 10.74
+   },
+   "baja_iml": {
+    "indice": 4,
+    "delta": -5.86
+   },
+   "hacia_falsa": {
+    "indice": 6,
+    "delta": 0.0368
+   },
+   "hacia_real": {
+    "indice": 3,
+    "delta": -0.0603
+   }
+  }
+ },
+ "variables": {
+  "sens_p_documento": 0.008839430287480354,
+  "sens_p_media_oraciones": 0.32875606417655945,
+  "sens_p_max_oraciones": 0.9678370952606201,
+  "sens_sd_oraciones": 0.3719155192375183,
+  "red_sim_max": 0.6873096227645874,
+  "red_sim_media": 0.42316779494285583,
+  "red_sim_top3": 0.6326213479042053,
+  "red_sim_varianza": 0.016243478283286095,
+  "red_consecutivas_media": 0.5026687383651733,
+  "red_consecutivas_min": 0.3403617739677429,
+  "emo_intensidad_media": 0.041277926415205,
+  "emo_intensidad_max": 0.07496041059494019,
+  "emo_ira_media": 0.0011620664736256003,
+  "emo_ira_max": 0.004786598961800337,
+  "emo_miedo_media": 0.0015867032343521714,
+  "emo_miedo_max": 0.003605274250730872,
+  "emo_tristeza_media": 0.0029904551338404417,
+  "emo_tristeza_max": 0.008435504510998726,
+  "emo_alegria_media": 0.023072803393006325,
+  "emo_alegria_max": 0.06610502302646637,
+  "emo_sorpresa_media": 0.011788294650614262,
+  "emo_sorpresa_max": 0.03653648495674133,
+  "ling_atenuadores": 0.0,
+  "ling_intensificadores": 0.0,
+  "orto_comillas": 0.6666666666666666,
+  "ling_verbos_dicendi": 0.5952380952380952,
+  "ling_flesch_szigriszt": 49.785,
+  "ling_guiraud": 8.872442622820286,
+  "ling_hapax": 0.5595238095238095,
+  "ling_adjetivos_sustantivos": 0.42857142857142855,
+  "ling_pronombres_1p": 0.0,
+  "ling_pronombres_3p": 5.952380952380952,
+  "ling_adverbios": 2.380952380952381,
+  "orto_mayusculas_sostenidas": 1.1904761904761905,
+  "orto_proporcion_mayusculas": 0.053128689492325853,
+  "orto_exclamaciones": 0.0,
+  "orto_interrogaciones": 0.0,
+  "orto_puntos_suspensivos": 0.0,
+  "ling_cifras": 2.380952380952381,
+  "ling_porcentajes": 0.0,
+  "ling_referencias_temporales": 0.5952380952380952,
+  "ling_palabras": 168.0,
+  "ling_oraciones": 6.0
+ },
+ "segundos_auditoria": 23.6,
+ "id": "noticia_4_verdadera_ciencia_efe",
+ "tipo_referencia": "Verdadera (clase_num = 0 en el corpus)",
+ "origen": "Edds Fixed (España) (https://huggingface.co/datasets/Edds/spanish-fake-news-fixed)",
+ "en_corpus": true,
+ "indice_csv": 2,
+ "clase_num": 0,
+ "fuente": "https://huggingface.co/datasets/Edds/spanish-fake-news-fixed",
+ "dataset_origen": "Edds Fixed (España)",
+ "region": "España",
+ "modelo_sobre_variables_fuera_de_pliegue": {
+  "p_falsa_oof": 0.2625960319376679,
+  "umbral_pliegue": 0.48,
+  "pliegue": 0,
+  "prediccion_oof": "real",
+  "idx_csv_representante": 2,
+  "es_representante": true,
+  "nota": "Protocolo original (escenario a de sensibilidad_clasificador.py). Si el texto está duplicado, se usa la predicción del representante conservado por drop_duplicates(keep=first)."
+ }
+}

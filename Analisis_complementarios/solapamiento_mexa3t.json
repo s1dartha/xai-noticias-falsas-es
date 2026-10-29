@@ -1,0 +1,27 @@
+{
+ "normalizacion": "*NUMBER*/*URL*/*PHONE* -> \"mascara\"; cifras eliminadas; TfidfVectorizer() por defecto ajustado sobre la unión de cada par de fuentes",
+ "MEX-A3T vs FakeDeS": {
+  "n_mexa3t": 566,
+  "n_otro": 248,
+  "similitud_maxima": 0.3726031175529855,
+  "textos_mexa3t_con_max_sobre_0_5": 0,
+  "pares_sim_ge_0.9": 0,
+  "pares_sim_ge_0.9_misma_etiqueta": 0,
+  "pares_sim_ge_0.9_etiqueta_opuesta": 0,
+  "pares_sim_ge_0.8": 0,
+  "pares_sim_ge_0.8_misma_etiqueta": 0,
+  "pares_sim_ge_0.8_etiqueta_opuesta": 0
+ },
+ "MEX-A3T vs Unified": {
+  "n_mexa3t": 566,
+  "n_otro": 2060,
+  "similitud_maxima": 0.4478269375812305,
+  "textos_mexa3t_con_max_sobre_0_5": 0,
+  "pares_sim_ge_0.9": 0,
+  "pares_sim_ge_0.9_misma_etiqueta": 0,
+  "pares_sim_ge_0.9_etiqueta_opuesta": 0,
+  "pares_sim_ge_0.8": 0,
+  "pares_sim_ge_0.8_misma_etiqueta": 0,
+  "pares_sim_ge_0.8_etiqueta_opuesta": 0
+ }
+}

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Entornos virtuales
+.env
+.venv/
+venv/
+env/
+
+# Pesos de modelos (se descargan de Hugging Face con revisión fija)
+*.pt
+*.bin
+*.safetensors
+
+# Archivos intermedios de la extracción del corpus de América Latina
+# (se regeneran con Modelos_Individuales/Clasificar_fake/Dataset/construir_corpus_latam.py)
+Modelos_Individuales/Clasificar_fake/Dataset/archivos_intermedios_extraccion/
+
+# Reportes extendidos que los scripts generar_reporte_*.py vuelven a escribir al ejecutarse.
+# El reporte de cada carpeta es su README.md.
+Reporte_*.md
+
+# Copias de respaldo, registros y presentaciones
+*.bak
+*.log
+*.pptx
+
+# IDE y sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+.~lock.*#

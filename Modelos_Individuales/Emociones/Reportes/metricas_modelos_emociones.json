@@ -1,0 +1,597 @@
+{
+ "metadata": {
+  "clases": [
+   "others",
+   "joy",
+   "sadness",
+   "anger",
+   "surprise",
+   "disgust",
+   "fear"
+  ],
+  "nombres_es": {
+   "others": "sin emoción dominante",
+   "joy": "alegría",
+   "sadness": "tristeza",
+   "anger": "ira",
+   "surprise": "sorpresa",
+   "disgust": "asco",
+   "fear": "miedo"
+  },
+  "sin_ajuste_fino": true,
+  "decision": "argmax de las 7 probabilidades (sin umbral)",
+  "criterio_referencia": "F1 macro >= 0.65 en emoevent_test",
+  "max_len": {
+   "tuit": 128,
+   "noticia": 256
+  },
+  "conjuntos": {
+   "emoevent_test": {
+    "n": 1615,
+    "dominio": "tuits (EmoEvent, prueba)",
+    "etiquetado": true,
+    "distribucion": {
+     "others": 792,
+     "joy": 346,
+     "sadness": 196,
+     "anger": 161,
+     "surprise": 66,
+     "disgust": 33,
+     "fear": 21
+    },
+    "diagnostico_etiquetas": {
+     "fuente_etiquetas": "emoevent_es.csv (corpus completo), cruce por texto normalizado",
+     "train": {
+      "filas": 5723,
+      "sin_texto": 0,
+      "encontradas_en_corpus": 5683,
+      "coincidencia_etiqueta_archivo_vs_corpus": 0.9998240366003871
+     },
+     "dev": {
+      "filas": 844,
+      "sin_texto": 0,
+      "encontradas_en_corpus": 831,
+      "coincidencia_etiqueta_archivo_vs_corpus": 1.0
+     },
+     "test": {
+      "filas": 1656,
+      "sin_texto": 30,
+      "encontradas_en_corpus": 1615,
+      "coincidencia_etiqueta_archivo_vs_corpus": 0.3504643962848297
+     }
+    }
+   },
+   "noticias_muestra": {
+    "n": 301,
+    "dominio": "noticias del corpus de la tesis (sin etiquetas de emoción)",
+    "etiquetado": false,
+    "estratos": {
+     "América Latina / Real (0)": 87,
+     "América Latina / Falsa (1)": 63,
+     "España / Real (0)": 79,
+     "España / Falsa (1)": 72
+    }
+   }
+  }
+ },
+ "modelos": {
+  "robertuito_pysentimiento": {
+   "id": "pysentimiento/robertuito-emotion-analysis",
+   "revision": "bcd6835f4d1ab1a061bd7437c9d762623c8437ad",
+   "referencia": "Pérez et al. (2021, 2023), pysentimiento; RoBERTuito (Pérez et al., LREC 2022)",
+   "preproceso": "pysentimiento",
+   "id2label": {
+    "0": "others",
+    "1": "joy",
+    "2": "sadness",
+    "3": "anger",
+    "4": "surprise",
+    "5": "disgust",
+    "6": "fear"
+   },
+   "max_len_efectivo": {
+    "emoevent_test": 128,
+    "noticias_muestra": 128
+   },
+   "tiempos_s": {
+    "emoevent_test": 133.55576944351196,
+    "noticias_muestra": 62.6154899597168
+   },
+   "ms_por_noticia": 208.024883587099,
+   "emoevent_test": {
+    "n": 1615,
+    "accuracy": 0.7139318885448916,
+    "f1_macro": 0.5649029222497246,
+    "f1_macro_ic95": [
+     0.5286622604801002,
+     0.5950140720769831
+    ],
+    "f1_macro_6_emociones": 0.5335094580293784,
+    "f1_ponderado": 0.706330282469528,
+    "recall_macro": 0.5754662468654549,
+    "roc_auc_macro_ovr": 0.9170542769425615,
+    "por_clase": {
+     "others": {
+      "precision": 0.7797297297297298,
+      "recall": 0.7285353535353535,
+      "f1": 0.7532637075718016,
+      "soporte": 792
+     },
+     "joy": {
+      "precision": 0.631578947368421,
+      "recall": 0.7630057803468208,
+      "f1": 0.6910994764397905,
+      "soporte": 346
+     },
+     "sadness": {
+      "precision": 0.7598039215686274,
+      "recall": 0.7908163265306123,
+      "f1": 0.775,
+      "soporte": 196
+     },
+     "anger": {
+      "precision": 0.6344086021505376,
+      "recall": 0.7329192546583851,
+      "f1": 0.6801152737752162,
+      "soporte": 161
+     },
+     "surprise": {
+      "precision": 0.6046511627906976,
+      "recall": 0.3939393939393939,
+      "f1": 0.47706422018348627,
+      "soporte": 66
+     },
+     "disgust": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "soporte": 33
+     },
+     "fear": {
+      "precision": 0.5416666666666666,
+      "recall": 0.6190476190476191,
+      "f1": 0.5777777777777777,
+      "soporte": 21
+     }
+    },
+    "matriz_confusion": [
+     [
+      577,
+      131,
+      33,
+      36,
+      10,
+      0,
+      5
+     ],
+     [
+      75,
+      264,
+      4,
+      1,
+      2,
+      0,
+      0
+     ],
+     [
+      26,
+      3,
+      155,
+      8,
+      0,
+      0,
+      4
+     ],
+     [
+      29,
+      2,
+      8,
+      118,
+      3,
+      0,
+      1
+     ],
+     [
+      24,
+      15,
+      0,
+      1,
+      26,
+      0,
+      0
+     ],
+     [
+      7,
+      2,
+      2,
+      21,
+      0,
+      0,
+      1
+     ],
+     [
+      2,
+      1,
+      2,
+      1,
+      2,
+      0,
+      13
+     ]
+    ]
+   },
+   "noticias_muestra": {
+    "distribucion_predicha": {
+     "others": 0.7840531561461794,
+     "joy": 0.029900332225913623,
+     "sadness": 0.036544850498338874,
+     "anger": 0.13953488372093023,
+     "surprise": 0.006644518272425249,
+     "disgust": 0.0,
+     "fear": 0.0033222591362126247
+    },
+    "probabilidad_media": {
+     "others": 0.7381776571273804,
+     "joy": 0.038644950836896896,
+     "sadness": 0.05188707262277603,
+     "anger": 0.13371458649635315,
+     "surprise": 0.008824024349451065,
+     "disgust": 0.019962510094046593,
+     "fear": 0.00878923386335373
+    },
+    "intensidad_emocional_media": 0.2618224322795868
+   },
+   "cumple_criterio": false
+  },
+  "beto_pysentimiento": {
+   "id": "finiteautomata/beto-emotion-analysis",
+   "revision": "9b628b0bd91471ad9bd709c10522c379ce09c32a",
+   "referencia": "Pérez et al. (2021), pysentimiento; BETO (Cañete et al., 2020)",
+   "preproceso": "pysentimiento",
+   "id2label": {
+    "0": "others",
+    "1": "joy",
+    "2": "sadness",
+    "3": "anger",
+    "4": "surprise",
+    "5": "disgust",
+    "6": "fear"
+   },
+   "max_len_efectivo": {
+    "emoevent_test": 128,
+    "noticias_muestra": 256
+   },
+   "tiempos_s": {
+    "emoevent_test": 138.6580159664154,
+    "noticias_muestra": 112.27396416664124
+   },
+   "ms_por_noticia": 373.00320321143266,
+   "emoevent_test": {
+    "n": 1615,
+    "accuracy": 0.6705882352941176,
+    "f1_macro": 0.5200450539533307,
+    "f1_macro_ic95": [
+     0.4848096996457405,
+     0.5488989186925216
+    ],
+    "f1_macro_6_emociones": 0.4839587783846147,
+    "f1_ponderado": 0.6710451659568634,
+    "recall_macro": 0.5621375099162822,
+    "roc_auc_macro_ovr": 0.8785083308535512,
+    "por_clase": {
+     "others": {
+      "precision": 0.7762237762237763,
+      "recall": 0.7007575757575758,
+      "f1": 0.7365627073656271,
+      "soporte": 792
+     },
+     "joy": {
+      "precision": 0.6203208556149733,
+      "recall": 0.6705202312138728,
+      "f1": 0.6444444444444445,
+      "soporte": 346
+     },
+     "sadness": {
+      "precision": 0.7551020408163265,
+      "recall": 0.7551020408163265,
+      "f1": 0.7551020408163265,
+      "soporte": 196
+     },
+     "anger": {
+      "precision": 0.5392670157068062,
+      "recall": 0.639751552795031,
+      "f1": 0.5852272727272727,
+      "soporte": 161
+     },
+     "surprise": {
+      "precision": 0.28846153846153844,
+      "recall": 0.45454545454545453,
+      "f1": 0.35294117647058826,
+      "soporte": 66
+     },
+     "disgust": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "soporte": 33
+     },
+     "fear": {
+      "precision": 0.46875,
+      "recall": 0.7142857142857143,
+      "f1": 0.5660377358490566,
+      "soporte": 21
+     }
+    },
+    "matriz_confusion": [
+     [
+      555,
+      121,
+      24,
+      47,
+      34,
+      0,
+      11
+     ],
+     [
+      71,
+      232,
+      9,
+      4,
+      30,
+      0,
+      0
+     ],
+     [
+      25,
+      4,
+      148,
+      12,
+      4,
+      0,
+      3
+     ],
+     [
+      32,
+      5,
+      11,
+      103,
+      5,
+      3,
+      2
+     ],
+     [
+      21,
+      9,
+      0,
+      6,
+      30,
+      0,
+      0
+     ],
+     [
+      8,
+      3,
+      2,
+      19,
+      0,
+      0,
+      1
+     ],
+     [
+      3,
+      0,
+      2,
+      0,
+      1,
+      0,
+      15
+     ]
+    ]
+   },
+   "noticias_muestra": {
+    "distribucion_predicha": {
+     "others": 0.7906976744186046,
+     "joy": 0.023255813953488372,
+     "sadness": 0.016611295681063124,
+     "anger": 0.15946843853820597,
+     "surprise": 0.006644518272425249,
+     "disgust": 0.0,
+     "fear": 0.0033222591362126247
+    },
+    "probabilidad_media": {
+     "others": 0.7253779768943787,
+     "joy": 0.030956344678997993,
+     "sadness": 0.0350157655775547,
+     "anger": 0.17415845394134521,
+     "surprise": 0.020949579775333405,
+     "disgust": 0.003908895421773195,
+     "fear": 0.009632966481149197
+    },
+    "intensidad_emocional_media": 0.27462199330329895
+   },
+   "cumple_criterio": false
+  },
+  "xlmr_emoevales_gsiupm": {
+   "id": "daveni/twitter-xlm-roberta-emotion-es",
+   "revision": "ab57a1137b2eb1f6c90fc77b0a4c4ced7dbd4d60",
+   "referencia": "Vera et al. (2021), GSI-UPM, primer lugar en EmoEvalEs (IberLEF 2021); XLM-T (Barbieri et al., LREC 2022)",
+   "preproceso": "xlmt",
+   "id2label": {
+    "0": "sadness",
+    "1": "joy",
+    "2": "anger",
+    "3": "surprise",
+    "4": "disgust",
+    "5": "fear",
+    "6": "others"
+   },
+   "max_len_efectivo": {
+    "emoevent_test": 128,
+    "noticias_muestra": 256
+   },
+   "tiempos_s": {
+    "emoevent_test": 146.52604794502258,
+    "noticias_muestra": 99.27057766914368
+   },
+   "ms_por_noticia": 329.80258361841754,
+   "emoevent_test": {
+    "n": 1615,
+    "accuracy": 0.691640866873065,
+    "f1_macro": 0.43767072136352186,
+    "f1_macro_ic95": [
+     0.40678613120644086,
+     0.47218498921298174
+    ],
+    "f1_macro_6_emociones": 0.38381765005768864,
+    "f1_ponderado": 0.6722830331549212,
+    "recall_macro": 0.43473566439225436,
+    "roc_auc_macro_ovr": 0.8885222799468722,
+    "por_clase": {
+     "others": {
+      "precision": 0.7433734939759036,
+      "recall": 0.7790404040404041,
+      "f1": 0.7607891491985204,
+      "soporte": 792
+     },
+     "joy": {
+      "precision": 0.6442048517520216,
+      "recall": 0.6907514450867052,
+      "f1": 0.6666666666666666,
+      "soporte": 346
+     },
+     "sadness": {
+      "precision": 0.6313725490196078,
+      "recall": 0.8214285714285714,
+      "f1": 0.7139689578713969,
+      "soporte": 196
+     },
+     "anger": {
+      "precision": 0.6267605633802817,
+      "recall": 0.5527950310559007,
+      "f1": 0.5874587458745875,
+      "soporte": 161
+     },
+     "surprise": {
+      "precision": 0.625,
+      "recall": 0.15151515151515152,
+      "f1": 0.24390243902439024,
+      "soporte": 66
+     },
+     "disgust": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "soporte": 33
+     },
+     "fear": {
+      "precision": 1.0,
+      "recall": 0.047619047619047616,
+      "f1": 0.09090909090909091,
+      "soporte": 21
+     }
+    },
+    "matriz_confusion": [
+     [
+      617,
+      101,
+      48,
+      24,
+      2,
+      0,
+      0
+     ],
+     [
+      92,
+      239,
+      10,
+      3,
+      2,
+      0,
+      0
+     ],
+     [
+      27,
+      4,
+      161,
+      4,
+      0,
+      0,
+      0
+     ],
+     [
+      43,
+      6,
+      22,
+      89,
+      1,
+      0,
+      0
+     ],
+     [
+      29,
+      18,
+      5,
+      4,
+      10,
+      0,
+      0
+     ],
+     [
+      10,
+      3,
+      3,
+      17,
+      0,
+      0,
+      0
+     ],
+     [
+      12,
+      0,
+      6,
+      1,
+      1,
+      0,
+      1
+     ]
+    ]
+   },
+   "noticias_muestra": {
+    "distribucion_predicha": {
+     "others": 0.867109634551495,
+     "joy": 0.019933554817275746,
+     "sadness": 0.07973421926910298,
+     "anger": 0.03322259136212625,
+     "surprise": 0.0,
+     "disgust": 0.0,
+     "fear": 0.0
+    },
+    "probabilidad_media": {
+     "others": 0.6946954727172852,
+     "joy": 0.041957754641771317,
+     "sadness": 0.12609687447547913,
+     "anger": 0.09405305981636047,
+     "surprise": 0.016816426068544388,
+     "disgust": 0.01748593896627426,
+     "fear": 0.008894494734704494
+    },
+    "intensidad_emocional_media": 0.30530452728271484
+   },
+   "cumple_criterio": false
+  }
+ },
+ "acuerdo_en_noticias": {
+  "robertuito_pysentimiento vs beto_pysentimiento": {
+   "kappa_cohen": 0.4500836068619557,
+   "acuerdo_bruto": 0.8039867109634552
+  },
+  "robertuito_pysentimiento vs xlmr_emoevales_gsiupm": {
+   "kappa_cohen": 0.39303781795026005,
+   "acuerdo_bruto": 0.8106312292358804
+  },
+  "beto_pysentimiento vs xlmr_emoevales_gsiupm": {
+   "kappa_cohen": 0.308070830789124,
+   "acuerdo_bruto": 0.7873754152823921
+  }
+ }
+}

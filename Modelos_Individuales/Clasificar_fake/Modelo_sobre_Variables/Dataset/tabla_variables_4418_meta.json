@@ -1,0 +1,97 @@
+{
+ "n_noticias": 4418,
+ "n_textos_unicos": 4100,
+ "n_oraciones": 26428,
+ "etiqueta": "1 = falsa, 0 = real",
+ "grupos": {
+  "S": [
+   "sens_p_documento",
+   "sens_p_media_oraciones",
+   "sens_p_max_oraciones",
+   "sens_sd_oraciones"
+  ],
+  "R": [
+   "red_sim_max",
+   "red_sim_media",
+   "red_sim_top3",
+   "red_sim_varianza",
+   "red_consecutivas_media",
+   "red_consecutivas_min"
+  ],
+  "O": [
+   "orto_mayusculas_sostenidas",
+   "orto_proporcion_mayusculas",
+   "orto_exclamaciones",
+   "orto_interrogaciones",
+   "orto_puntos_suspensivos",
+   "orto_comillas"
+  ],
+  "L": [
+   "ling_atenuadores",
+   "ling_intensificadores",
+   "ling_verbos_dicendi",
+   "ling_flesch_szigriszt",
+   "ling_guiraud",
+   "ling_hapax",
+   "ling_adjetivos_sustantivos",
+   "ling_pronombres_1p",
+   "ling_pronombres_3p",
+   "ling_adverbios",
+   "ling_cifras",
+   "ling_porcentajes",
+   "ling_referencias_temporales",
+   "ling_palabras",
+   "ling_oraciones"
+  ],
+  "E": [
+   "emo_intensidad_media",
+   "emo_intensidad_max",
+   "emo_ira_media",
+   "emo_ira_max",
+   "emo_miedo_media",
+   "emo_miedo_max",
+   "emo_tristeza_media",
+   "emo_tristeza_max",
+   "emo_alegria_media",
+   "emo_alegria_max",
+   "emo_sorpresa_media",
+   "emo_sorpresa_max"
+  ]
+ },
+ "nombres_grupos": {
+  "S": "Sensacionalismo",
+  "R": "Redundancia",
+  "E": "Emociones",
+  "O": "Marcadores ortotipográficos",
+  "L": "Rasgos lingüísticos"
+ },
+ "modelos": {
+  "Sensacionalismo_JJNeila": {
+   "id": "JJNeila/bert-spanish-sensationalism-oss",
+   "revision": "1b8140efe548c876cfc03357c86100ede9118440"
+  },
+  "SBERT_Redundancia": {
+   "id": "hiiamsid/sentence_similarity_spanish_es",
+   "revision": "66ab46adac3910bb6ea6085b962a25e49513b981"
+  },
+  "Emociones_RoBERTuito": {
+   "id": "pysentimiento/robertuito-emotion-analysis",
+   "revision": "bcd6835f4d1ab1a061bd7437c9d762623c8437ad"
+  }
+ },
+ "verificacion_variables_reutilizadas": {
+  "n_noticias": 40,
+  "diferencia_absoluta_maxima": {
+   "sens_p_documento": 1.6987323760431217e-06,
+   "sens_p_media_oraciones": 5.364418029785156e-07,
+   "red_sim_max": 5.364418029785156e-07
+  }
+ },
+ "faltantes": {
+  "red_sim_max": 133,
+  "red_sim_media": 133,
+  "red_sim_top3": 133,
+  "red_sim_varianza": 133
+ },
+ "nota": "Sin imputación: los NaN (noticias con una sola oración) se tratan dentro de cada pliegue."
+}

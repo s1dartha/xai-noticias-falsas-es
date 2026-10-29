@@ -1,0 +1,156 @@
+{
+  "tarea1_sinteticos_jjneila": {
+    "modelo": "JJNeila/bert-spanish-sensationalism-oss@1b8140e",
+    "max_length": 128,
+    "umbral_calibrado": 0.85,
+    "n": 70,
+    "positivos": 35,
+    "aciertos": 70,
+    "f1_macro": 1.0,
+    "f1_macro_ic95_bootstrap": [
+      1.0,
+      1.0
+    ],
+    "matriz_confusion_[[VN,FP],[FN,VP]]": [
+      [
+        35,
+        0
+      ],
+      [
+        0,
+        35
+      ]
+    ],
+    "p_min_sensacionalistas": 0.9065364599227905,
+    "p_max_no_sensacionalistas": 0.4690242409706116,
+    "diferencia_max_con_cache_original": 9.685754776000977e-08
+  },
+  "tarea2_longitud_corpus": {
+    "tokenizador": "VerificadoProfesional/SaBERT-Spanish-Fake-News@c092c97",
+    "n_noticias": 4418,
+    "mas_de_256_subpalabras_con_CLS_SEP": {
+      "n": 1504,
+      "pct": 34.04255319148936
+    },
+    "mas_de_256_subpalabras_sin_especiales": {
+      "n": 1479,
+      "pct": 33.47668628338615
+    },
+    "mas_de_1000_caracteres": {
+      "n": 1863,
+      "pct": 42.16840199185152
+    },
+    "subpalabras": {
+      "mediana": 179.0,
+      "p25": 102.0,
+      "p75": 309.0,
+      "max": 688
+    },
+    "caracteres": {
+      "mediana": 844.0,
+      "p25": 494.0,
+      "p75": 1455.75,
+      "max": 2497
+    }
+  },
+  "tarea3_bootstrap_tabla_4_18": {
+    "n_boot": 10000,
+    "semilla": 42,
+    "metodo": "bootstrap pareado por noticia, IC percentil 95 %",
+    "ganancia": "AOPC del método menos AOPC del borrado aleatorio por oraciones de la misma noticia",
+    "resultados": {
+      "Sensacionalismo": {
+        "media_ganancia": {
+          "MexGen": 0.14569798444659107,
+          "LIME-oración": 0.15106849127465216,
+          "SHAP-oración": 0.14950214887483126
+        },
+        "oraciones_menos_LIME-oración": {
+          "n_pares": 100,
+          "diferencia_media": -0.005370506828061125,
+          "ic95": [
+            -0.014925865318909557,
+            0.0029395170849375886
+          ]
+        },
+        "oraciones_menos_SHAP-oración": {
+          "n_pares": 100,
+          "diferencia_media": -0.0038041644282402146,
+          "ic95": [
+            -0.016297247058374542,
+            0.00907572943490937
+          ]
+        }
+      },
+      "Veracidad (SaBERT)": {
+        "media_ganancia": {
+          "MexGen": 0.07731762204665336,
+          "LIME-oración": 0.0827940804684514,
+          "SHAP-oración": 0.08357135716323247
+        },
+        "oraciones_menos_LIME-oración": {
+          "n_pares": 100,
+          "diferencia_media": -0.005476458421798023,
+          "ic95": [
+            -0.014437245620329638,
+            0.0029798205526231215
+          ]
+        },
+        "oraciones_menos_SHAP-oración": {
+          "n_pares": 100,
+          "diferencia_media": -0.006253735116579098,
+          "ic95": [
+            -0.015919101655437043,
+            0.0027211624934179775
+          ]
+        }
+      },
+      "Redundancia": {
+        "media_ganancia": {
+          "MexGen": 0.04253919166806599,
+          "LIME-oración": 0.035983889300236556,
+          "SHAP-oración": 0.03564531317632045
+        },
+        "oraciones_menos_LIME-oración": {
+          "n_pares": 100,
+          "diferencia_media": 0.006555302367829426,
+          "ic95": [
+            0.0021531278251547934,
+            0.011107942918089291
+          ]
+        },
+        "oraciones_menos_SHAP-oración": {
+          "n_pares": 100,
+          "diferencia_media": 0.006893878491745533,
+          "ic95": [
+            0.0027694376903387432,
+            0.01133669204445738
+          ]
+        }
+      },
+      "Clasificador interpretable": {
+        "media_ganancia": {
+          "MexGen": 0.07202859532844955,
+          "LIME-oración": 0.0754544200221875,
+          "SHAP-oración": 0.07180377946249603
+        },
+        "oraciones_menos_LIME-oración": {
+          "n_pares": 100,
+          "diferencia_media": -0.0034258246937379534,
+          "ic95": [
+            -0.006664532140086116,
+            -0.00037575494571520705
+          ]
+        },
+        "oraciones_menos_SHAP-oración": {
+          "n_pares": 100,
+          "diferencia_media": 0.00022481586595349685,
+          "ic95": [
+            -0.00344249673603244,
+            0.003926225603205161
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+# =============================================================================
+# Dependencias del repositorio (Python 3.12)
+# =============================================================================
+# Versiones del entorno con el que se obtuvieron los resultados de la tesis.
+# Para reproducir exactamente ese entorno, usar requirements_lock.txt.
+#
+# Pasos adicionales después de pip install -r requirements.txt:
+#   pip install --no-deps pysentimiento==0.7.3
+#   python -m spacy download es_core_news_sm
+#   python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
+
+# --- 1. Análisis, métricas y figuras (suficiente para regenerar reportes desde los JSON y cachés)
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+seaborn==0.13.2
+openpyxl==3.1.5            # lectura de los corpus en .xlsx
+pyarrow==26.0.0            # lectura de los bancos externos en .parquet
+
+# --- 2. Modelos de lenguaje, extracción de variables y explicabilidad
+torch==2.14.1              # instalar la variante CPU o CUDA según el equipo (https://pytorch.org)
+transformers==5.20.2
+sentence-transformers==6.2.0
+datasets==5.1.0            # descarga de los corpus de América Latina (construir_corpus_latam.py)
+accelerate==1.15.0
+spacy==3.8.16
+nltk==3.10.4
+shap==0.54.1
+lime==0.2.0.1
+umap-learn==0.5.12         # proyección de los estilos discursivos
+tqdm==4.70.1
+emoji==2.16.0
+# pysentimiento==0.7.3     # se instala con --no-deps (ver arriba); solo se usa su preprocesamiento
+
+# Los modelos de Hugging Face se fijan por revisión (commit) en config_proyecto.py (MODELOS_HF).

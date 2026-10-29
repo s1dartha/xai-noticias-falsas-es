@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "modelo": "hiiamsid/sentence_similarity_spanish_es",
+    "revision": "66ab46adac3910bb6ea6085b962a25e49513b981",
+    "semilla": 42,
+    "segmentacion": "nltk.sent_tokenize(language='spanish'), oraciones > 8 caracteres",
+    "etiqueta_veracidad": "1 = falsa, 0 = real (config_proyecto.etiqueta_binaria)",
+    "tiempo_total_s": 1891.012041568756
+  },
+  "sts_es": {
+    "n_dev": 1500,
+    "n_test": 1379,
+    "spearman_test": 0.8230125122623078,
+    "pearson_test": 0.8281962871551514,
+    "umbrales": {
+      "tau_tema": {
+        "descripcion": "Mismo tema (STS >= 1)",
+        "corte_sts": 1.0,
+        "tau": 0.41273486614227295,
+        "criterio": "Youden en STS-B dev",
+        "test": {
+          "roc_auc": 0.9585361966034891,
+          "accuracy": 0.8803480783176215,
+          "precision": 0.9764474975466143,
+          "recall": 0.8758802816901409,
+          "f1": 0.9234338747099768,
+          "prevalencia_positiva": 0.8237853517041335
+        }
+      },
+      "tau_parafrasis": {
+        "descripcion": "Aproximadamente equivalentes (STS >= 3)",
+        "corte_sts": 3.0,
+        "tau": 0.5906140804290771,
+        "criterio": "Youden en STS-B dev",
+        "test": {
+          "roc_auc": 0.9113162912669582,
+          "accuracy": 0.8143582306018854,
+          "precision": 0.7867950481430537,
+          "recall": 0.849925705794948,
+          "f1": 0.8171428571428572,
+          "prevalencia_positiva": 0.4880348078317622
+        }
+      },
+      "tau_redundante": {
+        "descripcion": "Casi equivalentes: repiten la misma afirmación (STS >= 4)",
+        "corte_sts": 4.0,
+        "tau": 0.7231543064117432,
+        "criterio": "Youden en STS-B dev",
+        "test": {
+          "roc_auc": 0.8780871828976463,
+          "accuracy": 0.7918781725888325,
+          "precision": 0.5534591194968553,
+          "recall": 0.7810650887573964,
+          "f1": 0.6478527607361964,
+          "prevalencia_positiva": 0.24510514865844815
+        }
+      }
+    }
+  },
+  "pawsx_es": {
+    "n_validation": 2000,
+    "n_test": 2000,
+    "tau_youden_validation": 0.9741325378417969,
+    "test_con_tau_youden": {
+      "roc_auc": 0.5597684372134591,
+      "accuracy": 0.5815,
+      "precision": 0.5879396984924623,
+      "recall": 0.2579933847850055,
+      "f1": 0.3586206896551724,
+      "prevalencia_positiva": 0.4535
+    },
+    "test_con_tau_redundante_sts": {
+      "roc_auc": 0.5597684372134591,
+      "accuracy": 0.4595,
+      "precision": 0.45570264765784113,
+      "recall": 0.9867695700110254,
+      "f1": 0.62347614071752,
+      "prevalencia_positiva": 0.4535
+    },
+    "nota": "PAWS-X contiene pares adversariales con alto solapamiento léxico; un coseno de embeddings de oración separa mal paráfrasis de no paráfrasis con las mismas palabras."
+  },
+  "corpus": {
+    "n_noticias": 2604,
+    "n_con_2_o_mas_oraciones": 2471,
+    "n_unicos_validos": 2152,
+    "n_oraciones": 13294,
+    "n_oraciones_en_validos": 13161,
+    "n_pares": 47967,
+    "tiempo_codificacion_s": 1297.8825073242188,
+    "pct_pares_sobre_umbral": {
+      "tau_tema": 0.2713115266745888,
+      "tau_parafrasis": 0.05441240853086497,
+      "tau_redundante": 0.0092355160839744
+    },
+    "pct_noticias_con_algun_par_sobre_umbral": {
+      "tau_tema": 0.7968433832456495,
+      "tau_parafrasis": 0.3322541481181708,
+      "tau_redundante": 0.07891541885876163
+    }
+  },
+  "asociacion_veracidad_textos_unicos": {
+    "max_intra_similarity": {
+      "mediana_falsas": 0.5149037837982178,
+      "mediana_reales": 0.5130303502082825,
+      "n_falsas": 1073,
+      "n_reales": 1079,
+      "U": 582443.5,
+      "p_valor": 0.8049301981239476,
+      "correlacion_biserial_rangos": 0.006149769340463074,
+      "auc_univariado_falsa": 0.5030748846702315,
+      "ic95_diferencia_medianas": [
+        -0.012524841725826264,
+        0.015136241912841797
+      ],
+      "p_holm": 1.0
+    },
+    "second_max_intra_similarity": {
+      "mediana_falsas": 0.4664592444896698,
+      "mediana_reales": 0.46304309368133545,
+      "n_falsas": 775,
+      "n_reales": 727,
+      "U": 276677.0,
+      "p_valor": 0.5489284160989476,
+      "correlacion_biserial_rangos": -0.017874606203132637,
+      "auc_univariado_falsa": 0.49106269689843374,
+      "ic95_diferencia_medianas": [
+        -0.022804199159145354,
+        0.02748627439141273
+      ],
+      "p_holm": 1.0
+    },
+    "mean_intra_similarity": {
+      "mediana_falsas": 0.36089855432510376,
+      "mediana_reales": 0.3666885197162628,
+      "n_falsas": 1073,
+      "n_reales": 1079,
+      "U": 562314.0,
+      "p_valor": 0.2503004037023906,
+      "correlacion_biserial_rangos": -0.0286232031142708,
+      "auc_univariado_falsa": 0.4856883984428646,
+      "ic95_diferencia_medianas": [
+        -0.017283125966787338,
+        0.005350692570209502
+      ],
+      "p_holm": 1.0
+    },
+    "consec_sim_mean": {
+      "mediana_falsas": 0.37724512815475464,
+      "mediana_reales": 0.3769490122795105,
+      "n_falsas": 1073,
+      "n_reales": 1079,
+      "U": 568387.0,
+      "p_valor": 0.46645917443706875,
+      "correlacion_biserial_rangos": -0.018132318506227985,
+      "auc_univariado_falsa": 0.490933840746886,
+      "ic95_diferencia_medianas": [
+        -0.011830894649028778,
+        0.010902339220046997
+      ],
+      "p_holm": 1.0
+    },
+    "densidad_tau_parafrasis": {
+      "mediana_falsas": 0.0,
+      "mediana_reales": 0.0,
+      "n_falsas": 1073,
+      "n_reales": 1079,
+      "U": 577681.5,
+      "p_valor": 0.9161509693288913,
+      "correlacion_biserial_rangos": -0.002076410884055302,
+      "auc_univariado_falsa": 0.49896179455797246,
+      "ic95_diferencia_medianas": [
+        0.0,
+        0.0
+      ],
+      "p_holm": 1.0
+    },
+    "densidad_tau_redundante": {
+      "mediana_falsas": 0.0,
+      "mediana_reales": 0.0,
+      "n_falsas": 1073,
+      "n_reales": 1079,
+      "U": 568370.5,
+      "p_valor": 0.07518040543037421,
+      "correlacion_biserial_rangos": -0.018160821650643033,
+      "auc_univariado_falsa": 0.49091958917467854,
+      "ic95_diferencia_medianas": [
+        0.0,
+        0.0
+      ],
+      "p_holm": 0.4510824325822453
+    }
+  }
+}

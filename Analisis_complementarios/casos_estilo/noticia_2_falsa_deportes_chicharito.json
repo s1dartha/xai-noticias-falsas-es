@@ -1,0 +1,543 @@
+{
+ "titulo": "Caso 2 · índice 3071 · MEX-A3T (UNAM / IPN)",
+ "perfil": {
+  "dimensiones": {
+   "D1": 29.7,
+   "D2": 32.2,
+   "D3": 31.6,
+   "D4": 34.2,
+   "D5": 70.1
+  },
+  "iml": 39.6,
+  "estilo": "Estilo 2: Opinión / Crónica",
+  "lema_estilo": "Relato o comentario fluido, subjetivo pero con escritura estándar.",
+  "indice_estilo": 1,
+  "pertenencia_estilo": 63.0,
+  "estilo_secundario": "Estilo 1: Institucional / Técnico",
+  "pertenencia_secundario": 19.3,
+  "pertenencias": {
+   "Estilo 1: Institucional / Técnico": 19.3,
+   "Estilo 2: Opinión / Crónica": 63.0,
+   "Estilo 3: Alarmista / Viral": 17.8
+  }
+ },
+ "variables_por_dimension": {
+  "D1": {
+   "nombre": "Sensacionalismo",
+   "variables": {
+    "sens_p_documento": {
+     "valor": 0.0032,
+     "percentil": 6.3,
+     "direccion": 1
+    },
+    "sens_p_media_oraciones": {
+     "valor": 0.3158,
+     "percentil": 37.7,
+     "direccion": 1
+    },
+    "sens_p_max_oraciones": {
+     "valor": 0.9182,
+     "percentil": 50.2,
+     "direccion": 1
+    }
+   }
+  },
+  "D2": {
+   "nombre": "Carga emocional",
+   "variables": {
+    "emo_intensidad_media": {
+     "valor": 0.1114,
+     "percentil": 67.0,
+     "direccion": 1
+    },
+    "emo_intensidad_max": {
+     "valor": 0.8308,
+     "percentil": 81.0,
+     "direccion": 1
+    },
+    "emo_ira_media": {
+     "valor": 0.0009,
+     "percentil": 16.5,
+     "direccion": 1
+    },
+    "emo_ira_max": {
+     "valor": 0.0039,
+     "percentil": 30.6,
+     "direccion": 1
+    },
+    "emo_miedo_media": {
+     "valor": 0.001,
+     "percentil": 19.5,
+     "direccion": 1
+    },
+    "emo_miedo_max": {
+     "valor": 0.0016,
+     "percentil": 18.9,
+     "direccion": 1
+    },
+    "emo_sorpresa_media": {
+     "valor": 0.002,
+     "percentil": 27.4,
+     "direccion": 1
+    },
+    "emo_sorpresa_max": {
+     "valor": 0.0038,
+     "percentil": 30.7,
+     "direccion": 1
+    }
+   }
+  },
+  "D3": {
+   "nombre": "Reiteración",
+   "variables": {
+    "red_sim_max": {
+     "valor": 0.5179,
+     "percentil": 35.1,
+     "direccion": 1
+    },
+    "red_sim_media": {
+     "valor": 0.2975,
+     "percentil": 24.9,
+     "direccion": 1
+    },
+    "red_sim_top3": {
+     "valor": 0.4872,
+     "percentil": 40.9,
+     "direccion": 1
+    },
+    "red_consecutivas_media": {
+     "valor": 0.3804,
+     "percentil": 51.1,
+     "direccion": 1
+    }
+   }
+  },
+  "D4": {
+   "nombre": "Énfasis ortotipográfico",
+   "variables": {
+    "orto_mayusculas_sostenidas": {
+     "valor": 0.0,
+     "percentil": 23.9,
+     "direccion": 1
+    },
+    "orto_proporcion_mayusculas": {
+     "valor": 0.024,
+     "percentil": 20.2,
+     "direccion": 1
+    },
+    "orto_exclamaciones": {
+     "valor": 0.0,
+     "percentil": 48.5,
+     "direccion": 1
+    },
+    "orto_interrogaciones": {
+     "valor": 0.0,
+     "percentil": 46.8,
+     "direccion": 1
+    },
+    "orto_puntos_suspensivos": {
+     "valor": 0.0,
+     "percentil": 47.6,
+     "direccion": 1
+    },
+    "orto_comillas": {
+     "valor": 0.75,
+     "percentil": 79.3,
+     "direccion": 1
+    }
+   }
+  },
+  "D5": {
+   "nombre": "Aserción sin respaldo",
+   "variables": {
+    "ling_intensificadores": {
+     "valor": 0.0,
+     "percentil": 47.6,
+     "direccion": 1
+    },
+    "ling_pronombres_1p": {
+     "valor": 1.7467,
+     "percentil": 95.7,
+     "direccion": 1
+    },
+    "ling_adjetivos_sustantivos": {
+     "valor": 0.3415,
+     "percentil": 63.9,
+     "direccion": 1
+    },
+    "ling_atenuadores": {
+     "valor": 0.0,
+     "percentil": 42.4,
+     "direccion": -1
+    },
+    "ling_verbos_dicendi": {
+     "valor": 0.8734,
+     "percentil": 83.5,
+     "direccion": -1
+    },
+    "ling_cifras": {
+     "valor": 0.0,
+     "percentil": 17.7,
+     "direccion": -1
+    },
+    "ling_referencias_temporales": {
+     "valor": 0.4367,
+     "percentil": 74.5,
+     "direccion": -1
+    }
+   }
+  }
+ },
+ "oraciones": {
+  "n_oraciones": 8,
+  "mas_sensacionalista": {
+   "indice": 8,
+   "texto": "Vía telefónica, el Chicharito nos dijo que no estaba aún autorizado a dar demasiados detalles, pero nos prometió una exclusiva en cuanto le fuera posible hablar con más libertad.",
+   "probabilidad": 0.918
+  },
+  "mas_emotiva": {
+   "indice": 4,
+   "texto": "Este año, apostaremos por la chispa, y creo que éste jugador de soccer tiene lo que necesitamos.",
+   "intensidad": 0.831,
+   "emocion": "alegría",
+   "probabilidad_emocion": 0.823
+  },
+  "detalle": [
+   {
+    "indice": 1,
+    "texto": "El Chicharito Hernández, nuevo refuerzo de los Delfines de Miami\nParece que la reestructuración general de los Delfines de Miami será mucho mayor de lo que nos imaginábamos, pues después que fuera despedido su entrenador en jefe, Joe Philbin, el dueño del equipo, Stephen Ross, anunció sus intenciones de fichar al \"Chicharito\" Javier Hernández para la próxima temporada.",
+    "sensacionalismo": 0.005,
+    "intensidad_emocional": 0.013,
+    "emocion_principal": "tristeza"
+   },
+   {
+    "indice": 2,
+    "texto": "\"El futbol americano se ha centrado demasiado en el poder y la fuerza, y yo creo que es momento de cambiar de estrategia\", declaró Ross en entrevista exclusiva con El.",
+    "sensacionalismo": 0.159,
+    "intensidad_emocional": 0.005,
+    "emocion_principal": "sorpresa"
+   },
+   {
+    "indice": 3,
+    "texto": "\"Para los contrarios, no servirá de gran cosa tener a los jugadores más fuertes y con más empuje si simplemente no tienen el colmillo para quitarse la marca como Hernández.",
+    "sensacionalismo": 0.71,
+    "intensidad_emocional": 0.015,
+    "emocion_principal": "tristeza"
+   },
+   {
+    "indice": 4,
+    "texto": "Este año, apostaremos por la chispa, y creo que éste jugador de soccer tiene lo que necesitamos.",
+    "sensacionalismo": 0.412,
+    "intensidad_emocional": 0.831,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 5,
+    "texto": "Además, lo podremos usar para patear los puntos extras y los goles de campo\".",
+    "sensacionalismo": 0.178,
+    "intensidad_emocional": 0.005,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 6,
+    "texto": "El equipo inició las negociaciones para poder fichar al jugador, y se espera que comience a entrenar con el resto del equipo para este próximo mes de julio.",
+    "sensacionalismo": 0.016,
+    "intensidad_emocional": 0.008,
+    "emocion_principal": "sorpresa"
+   },
+   {
+    "indice": 7,
+    "texto": "Por ahora, no se ha dado a conocer el monto del salario que percibiría, pero se dice que sería muy superior al actual.",
+    "sensacionalismo": 0.129,
+    "intensidad_emocional": 0.01,
+    "emocion_principal": "tristeza"
+   },
+   {
+    "indice": 8,
+    "texto": "Vía telefónica, el Chicharito nos dijo que no estaba aún autorizado a dar demasiados detalles, pero nos prometió una exclusiva en cuanto le fuera posible hablar con más libertad.",
+    "sensacionalismo": 0.918,
+    "intensidad_emocional": 0.004,
+    "emocion_principal": "sorpresa"
+   }
+  ],
+  "par_mas_parecido": {
+   "oracion_a": 2,
+   "texto_a": "\"El futbol americano se ha centrado demasiado en el poder y la fuerza, y yo creo que es momento de cambiar de estrategia\", declaró Ross en entrevista exclusiva con El.",
+   "oracion_b": 4,
+   "texto_b": "Este año, apostaremos por la chispa, y creo que éste jugador de soccer tiene lo que necesitamos.",
+   "similitud": 0.518,
+   "repite_la_misma_afirmacion": false,
+   "tau_redundante": 0.7231543064117432
+  }
+ },
+ "marcadores": {
+  "mayusculas_sostenidas": [],
+  "exclamaciones": 0,
+  "interrogaciones": 0,
+  "puntos_suspensivos": 0,
+  "intensificadores": [],
+  "atenuadores": [],
+  "verbos_atribucion": [
+   "declaró",
+   "dijo"
+  ]
+ },
+ "modelo_sobre_variables": {
+  "p_falsa": 0.482,
+  "umbral": 0.47,
+  "prediccion": "falsa",
+  "principales_contribuciones": [
+   {
+    "variable": "emo_alegria_max",
+    "valor": 0.8233,
+    "z": 3.56,
+    "contribucion_log_odds": 0.598,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "ling_guiraud",
+    "valor": 9.0532,
+    "z": 1.16,
+    "contribucion_log_odds": 0.508,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "sens_p_max_oraciones",
+    "valor": 0.9182,
+    "z": 0.57,
+    "contribucion_log_odds": -0.316,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "orto_mayusculas_sostenidas",
+    "valor": 0.0,
+    "z": -0.5,
+    "contribucion_log_odds": -0.279,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "sens_p_media_oraciones",
+    "valor": 0.3158,
+    "z": -0.45,
+    "contribucion_log_odds": -0.269,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "ling_palabras",
+    "valor": 229.0,
+    "z": 0.77,
+    "contribucion_log_odds": -0.267,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "ling_adverbios",
+    "valor": 6.5502,
+    "z": 1.84,
+    "contribucion_log_odds": 0.252,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "ling_pronombres_1p",
+    "valor": 1.7467,
+    "z": 2.19,
+    "contribucion_log_odds": 0.241,
+    "empuja_hacia": "falsa"
+   }
+  ]
+ },
+ "mexgen": {
+  "aplica": true,
+  "segmentacion": "Punkt en español (xai_metodos.spans_oraciones)",
+  "n_oraciones": 8,
+  "iml_texto": 39.57,
+  "p_falsa_texto": 0.4815,
+  "oraciones": [
+   {
+    "indice": 1,
+    "texto": "El Chicharito Hernández, nuevo refuerzo de los Delfines de Miami\nParece que la reestructuración general de los Delfines de Miami será mucho mayor de lo que nos imaginábamos, pues después que fuera despedido su entrenador en jefe, Joe Philbin, el dueño del equipo, Stephen Ross, anunció sus intenciones de fichar al \"Chicharito\" Javier Hernández para la próxima temporada.",
+    "delta_iml": 4.98,
+    "delta_dimensiones": {
+     "D1": -5.46,
+     "D2": 0.46,
+     "D3": 4.8,
+     "D4": 12.45,
+     "D5": 12.63
+    },
+    "delta_p_falsa": -0.0141
+   },
+   {
+    "indice": 2,
+    "texto": "\"El futbol americano se ha centrado demasiado en el poder y la fuerza, y yo creo que es momento de cambiar de estrategia\", declaró Ross en entrevista exclusiva con El.",
+    "delta_iml": 0.77,
+    "delta_dimensiones": {
+     "D1": -3.61,
+     "D2": -1.2,
+     "D3": 8.24,
+     "D4": 4.21,
+     "D5": -3.8
+    },
+    "delta_p_falsa": -0.0623
+   },
+   {
+    "indice": 3,
+    "texto": "\"Para los contrarios, no servirá de gran cosa tener a los jugadores más fuertes y con más empuje si simplemente no tienen el colmillo para quitarse la marca como Hernández.",
+    "delta_iml": 1.13,
+    "delta_dimensiones": {
+     "D1": 3.05,
+     "D2": 4.16,
+     "D3": -1.51,
+     "D4": -1.12,
+     "D5": 1.07
+    },
+    "delta_p_falsa": 0.0765
+   },
+   {
+    "indice": 4,
+    "texto": "Este año, apostaremos por la chispa, y creo que éste jugador de soccer tiene lo que necesitamos.",
+    "delta_iml": 4.87,
+    "delta_dimensiones": {
+     "D1": 1.07,
+     "D2": 18.8,
+     "D3": 10.66,
+     "D4": -3.48,
+     "D5": -2.71
+    },
+    "delta_p_falsa": 0.0453
+   },
+   {
+    "indice": 5,
+    "texto": "Además, lo podremos usar para patear los puntos extras y los goles de campo\".",
+    "delta_iml": -1.81,
+    "delta_dimensiones": {
+     "D1": -0.85,
+     "D2": -1.83,
+     "D3": -6.78,
+     "D4": 0.15,
+     "D5": 0.27
+    },
+    "delta_p_falsa": -0.0136
+   },
+   {
+    "indice": 6,
+    "texto": "El equipo inició las negociaciones para poder fichar al jugador, y se espera que comience a entrenar con el resto del equipo para este próximo mes de julio.",
+    "delta_iml": -4.71,
+    "delta_dimensiones": {
+     "D1": -2.8,
+     "D2": 0.02,
+     "D3": 4.2,
+     "D4": -5.24,
+     "D5": -19.74
+    },
+    "delta_p_falsa": -0.0489
+   },
+   {
+    "indice": 7,
+    "texto": "Por ahora, no se ha dado a conocer el monto del salario que percibiría, pero se dice que sería muy superior al actual.",
+    "delta_iml": 0.49,
+    "delta_dimensiones": {
+     "D1": -1.22,
+     "D2": -0.22,
+     "D3": 0.44,
+     "D4": -3.9,
+     "D5": 7.37
+    },
+    "delta_p_falsa": 0.008
+   },
+   {
+    "indice": 8,
+    "texto": "Vía telefónica, el Chicharito nos dijo que no estaba aún autorizado a dar demasiados detalles, pero nos prometió una exclusiva en cuanto le fuera posible hablar con más libertad.",
+    "delta_iml": 0.85,
+    "delta_dimensiones": {
+     "D1": 9.32,
+     "D2": -1.79,
+     "D3": -0.12,
+     "D4": -4.49,
+     "D5": 1.34
+    },
+    "delta_p_falsa": 0.0323
+   }
+  ],
+  "extremos": {
+   "sube_iml": {
+    "indice": 1,
+    "delta": 4.98
+   },
+   "baja_iml": {
+    "indice": 6,
+    "delta": -4.71
+   },
+   "hacia_falsa": {
+    "indice": 3,
+    "delta": 0.0765
+   },
+   "hacia_real": {
+    "indice": 2,
+    "delta": -0.0623
+   }
+  }
+ },
+ "variables": {
+  "sens_p_documento": 0.0031865236815065145,
+  "sens_p_media_oraciones": 0.3158358633518219,
+  "sens_p_max_oraciones": 0.918246328830719,
+  "sens_sd_oraciones": 0.3147754967212677,
+  "red_sim_max": 0.5178818702697754,
+  "red_sim_media": 0.2974669635295868,
+  "red_sim_top3": 0.48724809288978577,
+  "red_sim_varianza": 0.014070836827158928,
+  "red_consecutivas_media": 0.3803718388080597,
+  "red_consecutivas_min": 0.23240824043750763,
+  "emo_intensidad_media": 0.11139339208602905,
+  "emo_intensidad_max": 0.8307929039001465,
+  "emo_ira_media": 0.0009330842294730246,
+  "emo_ira_max": 0.0039054222870618105,
+  "emo_miedo_media": 0.000964367005508393,
+  "emo_miedo_max": 0.0015633378643542528,
+  "emo_tristeza_media": 0.00244135782122612,
+  "emo_tristeza_max": 0.005644375924021006,
+  "emo_alegria_media": 0.1046147271990776,
+  "emo_alegria_max": 0.8233126997947693,
+  "emo_sorpresa_media": 0.002014132682234049,
+  "emo_sorpresa_max": 0.003841146593913436,
+  "ling_atenuadores": 0.0,
+  "ling_intensificadores": 0.0,
+  "orto_comillas": 0.75,
+  "ling_verbos_dicendi": 0.8733624454148471,
+  "ling_flesch_szigriszt": 56.60257641921399,
+  "ling_guiraud": 9.05321482623473,
+  "ling_hapax": 0.45414847161572053,
+  "ling_adjetivos_sustantivos": 0.34146341463414637,
+  "ling_pronombres_1p": 1.7467248908296942,
+  "ling_pronombres_3p": 9.606986899563319,
+  "ling_adverbios": 6.550218340611353,
+  "orto_mayusculas_sostenidas": 0.0,
+  "orto_proporcion_mayusculas": 0.024007386888273315,
+  "orto_exclamaciones": 0.0,
+  "orto_interrogaciones": 0.0,
+  "orto_puntos_suspensivos": 0.0,
+  "ling_cifras": 0.0,
+  "ling_porcentajes": 0.0,
+  "ling_referencias_temporales": 0.43668122270742354,
+  "ling_palabras": 229.0,
+  "ling_oraciones": 8.0
+ },
+ "segundos_auditoria": 36.1,
+ "id": "noticia_2_falsa_deportes_chicharito",
+ "tipo_referencia": "Falsa (clase_num = 1 en el corpus)",
+ "origen": "MEX-A3T (UNAM / IPN) (https://github.com/jpposadas/FakeNewsCorpusSpanish (MEX-A3T - México))",
+ "en_corpus": true,
+ "indice_csv": 3071,
+ "clase_num": 1,
+ "fuente": "https://github.com/jpposadas/FakeNewsCorpusSpanish (MEX-A3T - México)",
+ "dataset_origen": "MEX-A3T (UNAM / IPN)",
+ "region": "América Latina",
+ "modelo_sobre_variables_fuera_de_pliegue": {
+  "p_falsa_oof": 0.49220051594982966,
+  "umbral_pliegue": 0.46,
+  "pliegue": 4,
+  "prediccion_oof": "falsa",
+  "idx_csv_representante": 3071,
+  "es_representante": true,
+  "nota": "Protocolo original (escenario a de sensibilidad_clasificador.py). Si el texto está duplicado, se usa la predicción del representante conservado por drop_duplicates(keep=first)."
+ }
+}

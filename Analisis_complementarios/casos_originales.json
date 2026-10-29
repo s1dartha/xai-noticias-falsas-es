@@ -1,0 +1,54 @@
+[
+ {
+  "id": "noticia_1_falsa_salud_mayusculas",
+  "indice_csv": 2357,
+  "clase_num": 1,
+  "tipo_referencia": "Falsa (clase_num = 1 en el corpus)",
+  "titulo": "Caso 1 · índice 2357 · FakeDeS 2021 (LatAm)",
+  "origen": "FakeDeS 2021 (LatAm) (https://huggingface.co/datasets/mariagrandury/fake_news_corpus_spanish)",
+  "fuente": "https://huggingface.co/datasets/mariagrandury/fake_news_corpus_spanish",
+  "dataset_origen": "FakeDeS 2021 (LatAm)",
+  "region": "América Latina",
+  "en_corpus": true,
+  "texto": "Boooomm\nMUJERES VACUNADAS DE COVID ESTÁN MOSTRANDO EFECTOS SECUNDARIOS TÍPICOS DE CANCER DE MAMA\nLos médicos de Intermountain Healthcare’s Breast Care Centre de Utah, USA, anuncian nuevas pautas de mamografías para las mujeres vacunadas contra Covid-19 recientemente.\nLos médicos han observado inflamación de los ganglios linfáticos en las mamografías de detección de mujeres que se vacunaron recientemente contra COVID-19. \n\"Siempre que los vemos en una mamografía de detección normal, llamamos a esas pacientes porque puede significar cáncer de mama metastásico que viaja a los ganglios linfáticos o linfoma o leucemia\".\n“Con la vacuna Moderna están habiendo estos síntomas aproximadamente un 11% después de la primera dosis y un 16% después de la segunda dosis. Creemos que también es comparable para la vacuna Pfizer."
+ },
+ {
+  "id": "noticia_2_falsa_deportes_chicharito",
+  "indice_csv": 3071,
+  "clase_num": 1,
+  "tipo_referencia": "Falsa (clase_num = 1 en el corpus)",
+  "titulo": "Caso 2 · índice 3071 · MEX-A3T (UNAM / IPN)",
+  "origen": "MEX-A3T (UNAM / IPN) (https://github.com/jpposadas/FakeNewsCorpusSpanish (MEX-A3T - México))",
+  "fuente": "https://github.com/jpposadas/FakeNewsCorpusSpanish (MEX-A3T - México)",
+  "dataset_origen": "MEX-A3T (UNAM / IPN)",
+  "region": "América Latina",
+  "en_corpus": true,
+  "texto": "El Chicharito Hernández, nuevo refuerzo de los Delfines de Miami\nParece que la reestructuración general de los Delfines de Miami será mucho mayor de lo que nos imaginábamos, pues después que fuera despedido su entrenador en jefe, Joe Philbin, el dueño del equipo, Stephen Ross, anunció sus intenciones de fichar al \"Chicharito\" Javier Hernández para la próxima temporada.\n\"El futbol americano se ha centrado demasiado en el poder y la fuerza, y yo creo que es momento de cambiar de estrategia\", declaró Ross en entrevista exclusiva con El. \"Para los contrarios, no servirá de gran cosa tener a los jugadores más fuertes y con más empuje si simplemente no tienen el colmillo para quitarse la marca como Hernández. Este año, apostaremos por la chispa, y creo que éste jugador de soccer tiene lo que necesitamos. Además, lo podremos usar para patear los puntos extras y los goles de campo\".\nEl equipo inició las negociaciones para poder fichar al jugador, y se espera que comience a entrenar con el resto del equipo para este próximo mes de julio. Por ahora, no se ha dado a conocer el monto del salario que percibiría, pero se dice que sería muy superior al actual.\nVía telefónica, el Chicharito nos dijo que no estaba aún autorizado a dar demasiados detalles, pero nos prometió una exclusiva en cuanto le fuera posible hablar con más libertad."
+ },
+ {
+  "id": "noticia_3_verdadera_medicos_zacatecoluca",
+  "indice_csv": 3653,
+  "clase_num": 0,
+  "tipo_referencia": "Verdadera (clase_num = 0 en el corpus)",
+  "titulo": "Caso 3 · índice 3653 · Omdena LATAM (Politics Fake News Detector)",
+  "origen": "Omdena LATAM (Politics Fake News Detector) (https://huggingface.co/datasets/IsaacRodgz/Fake-news-latam-omdena)",
+  "fuente": "https://huggingface.co/datasets/IsaacRodgz/Fake-news-latam-omdena",
+  "dataset_origen": "Omdena LATAM (Politics Fake News Detector)",
+  "region": "América Latina",
+  "en_corpus": true,
+  "texto": "El diputado Orlando Candray, del partido Arena, acompañó la petición de los médicos. Foto DEM\n\nUn grupo de médicos del Hospital Nacional de Zacatecoluca llegó ayer a la Asamblea Legislativa y pidió que el Ministerio de Salud cambie sus categorías de médicos residentes a médicos hospitalarios o consultantes.\n\nLa doctora Patricia Guzmán explicó que ya son graduados de la universidad, pero por no haber sido modificada la categoría de médicos residentes a consultantes, todavía reciben salarios de $400.\n\nExplicó que hay al menos 60 médicos en el hospital nacional de Zacatecoluca que no han sido trasladados a la categoría de médicos consultantes.\n\n“Con esta categoría de médicos residentes hacemos más de 300 horas laborales en el mes. Con esta moda­lidad a cada fin de año sufrimos acoso porque tenemos advertencias de despidos”, dijo la doctora.\n\nEl doctor y diputado Orlando Cabrera Candray, de Arena, acompañó a los médicos y firmó un proyecto de dictamen recomen­dable para presentarlo en la Comisión de Salud de Asamblea Legislativa para que sugieran que el Mi­nisterio de Salud cambie la categoría.\n\nCandray detalló que al tener la categoría de médicos residentes, los contratos de trabajo son renovados cada año. “Al ser renovados sus contratos a cada rato, ellos no tienen acceso a la banca, no pueden hacer préstamos, no pueden hipotecar nada”, ejemplificó el diputado de derecha."
+ },
+ {
+  "id": "noticia_4_verdadera_ciencia_efe",
+  "indice_csv": 2,
+  "clase_num": 0,
+  "tipo_referencia": "Verdadera (clase_num = 0 en el corpus)",
+  "titulo": "Caso 4 · índice 2 · Edds Fixed (España)",
+  "origen": "Edds Fixed (España) (https://huggingface.co/datasets/Edds/spanish-fake-news-fixed)",
+  "fuente": "https://huggingface.co/datasets/Edds/spanish-fake-news-fixed",
+  "dataset_origen": "Edds Fixed (España)",
+  "region": "España",
+  "en_corpus": true,
+  "texto": "Rusia quiere recrear el comienzo del Universo. Redacción DUBNÁ EFE En Dubná, a unos 100 kilómetros al norte de Moscú, se comienza a vislumbrar lo que será un enorme complejo científico que albergará el \"supercolisionador\" NICA, un gran proyecto con participación internacional con el que Rusia aspira a recrear los primeros momentos del Universo. La construcción del NICA (Nuclotron based Ion Collider Facility)en el Instituto Conjunto de Investigación Nuclear (JINR) comenzó en 2013 y está previsto que las obras concluyan a finales del próximo año, dijo a un grupo de periodistas extranjeros el científico Dmitri Driablov. El deseo de los aproximadamente mil científicos e ingenieros que trabajan en el proyecto es comenzar a operar el colisionador a partir de 2023. El objetivo es estudiar la transición de la materia ordinaria al plasma quark-gluón, una \"sopa\" muy caliente y densa que existía justo unas pocas millonésimas de segundo después del Big Bang, hace 13.700 millones de años. Para ello en Dubná se harán colisionar haces de iones de oro."
+ }
+]

@@ -1,0 +1,71 @@
+﻿Texto,Clase,p_sensacionalista,prediccion,acierto
+¡El fin de la humanidad! La nueva inteligencia artificial que destruirá millones de empleos mañana mismo. Expertos advierten que el apocalipsis digital ya comenzó y nadie está a salvo.,Sensacionalista,0.9957996,Sensacionalista,True
+Empresa de tecnología anuncia un nuevo modelo de lenguaje que podría automatizar tareas administrativas. El reporte técnico indica un posible impacto gradual en el sector empresarial.,No sensacionalista,0.04105191,No sensacionalista,True
+¡Tu celular te está espiando! Descubre cómo la cámara secreta graba todas tus conversaciones y las envía a los gobiernos sin tu permiso.,Sensacionalista,0.9786823,Sensacionalista,True
+Especialistas en ciberseguridad recomiendan revisar los permisos de las aplicaciones móviles para proteger los datos personales de los usuarios.,No sensacionalista,0.02279845,No sensacionalista,True
+¡Escándalo brutal! Político es captado destruyendo pruebas de corrupción en una fiesta clandestina con delincuentes peligrosos.,Sensacionalista,0.99319273,Sensacionalista,True
+La comisión parlamentaria citó al funcionario público para responder sobre presuntas irregularidades en el presupuesto de infraestructura.,No sensacionalista,0.03158251,No sensacionalista,True
+¡Fraude colosal! El gobierno planea confiscar todos los depósitos bancarios de los ciudadanos para pagar una deuda secreta este fin de semana.,Sensacionalista,0.99218607,Sensacionalista,True
+El Banco Central emitió un comunicado oficial asegurando la estabilidad del sistema financiero tras las fluctuaciones del mercado internacional.,No sensacionalista,0.028225131,No sensacionalista,True
+¡Terremoto devastador! La falla tectónica que partirá al país en dos y hundirá ciudades enteras en las próximas horas.,Sensacionalista,0.99194056,Sensacionalista,True
+El instituto geofísico monitorea la actividad sísmica en la región andina tras registrarse un temblor de magnitud moderada sin daños reportados.,No sensacionalista,0.028082896,No sensacionalista,True
+¡Tóxicos en tu ropa! Las marcas de moda más famosas usan ácidos mortales que están quemando la piel de millones.,Sensacionalista,0.9844052,Sensacionalista,True
+Diseñador local presentó su nueva colección de invierno destacando el uso de materiales reciclados y sostenibles.,No sensacionalista,0.055917893,No sensacionalista,True
+¡Ola de calor asesina! Temperaturas extremas derretirán el asfalto y causarán muertes instantáneas si sales de tu casa mañana.,Sensacionalista,0.99310726,Sensacionalista,True
+Las autoridades declararon alerta amarilla ante el aumento gradual de las temperaturas en la región central del país.,No sensacionalista,0.08357314,No sensacionalista,True
+¡Universidades de cartón! Estudiantes descubren que sus diplomas son totalmente falsos tras años de pagar fortunas a mafias académicas.,Sensacionalista,0.9838095,Sensacionalista,True
+Universidad pública inaugura un nuevo centro de investigación tecnológica con fondos otorgados por organismos internacionales.,No sensacionalista,0.46902424,No sensacionalista,True
+¡El metro es una trampa mortal! Fallas eléctricas inminentes amenazan con electrocutar a miles de pasajeros en hora pico.,Sensacionalista,0.97898006,Sensacionalista,True
+La línea de metro suspenderá su servicio en tres estaciones durante el fin de semana por mantenimiento preventivo en las vías.,No sensacionalista,0.022742216,No sensacionalista,True
+¡Actor enloquece en vivo! Golpea salvajemente a un presentador y amenaza con incendiar el estudio de grabación por completo.,Sensacionalista,0.99565613,Sensacionalista,True
+La ceremonia de premios a la televisión concluyó con un homenaje a la trayectoria del reconocido director de cine independiente.,No sensacionalista,0.016545052,No sensacionalista,True
+¡Gatos diabólicos! Una nueva enfermedad transmitida por felinos domésticos está dejando a familias enteras en coma profundo.,Sensacionalista,0.98693466,Sensacionalista,True
+Veterinarios advierten sobre la importancia de desparasitar a las mascotas regularmente para prevenir enfermedades comunes.,No sensacionalista,0.045012582,No sensacionalista,True
+¡Mafia de los alquileres! Propietarios sin escrúpulos expulsan a ancianos a la calle para cobrar el triple a extranjeros ricos.,Sensacionalista,0.99441963,Sensacionalista,True
+Nuevo proyecto de ley busca regular los precios de alquiler en zonas céntricas para facilitar el acceso a la vivienda.,No sensacionalista,0.045447335,No sensacionalista,True
+¡Maquillaje letal! El labial de moda que contiene plomo puro y está envenenando silenciosamente a las jóvenes del país.,Sensacionalista,0.99516284,Sensacionalista,True
+Empresa de cosméticos retiró voluntariamente un lote de sus productos tras detectar leves inconsistencias en el empaquetado.,No sensacionalista,0.116683625,No sensacionalista,True
+"¡Huracán apocalíptico! Vientos destructores borrarán la costa del mapa en menos de veinticuatro horas, huye mientras puedas.",Sensacionalista,0.99025714,Sensacionalista,True
+Protección civil recomienda asegurar puertas y ventanas ante la posible llegada de ráfagas de viento a la zona costera.,No sensacionalista,0.026794543,No sensacionalista,True
+¡Profesores acosadores! La red secreta de maestros que vigila a los alumnos por cámaras ocultas en los baños del colegio.,Sensacionalista,0.9850347,Sensacionalista,True
+Sindicato de maestros llegó a un acuerdo salarial con el gobierno local tras dos semanas de negociaciones formales.,No sensacionalista,0.012652702,No sensacionalista,True
+¡Taxis de la muerte! Conductores psicópatas están secuestrando pasajeros a plena luz del día bajo la mirada cómplice de la policía.,Sensacionalista,0.99462354,Sensacionalista,True
+Plataforma de movilidad compartida ajustará sus tarifas en un cinco por ciento a partir del inicio del próximo mes.,No sensacionalista,0.12451535,No sensacionalista,True
+¡Ídolo juvenil hundido en las drogas! Fotos exclusivas lo muestran consumiendo sustancias letales en un antro de perdición.,Sensacionalista,0.9939203,Sensacionalista,True
+La banda de rock confirmó las fechas de su próxima gira latinoamericana que iniciará a principios del año entrante.,No sensacionalista,0.062448304,No sensacionalista,True
+¡Aves portadoras de la peste! Palomas mutantes están esparciendo un virus carnívoro desde los techos de la ciudad.,Sensacionalista,0.98834115,Sensacionalista,True
+El zoológico municipal anunció el nacimiento de tres crías de flamenco como parte de su programa de conservación.,No sensacionalista,0.033869226,No sensacionalista,True
+¡Burbuja a punto de estallar! Los precios de los apartamentos caerán a cero y perderás todos los ahorros de tu vida hoy.,Sensacionalista,0.993845,Sensacionalista,True
+Expertos en economía sugieren que el mercado de oficinas tardará varios años en recuperar los niveles de ocupación previos a la crisis.,No sensacionalista,0.008537854,No sensacionalista,True
+¡Zapatos que mutilan! Deportivas de marca famosa están deformando los pies de los atletas causando amputaciones terribles.,Sensacionalista,0.9942153,Sensacionalista,True
+Feria textil congrega a cientos de empresarios del sector para discutir las nuevas tendencias en exportación de prendas.,No sensacionalista,0.041116036,No sensacionalista,True
+¡Inundación bíblica! Represas a punto de reventar ahogarán a pueblos enteros mientras los políticos escapan en helicópteros privados.,Sensacionalista,0.9953157,Sensacionalista,True
+El nivel de los embalses se encuentra en un promedio estable tras las precipitaciones registradas durante el último mes.,No sensacionalista,0.013222797,No sensacionalista,True
+¡Adoctrinamiento forzado! Libros de texto incluyen mensajes subliminales para que los niños odien a sus propios padres.,Sensacionalista,0.9916338,Sensacionalista,True
+La facultad de ciencias sociales publicó un estudio sobre el impacto de la lectura comprensiva en el rendimiento académico.,No sensacionalista,0.01688633,No sensacionalista,True
+¡Tren fantasma fuera de control! Una locomotora a toda velocidad se dirige al centro de la ciudad para causar una carnicería.,Sensacionalista,0.99427766,Sensacionalista,True
+Ministerio de transporte inauguró el nuevo puente colgante que conectará a las dos provincias más aisladas del sur.,No sensacionalista,0.059966046,No sensacionalista,True
+¡Divorcio sangriento! Pareja de Hollywood se enfrenta a cuchillazos por la custodia de sus hijos y su mansión de oro.,Sensacionalista,0.9957141,Sensacionalista,True
+Festival de cine documental abre su convocatoria para recibir largometrajes producidos por jóvenes realizadores iberoamericanos.,No sensacionalista,0.085322656,No sensacionalista,True
+¡Comida de mascotas envenenada! Croquetas de supermercado están matando a miles de perros en una agonía espantosa.,Sensacionalista,0.9903651,Sensacionalista,True
+La venta de alimentos premium para mascotas experimentó un crecimiento sustained en los supermercados de cadena de la región.,No sensacionalista,0.06584332,No sensacionalista,True
+¡Derrumbe inminente! Tu edificio está construido con arena y colapsará sobre tu cabeza al primer temblor leve.,Sensacionalista,0.98581845,Sensacionalista,True
+Fondo de inversión adquiere un complejo de oficinas en el distrito financiero para destinarlo a espacios de trabajo colaborativo.,No sensacionalista,0.11757402,No sensacionalista,True
+¡Pantalones cancerígenos! La tela sintética que absorbe radiación y te condena a una muerte lenta y dolorosa e irreversible.,Sensacionalista,0.9883874,Sensacionalista,True
+Organización no gubernamental promueve el intercambio de prendas usadas para reducir el impacto ambiental de la industria textil.,No sensacionalista,0.29041874,No sensacionalista,True
+¡Sequía mortal! El agua potable se agotará mañana mismo y comenzarás a morir de sed en tu propia casa sin ayuda.,Sensacionalista,0.99385864,Sensacionalista,True
+Agricultores implementan nuevos sistemas de riego por goteo para optimizar el uso de recursos hídricos en época de sequía.,No sensacionalista,0.018342774,No sensacionalista,True
+¡Ciborgs en las aulas! Niños con chips cerebrales están reemplazando a los estudiantes humanos en un experimento gubernamental macabro.,Sensacionalista,0.99067944,Sensacionalista,True
+Foro internacional debate los retos de integrar herramientas de inteligencia artificial en la evaluación de estudiantes universitarios.,No sensacionalista,0.12993404,No sensacionalista,True
+¡Quiebra nacional inminente! Todos los bancos cerrarán sus puertas y la inflación devorará los salarios en cuestión de horas.,Sensacionalista,0.99543494,Sensacionalista,True
+El Ministerio de Economía anunció un ajuste en las tasas de interés para contener el incremento inflacionario trimestral.,No sensacionalista,0.021452025,No sensacionalista,True
+¡Bancarrotas en cadena! Millones de familias perderán sus ahorros por el colapso financiero total del sistema crediticio.,Sensacionalista,0.9903432,Sensacionalista,True
+La superintendencia financiera reportó un incremento moderado en los índices de morosidad comercial durante el último semestre.,No sensacionalista,0.01911283,No sensacionalista,True
+¡Tragedia en la cancha! Violencia desmedida y sangre tiñen el clásico de fútbol tras batalla campal entre hinchas armados.,Sensacionalista,0.99630237,Sensacionalista,True
+El comité disciplinario de la liga sancionó a dos clubes con multas económicas por disturbios menores en las tribunas.,No sensacionalista,0.040868144,No sensacionalista,True
+¡Escándalo arbitral histórico! Árbitro vendido comete fraude descarado para coronar al equipo más odiado del país.,Sensacionalista,0.9945529,Sensacionalista,True
+La federación de fútbol evaluó el uso del sistema de videoarbitraje tras las polémicas decisiones de la jornada deportiva.,No sensacionalista,0.029942049,No sensacionalista,True
+¡Asteroide mortal se aproxima a la Tierra! La NASA oculta que un impacto devastador destruirá la civilización la próxima semana.,Sensacionalista,0.99041593,Sensacionalista,True
+La agencia espacial publicó los datos de seguimiento orbital de un asteroide cercano que pasará a una distancia segura de la órbita lunar.,No sensacionalista,0.07577218,No sensacionalista,True
+¡El sol se está apagando! Científicos alertan que una era de hielo perpetua congelará a los seres humanos este mismo año.,Sensacionalista,0.90653646,Sensacionalista,True
+Investigadores solares reportan un descenso periódico en las manchas solares acorde a los ciclos normales de actividad heliomagnética.,No sensacionalista,0.18468215,No sensacionalista,True

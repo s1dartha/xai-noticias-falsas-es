@@ -1,0 +1,19 @@
+{
+ "revision": "03c31ac0c288a982fb2aa02755a9bd0abb43078e",
+ "id2label": {
+  "0": "Not Clickbait",
+  "1": "Clickbait"
+ },
+ "tiempos_s": {
+  "ta1c_validation_titular": 27.35937190055847,
+  "ta1c_validation_cuerpo": 187.62359261512756,
+  "ta1c_test_titular": 16.015405654907227,
+  "ta1c_test_cuerpo": 170.3938045501709,
+  "salud_calibracion": 30.08774161338806,
+  "salud_prueba": 22.454654455184937,
+  "amarillismo_humano_titular": 3.0798332691192627,
+  "amarillismo_humano_cuerpo": 26.540468454360962,
+  "ia_sintetico": 2.032560348510742,
+  "noticia_clickbait": 24.07406187057495
+ }
+}

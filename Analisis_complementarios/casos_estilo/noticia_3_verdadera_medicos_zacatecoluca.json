@@ -1,0 +1,566 @@
+{
+ "titulo": "Caso 3 · índice 3653 · Omdena LATAM (Politics Fake News Detector)",
+ "perfil": {
+  "dimensiones": {
+   "D1": 16.4,
+   "D2": 26.5,
+   "D3": 64.6,
+   "D4": 53.2,
+   "D5": 14.7
+  },
+  "iml": 35.1,
+  "estilo": "Estilo 1: Institucional / Técnico",
+  "lema_estilo": "Tono formal y factual, con ideas clave reiteradas y fuentes citadas.",
+  "indice_estilo": 0,
+  "pertenencia_estilo": 60.6,
+  "estilo_secundario": "Estilo 2: Opinión / Crónica",
+  "pertenencia_secundario": 23.5,
+  "pertenencias": {
+   "Estilo 1: Institucional / Técnico": 60.6,
+   "Estilo 2: Opinión / Crónica": 23.5,
+   "Estilo 3: Alarmista / Viral": 15.9
+  }
+ },
+ "variables_por_dimension": {
+  "D1": {
+   "nombre": "Sensacionalismo",
+   "variables": {
+    "sens_p_documento": {
+     "valor": 0.0032,
+     "percentil": 6.4,
+     "direccion": 1
+    },
+    "sens_p_media_oraciones": {
+     "valor": 0.1339,
+     "percentil": 16.2,
+     "direccion": 1
+    },
+    "sens_p_max_oraciones": {
+     "valor": 0.6897,
+     "percentil": 32.6,
+     "direccion": 1
+    }
+   }
+  },
+  "D2": {
+   "nombre": "Carga emocional",
+   "variables": {
+    "emo_intensidad_media": {
+     "valor": 0.0102,
+     "percentil": 16.9,
+     "direccion": 1
+    },
+    "emo_intensidad_max": {
+     "valor": 0.0263,
+     "percentil": 24.7,
+     "direccion": 1
+    },
+    "emo_ira_media": {
+     "valor": 0.0019,
+     "percentil": 32.9,
+     "direccion": 1
+    },
+    "emo_ira_max": {
+     "valor": 0.0086,
+     "percentil": 43.3,
+     "direccion": 1
+    },
+    "emo_miedo_media": {
+     "valor": 0.0012,
+     "percentil": 27.0,
+     "direccion": 1
+    },
+    "emo_miedo_max": {
+     "valor": 0.0036,
+     "percentil": 42.4,
+     "direccion": 1
+    },
+    "emo_sorpresa_media": {
+     "valor": 0.0019,
+     "percentil": 23.9,
+     "direccion": 1
+    },
+    "emo_sorpresa_max": {
+     "valor": 0.0049,
+     "percentil": 39.2,
+     "direccion": 1
+    }
+   }
+  },
+  "D3": {
+   "nombre": "Reiteración",
+   "variables": {
+    "red_sim_max": {
+     "valor": 0.6252,
+     "percentil": 64.6,
+     "direccion": 1
+    },
+    "red_sim_media": {
+     "valor": 0.3413,
+     "percentil": 41.6,
+     "direccion": 1
+    },
+    "red_sim_top3": {
+     "valor": 0.6182,
+     "percentil": 78.2,
+     "direccion": 1
+    },
+    "red_consecutivas_media": {
+     "valor": 0.3991,
+     "percentil": 57.8,
+     "direccion": 1
+    }
+   }
+  },
+  "D4": {
+   "nombre": "Énfasis ortotipográfico",
+   "variables": {
+    "orto_mayusculas_sostenidas": {
+     "valor": 0.4505,
+     "percentil": 51.9,
+     "direccion": 1
+    },
+    "orto_proporcion_mayusculas": {
+     "valor": 0.0319,
+     "percentil": 38.9,
+     "direccion": 1
+    },
+    "orto_exclamaciones": {
+     "valor": 0.0,
+     "percentil": 48.5,
+     "direccion": 1
+    },
+    "orto_interrogaciones": {
+     "valor": 0.0,
+     "percentil": 46.8,
+     "direccion": 1
+    },
+    "orto_puntos_suspensivos": {
+     "valor": 0.0,
+     "percentil": 47.6,
+     "direccion": 1
+    },
+    "orto_comillas": {
+     "valor": 0.4444,
+     "percentil": 67.8,
+     "direccion": 1
+    }
+   }
+  },
+  "D5": {
+   "nombre": "Aserción sin respaldo",
+   "variables": {
+    "ling_intensificadores": {
+     "valor": 0.0,
+     "percentil": 47.6,
+     "direccion": 1
+    },
+    "ling_pronombres_1p": {
+     "valor": 0.0,
+     "percentil": 37.8,
+     "direccion": 1
+    },
+    "ling_adjetivos_sustantivos": {
+     "valor": 0.2,
+     "percentil": 18.9,
+     "direccion": 1
+    },
+    "ling_atenuadores": {
+     "valor": 0.0,
+     "percentil": 42.4,
+     "direccion": -1
+    },
+    "ling_verbos_dicendi": {
+     "valor": 1.3514,
+     "percentil": 92.2,
+     "direccion": -1
+    },
+    "ling_cifras": {
+     "valor": 1.3514,
+     "percentil": 64.1,
+     "direccion": -1
+    },
+    "ling_referencias_temporales": {
+     "valor": 0.0,
+     "percentil": 34.7,
+     "direccion": -1
+    }
+   }
+  }
+ },
+ "oraciones": {
+  "n_oraciones": 9,
+  "mas_sensacionalista": {
+   "indice": 9,
+   "texto": "“Al ser renovados sus contratos a cada rato, ellos no tienen acceso a la banca, no pueden hacer préstamos, no pueden hipotecar nada”, ejemplificó el diputado de derecha.",
+   "probabilidad": 0.69
+  },
+  "mas_emotiva": {
+   "indice": 6,
+   "texto": "Con esta moda­lidad a cada fin de año sufrimos acoso porque tenemos advertencias de despidos”, dijo la doctora.",
+   "intensidad": 0.026,
+   "emocion": "ira",
+   "probabilidad_emocion": 0.009
+  },
+  "detalle": [
+   {
+    "indice": 1,
+    "texto": "El diputado Orlando Candray, del partido Arena, acompañó la petición de los médicos.",
+    "sensacionalismo": 0.023,
+    "intensidad_emocional": 0.006,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 2,
+    "texto": "Foto DEM\n\nUn grupo de médicos del Hospital Nacional de Zacatecoluca llegó ayer a la Asamblea Legislativa y pidió que el Ministerio de Salud cambie sus categorías de médicos residentes a médicos hospitalarios o consultantes.",
+    "sensacionalismo": 0.095,
+    "intensidad_emocional": 0.005,
+    "emocion_principal": "sorpresa"
+   },
+   {
+    "indice": 3,
+    "texto": "La doctora Patricia Guzmán explicó que ya son graduados de la universidad, pero por no haber sido modificada la categoría de médicos residentes a consultantes, todavía reciben salarios de $400.",
+    "sensacionalismo": 0.028,
+    "intensidad_emocional": 0.013,
+    "emocion_principal": "tristeza"
+   },
+   {
+    "indice": 4,
+    "texto": "Explicó que hay al menos 60 médicos en el hospital nacional de Zacatecoluca que no han sido trasladados a la categoría de médicos consultantes.",
+    "sensacionalismo": 0.045,
+    "intensidad_emocional": 0.007,
+    "emocion_principal": "tristeza"
+   },
+   {
+    "indice": 5,
+    "texto": "“Con esta categoría de médicos residentes hacemos más de 300 horas laborales en el mes.",
+    "sensacionalismo": 0.167,
+    "intensidad_emocional": 0.015,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 6,
+    "texto": "Con esta moda­lidad a cada fin de año sufrimos acoso porque tenemos advertencias de despidos”, dijo la doctora.",
+    "sensacionalismo": 0.105,
+    "intensidad_emocional": 0.026,
+    "emocion_principal": "ira"
+   },
+   {
+    "indice": 7,
+    "texto": "El doctor y diputado Orlando Cabrera Candray, de Arena, acompañó a los médicos y firmó un proyecto de dictamen recomen­dable para presentarlo en la Comisión de Salud de Asamblea Legislativa para que sugieran que el Mi­nisterio de Salud cambie la categoría.",
+    "sensacionalismo": 0.033,
+    "intensidad_emocional": 0.005,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 8,
+    "texto": "Candray detalló que al tener la categoría de médicos residentes, los contratos de trabajo son renovados cada año.",
+    "sensacionalismo": 0.02,
+    "intensidad_emocional": 0.006,
+    "emocion_principal": "alegría"
+   },
+   {
+    "indice": 9,
+    "texto": "“Al ser renovados sus contratos a cada rato, ellos no tienen acceso a la banca, no pueden hacer préstamos, no pueden hipotecar nada”, ejemplificó el diputado de derecha.",
+    "sensacionalismo": 0.69,
+    "intensidad_emocional": 0.008,
+    "emocion_principal": "tristeza"
+   }
+  ],
+  "par_mas_parecido": {
+   "oracion_a": 2,
+   "texto_a": "Foto DEM\n\nUn grupo de médicos del Hospital Nacional de Zacatecoluca llegó ayer a la Asamblea Legislativa y pidió que el Ministerio de Salud cambie sus categorías de médicos residentes a médicos hospitalarios o consultantes.",
+   "oracion_b": 7,
+   "texto_b": "El doctor y diputado Orlando Cabrera Candray, de Arena, acompañó a los médicos y firmó un proyecto de dictamen recomen­dable para presentarlo en la Comisión de Salud de Asamblea Legislativa para que sugieran que el Mi­nisterio de Salud cambie la categoría.",
+   "similitud": 0.625,
+   "repite_la_misma_afirmacion": false,
+   "tau_redundante": 0.7231543064117432
+  }
+ },
+ "marcadores": {
+  "mayusculas_sostenidas": [
+   "DEM"
+  ],
+  "exclamaciones": 0,
+  "interrogaciones": 0,
+  "puntos_suspensivos": 0,
+  "intensificadores": [],
+  "atenuadores": [],
+  "verbos_atribucion": [
+   "explicó",
+   "Explicó",
+   "dijo"
+  ]
+ },
+ "modelo_sobre_variables": {
+  "p_falsa": 0.149,
+  "umbral": 0.47,
+  "prediccion": "real",
+  "principales_contribuciones": [
+   {
+    "variable": "sens_p_media_oraciones",
+    "valor": 0.1339,
+    "z": -1.12,
+    "contribucion_log_odds": -0.669,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "ling_verbos_dicendi",
+    "valor": 1.3514,
+    "z": 1.73,
+    "contribucion_log_odds": -0.395,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "red_sim_top3",
+    "valor": 0.6182,
+    "z": 0.81,
+    "contribucion_log_odds": -0.249,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "ling_palabras",
+    "valor": 222.0,
+    "z": 0.69,
+    "contribucion_log_odds": -0.239,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "ling_hapax",
+    "valor": 0.3063,
+    "z": -1.85,
+    "contribucion_log_odds": 0.205,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "orto_mayusculas_sostenidas",
+    "valor": 0.4505,
+    "z": -0.27,
+    "contribucion_log_odds": -0.15,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "emo_sorpresa_media",
+    "valor": 0.0019,
+    "z": -0.39,
+    "contribucion_log_odds": 0.117,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "emo_sorpresa_max",
+    "valor": 0.0049,
+    "z": -0.27,
+    "contribucion_log_odds": -0.113,
+    "empuja_hacia": "real"
+   }
+  ]
+ },
+ "mexgen": {
+  "aplica": true,
+  "segmentacion": "Punkt en español (xai_metodos.spans_oraciones)",
+  "n_oraciones": 9,
+  "iml_texto": 35.09,
+  "p_falsa_texto": 0.1493,
+  "oraciones": [
+   {
+    "indice": 1,
+    "texto": "El diputado Orlando Candray, del partido Arena, acompañó la petición de los médicos.",
+    "delta_iml": -0.78,
+    "delta_dimensiones": {
+     "D1": -1.89,
+     "D2": -0.96,
+     "D3": -1.35,
+     "D4": 0.96,
+     "D5": -0.65
+    },
+    "delta_p_falsa": -0.0216
+   },
+   {
+    "indice": 2,
+    "texto": "Foto DEM\n\nUn grupo de médicos del Hospital Nacional de Zacatecoluca llegó ayer a la Asamblea Legislativa y pidió que el Ministerio de Salud cambie sus categorías de médicos residentes a médicos hospitalarios o consultantes.",
+    "delta_iml": 7.71,
+    "delta_dimensiones": {
+     "D1": -1.96,
+     "D2": -0.83,
+     "D3": 14.91,
+     "D4": 22.89,
+     "D5": 3.55
+    },
+    "delta_p_falsa": -0.0034
+   },
+   {
+    "indice": 3,
+    "texto": "La doctora Patricia Guzmán explicó que ya son graduados de la universidad, pero por no haber sido modificada la categoría de médicos residentes a consultantes, todavía reciben salarios de $400.",
+    "delta_iml": -2.64,
+    "delta_dimensiones": {
+     "D1": -2.63,
+     "D2": -0.21,
+     "D3": 3.91,
+     "D4": -4.7,
+     "D5": -9.57
+    },
+    "delta_p_falsa": -0.0163
+   },
+   {
+    "indice": 4,
+    "texto": "Explicó que hay al menos 60 médicos en el hospital nacional de Zacatecoluca que no han sido trasladados a la categoría de médicos consultantes.",
+    "delta_iml": -1.63,
+    "delta_dimensiones": {
+     "D1": -0.24,
+     "D2": -0.4,
+     "D3": 0.16,
+     "D4": -3.84,
+     "D5": -3.84
+    },
+    "delta_p_falsa": -0.052
+   },
+   {
+    "indice": 5,
+    "texto": "“Con esta categoría de médicos residentes hacemos más de 300 horas laborales en el mes.",
+    "delta_iml": 0.57,
+    "delta_dimensiones": {
+     "D1": -0.38,
+     "D2": 0.52,
+     "D3": 3.87,
+     "D4": 0.95,
+     "D5": -2.11
+    },
+    "delta_p_falsa": -0.002
+   },
+   {
+    "indice": 6,
+    "texto": "Con esta moda­lidad a cada fin de año sufrimos acoso porque tenemos advertencias de despidos”, dijo la doctora.",
+    "delta_iml": 2.91,
+    "delta_dimensiones": {
+     "D1": 0.13,
+     "D2": 17.38,
+     "D3": -1.5,
+     "D4": -0.05,
+     "D5": -1.4
+    },
+    "delta_p_falsa": -0.0203
+   },
+   {
+    "indice": 7,
+    "texto": "El doctor y diputado Orlando Cabrera Candray, de Arena, acompañó a los médicos y firmó un proyecto de dictamen recomen­dable para presentarlo en la Comisión de Salud de Asamblea Legislativa para que sugieran que el Mi­nisterio de Salud cambie la categoría.",
+    "delta_iml": 1.25,
+    "delta_dimensiones": {
+     "D1": -0.28,
+     "D2": -1.28,
+     "D3": 1.94,
+     "D4": 3.96,
+     "D5": 1.89
+    },
+    "delta_p_falsa": -0.0394
+   },
+   {
+    "indice": 8,
+    "texto": "Candray detalló que al tener la categoría de médicos residentes, los contratos de trabajo son renovados cada año.",
+    "delta_iml": 0.22,
+    "delta_dimensiones": {
+     "D1": -0.28,
+     "D2": -1.11,
+     "D3": 5.48,
+     "D4": -4.11,
+     "D5": 1.13
+    },
+    "delta_p_falsa": -0.0108
+   },
+   {
+    "indice": 9,
+    "texto": "“Al ser renovados sus contratos a cada rato, ellos no tienen acceso a la banca, no pueden hacer préstamos, no pueden hipotecar nada”, ejemplificó el diputado de derecha.",
+    "delta_iml": 1.9,
+    "delta_dimensiones": {
+     "D1": 11.6,
+     "D2": -0.96,
+     "D3": 0.11,
+     "D4": 0.09,
+     "D5": -1.3
+    },
+    "delta_p_falsa": -0.0339
+   }
+  ],
+  "extremos": {
+   "sube_iml": {
+    "indice": 2,
+    "delta": 7.71
+   },
+   "baja_iml": {
+    "indice": 3,
+    "delta": -2.64
+   },
+   "hacia_falsa": {
+    "indice": 5,
+    "delta": -0.002
+   },
+   "hacia_real": {
+    "indice": 4,
+    "delta": -0.052
+   }
+  }
+ },
+ "variables": {
+  "sens_p_documento": 0.003205974120646715,
+  "sens_p_media_oraciones": 0.1339064985513687,
+  "sens_p_max_oraciones": 0.6897155046463013,
+  "sens_sd_oraciones": 0.20193849503993988,
+  "red_sim_max": 0.6252124309539795,
+  "red_sim_media": 0.3412792980670929,
+  "red_sim_top3": 0.6181596517562866,
+  "red_sim_varianza": 0.021092554554343224,
+  "red_consecutivas_media": 0.39912110567092896,
+  "red_consecutivas_min": 0.20617786049842834,
+  "emo_intensidad_media": 0.010170983150601387,
+  "emo_intensidad_max": 0.026264667510986328,
+  "emo_ira_media": 0.0018745365086942911,
+  "emo_ira_max": 0.008628745563328266,
+  "emo_miedo_media": 0.001159393577836454,
+  "emo_miedo_max": 0.003597065107896924,
+  "emo_tristeza_media": 0.0029426738619804382,
+  "emo_tristeza_max": 0.007146351970732212,
+  "emo_alegria_media": 0.0017176769906654954,
+  "emo_alegria_max": 0.006738476455211639,
+  "emo_sorpresa_media": 0.0018797769444063306,
+  "emo_sorpresa_max": 0.004878378473222256,
+  "ling_atenuadores": 0.0,
+  "ling_intensificadores": 0.0,
+  "orto_comillas": 0.4444444444444444,
+  "ling_verbos_dicendi": 1.3513513513513513,
+  "ling_flesch_szigriszt": 46.90436936936938,
+  "ling_guiraud": 7.382716607354268,
+  "ling_hapax": 0.3063063063063063,
+  "ling_adjetivos_sustantivos": 0.2,
+  "ling_pronombres_1p": 0.0,
+  "ling_pronombres_3p": 7.657657657657657,
+  "ling_adverbios": 4.504504504504505,
+  "orto_mayusculas_sostenidas": 0.45045045045045046,
+  "orto_proporcion_mayusculas": 0.031914893617021274,
+  "orto_exclamaciones": 0.0,
+  "orto_interrogaciones": 0.0,
+  "orto_puntos_suspensivos": 0.0,
+  "ling_cifras": 1.3513513513513513,
+  "ling_porcentajes": 0.0,
+  "ling_referencias_temporales": 0.0,
+  "ling_palabras": 222.0,
+  "ling_oraciones": 9.0
+ },
+ "segundos_auditoria": 40.8,
+ "id": "noticia_3_verdadera_medicos_zacatecoluca",
+ "tipo_referencia": "Verdadera (clase_num = 0 en el corpus)",
+ "origen": "Omdena LATAM (Politics Fake News Detector) (https://huggingface.co/datasets/IsaacRodgz/Fake-news-latam-omdena)",
+ "en_corpus": true,
+ "indice_csv": 3653,
+ "clase_num": 0,
+ "fuente": "https://huggingface.co/datasets/IsaacRodgz/Fake-news-latam-omdena",
+ "dataset_origen": "Omdena LATAM (Politics Fake News Detector)",
+ "region": "América Latina",
+ "modelo_sobre_variables_fuera_de_pliegue": {
+  "p_falsa_oof": 0.15929196186904906,
+  "umbral_pliegue": 0.47,
+  "pliegue": 3,
+  "prediccion_oof": "real",
+  "idx_csv_representante": 3653,
+  "es_representante": true,
+  "nota": "Protocolo original (escenario a de sensibilidad_clasificador.py). Si el texto está duplicado, se usa la predicción del representante conservado por drop_duplicates(keep=first)."
+ }
+}

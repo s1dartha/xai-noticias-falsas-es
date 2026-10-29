@@ -1,0 +1,492 @@
+{
+ "titulo": "Caso 1 · índice 2357 · FakeDeS 2021 (LatAm)",
+ "perfil": {
+  "dimensiones": {
+   "D1": 78.0,
+   "D2": 53.9,
+   "D3": 73.5,
+   "D4": 95.2,
+   "D5": 64.0
+  },
+  "iml": 72.9,
+  "estilo": "Estilo 3: Alarmista / Viral",
+  "lema_estilo": "Alto dramatismo, tono emocional y énfasis visual (mayúsculas y signos).",
+  "indice_estilo": 2,
+  "pertenencia_estilo": 43.0,
+  "estilo_secundario": "Estilo 1: Institucional / Técnico",
+  "pertenencia_secundario": 32.2,
+  "pertenencias": {
+   "Estilo 1: Institucional / Técnico": 32.2,
+   "Estilo 2: Opinión / Crónica": 24.9,
+   "Estilo 3: Alarmista / Viral": 43.0
+  }
+ },
+ "variables_por_dimension": {
+  "D1": {
+   "nombre": "Sensacionalismo",
+   "variables": {
+    "sens_p_documento": {
+     "valor": 0.9717,
+     "percentil": 83.8,
+     "direccion": 1
+    },
+    "sens_p_media_oraciones": {
+     "valor": 0.4564,
+     "percentil": 54.7,
+     "direccion": 1
+    },
+    "sens_p_max_oraciones": {
+     "valor": 0.9912,
+     "percentil": 89.0,
+     "direccion": 1
+    }
+   }
+  },
+  "D2": {
+   "nombre": "Carga emocional",
+   "variables": {
+    "emo_intensidad_media": {
+     "valor": 0.025,
+     "percentil": 38.6,
+     "direccion": 1
+    },
+    "emo_intensidad_max": {
+     "valor": 0.0679,
+     "percentil": 41.0,
+     "direccion": 1
+    },
+    "emo_ira_media": {
+     "valor": 0.0016,
+     "percentil": 29.2,
+     "direccion": 1
+    },
+    "emo_ira_max": {
+     "valor": 0.0024,
+     "percentil": 22.9,
+     "direccion": 1
+    },
+    "emo_miedo_media": {
+     "valor": 0.0038,
+     "percentil": 67.1,
+     "direccion": 1
+    },
+    "emo_miedo_max": {
+     "valor": 0.0066,
+     "percentil": 59.1,
+     "direccion": 1
+    },
+    "emo_sorpresa_media": {
+     "valor": 0.0131,
+     "percentil": 88.6,
+     "direccion": 1
+    },
+    "emo_sorpresa_max": {
+     "valor": 0.0483,
+     "percentil": 91.2,
+     "direccion": 1
+    }
+   }
+  },
+  "D3": {
+   "nombre": "Reiteración",
+   "variables": {
+    "red_sim_max": {
+     "valor": 0.6454,
+     "percentil": 70.7,
+     "direccion": 1
+    },
+    "red_sim_media": {
+     "valor": 0.3904,
+     "percentil": 59.5,
+     "direccion": 1
+    },
+    "red_sim_top3": {
+     "valor": 0.5947,
+     "percentil": 70.8,
+     "direccion": 1
+    },
+    "red_consecutivas_media": {
+     "valor": 0.4293,
+     "percentil": 67.5,
+     "direccion": 1
+    }
+   }
+  },
+  "D4": {
+   "nombre": "Énfasis ortotipográfico",
+   "variables": {
+    "orto_mayusculas_sostenidas": {
+     "valor": 8.9431,
+     "percentil": 99.8,
+     "direccion": 1
+    },
+    "orto_proporcion_mayusculas": {
+     "valor": 0.1469,
+     "percentil": 99.8,
+     "direccion": 1
+    },
+    "orto_exclamaciones": {
+     "valor": 0.0,
+     "percentil": 48.5,
+     "direccion": 1
+    },
+    "orto_interrogaciones": {
+     "valor": 0.0,
+     "percentil": 46.8,
+     "direccion": 1
+    },
+    "orto_puntos_suspensivos": {
+     "valor": 0.0,
+     "percentil": 47.6,
+     "direccion": 1
+    },
+    "orto_comillas": {
+     "valor": 0.6,
+     "percentil": 74.0,
+     "direccion": 1
+    }
+   }
+  },
+  "D5": {
+   "nombre": "Aserción sin respaldo",
+   "variables": {
+    "ling_intensificadores": {
+     "valor": 0.0,
+     "percentil": 47.6,
+     "direccion": 1
+    },
+    "ling_pronombres_1p": {
+     "valor": 0.0,
+     "percentil": 37.8,
+     "direccion": 1
+    },
+    "ling_adjetivos_sustantivos": {
+     "valor": 0.4783,
+     "percentil": 90.1,
+     "direccion": 1
+    },
+    "ling_atenuadores": {
+     "valor": 0.0,
+     "percentil": 42.4,
+     "direccion": -1
+    },
+    "ling_verbos_dicendi": {
+     "valor": 0.0,
+     "percentil": 33.7,
+     "direccion": -1
+    },
+    "ling_cifras": {
+     "valor": 3.252,
+     "percentil": 88.2,
+     "direccion": -1
+    },
+    "ling_referencias_temporales": {
+     "valor": 0.0,
+     "percentil": 34.7,
+     "direccion": -1
+    }
+   }
+  }
+ },
+ "oraciones": {
+  "n_oraciones": 5,
+  "mas_sensacionalista": {
+   "indice": 1,
+   "texto": "Boooomm\nMUJERES VACUNADAS DE COVID ESTÁN MOSTRANDO EFECTOS SECUNDARIOS TÍPICOS DE CANCER DE MAMA\nLos médicos de Intermountain Healthcare’s Breast Care Centre de Utah, USA, anuncian nuevas pautas de mamografías para las mujeres vacunadas contra Covid-19 recientemente.",
+   "probabilidad": 0.991
+  },
+  "mas_emotiva": {
+   "indice": 1,
+   "texto": "Boooomm\nMUJERES VACUNADAS DE COVID ESTÁN MOSTRANDO EFECTOS SECUNDARIOS TÍPICOS DE CANCER DE MAMA\nLos médicos de Intermountain Healthcare’s Breast Care Centre de Utah, USA, anuncian nuevas pautas de mamografías para las mujeres vacunadas contra Covid-19 recientemente.",
+   "intensidad": 0.068,
+   "emocion": "sorpresa",
+   "probabilidad_emocion": 0.048
+  },
+  "detalle": [
+   {
+    "indice": 1,
+    "texto": "Boooomm\nMUJERES VACUNADAS DE COVID ESTÁN MOSTRANDO EFECTOS SECUNDARIOS TÍPICOS DE CANCER DE MAMA\nLos médicos de Intermountain Healthcare’s Breast Care Centre de Utah, USA, anuncian nuevas pautas de mamografías para las mujeres vacunadas contra Covid-19 recientemente.",
+    "sensacionalismo": 0.991,
+    "intensidad_emocional": 0.068,
+    "emocion_principal": "sorpresa"
+   },
+   {
+    "indice": 2,
+    "texto": "Los médicos han observado inflamación de los ganglios linfáticos en las mamografías de detección de mujeres que se vacunaron recientemente contra COVID-19.",
+    "sensacionalismo": 0.277,
+    "intensidad_emocional": 0.022,
+    "emocion_principal": "sorpresa"
+   },
+   {
+    "indice": 3,
+    "texto": "\"Siempre que los vemos en una mamografía de detección normal, llamamos a esas pacientes porque puede significar cáncer de mama metastásico que viaja a los ganglios linfáticos o linfoma o leucemia\".",
+    "sensacionalismo": 0.629,
+    "intensidad_emocional": 0.013,
+    "emocion_principal": "tristeza"
+   },
+   {
+    "indice": 4,
+    "texto": "“Con la vacuna Moderna están habiendo estos síntomas aproximadamente un 11% después de la primera dosis y un 16% después de la segunda dosis.",
+    "sensacionalismo": 0.058,
+    "intensidad_emocional": 0.015,
+    "emocion_principal": "sorpresa"
+   },
+   {
+    "indice": 5,
+    "texto": "Creemos que también es comparable para la vacuna Pfizer.",
+    "sensacionalismo": 0.326,
+    "intensidad_emocional": 0.007,
+    "emocion_principal": "sorpresa"
+   }
+  ],
+  "par_mas_parecido": {
+   "oracion_a": 1,
+   "texto_a": "Boooomm\nMUJERES VACUNADAS DE COVID ESTÁN MOSTRANDO EFECTOS SECUNDARIOS TÍPICOS DE CANCER DE MAMA\nLos médicos de Intermountain Healthcare’s Breast Care Centre de Utah, USA, anuncian nuevas pautas de mamografías para las mujeres vacunadas contra Covid-19 recientemente.",
+   "oracion_b": 2,
+   "texto_b": "Los médicos han observado inflamación de los ganglios linfáticos en las mamografías de detección de mujeres que se vacunaron recientemente contra COVID-19.",
+   "similitud": 0.645,
+   "repite_la_misma_afirmacion": false,
+   "tau_redundante": 0.7231543064117432
+  }
+ },
+ "marcadores": {
+  "mayusculas_sostenidas": [
+   "MUJERES",
+   "VACUNADAS",
+   "COVID",
+   "ESTÁN",
+   "MOSTRANDO",
+   "EFECTOS",
+   "SECUNDARIOS",
+   "TÍPICOS",
+   "CANCER",
+   "MAMA",
+   "COVID"
+  ],
+  "exclamaciones": 0,
+  "interrogaciones": 0,
+  "puntos_suspensivos": 0,
+  "intensificadores": [],
+  "atenuadores": [],
+  "verbos_atribucion": []
+ },
+ "modelo_sobre_variables": {
+  "p_falsa": 0.769,
+  "umbral": 0.47,
+  "prediccion": "falsa",
+  "principales_contribuciones": [
+   {
+    "variable": "orto_mayusculas_sostenidas",
+    "valor": 8.9431,
+    "z": 4.1,
+    "contribucion_log_odds": 2.279,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "orto_proporcion_mayusculas",
+    "valor": 0.1469,
+    "z": 3.85,
+    "contribucion_log_odds": -0.767,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "sens_p_max_oraciones",
+    "valor": 0.9912,
+    "z": 0.81,
+    "contribucion_log_odds": -0.446,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "sens_sd_oraciones",
+    "valor": 0.3235,
+    "z": 0.76,
+    "contribucion_log_odds": 0.208,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "red_sim_top3",
+    "valor": 0.5947,
+    "z": 0.63,
+    "contribucion_log_odds": -0.195,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "ling_adverbios",
+    "valor": 5.6911,
+    "z": 1.38,
+    "contribucion_log_odds": 0.19,
+    "empuja_hacia": "falsa"
+   },
+   {
+    "variable": "ling_guiraud",
+    "valor": 7.1232,
+    "z": -0.4,
+    "contribucion_log_odds": -0.175,
+    "empuja_hacia": "real"
+   },
+   {
+    "variable": "ling_cifras",
+    "valor": 3.252,
+    "z": 1.03,
+    "contribucion_log_odds": -0.171,
+    "empuja_hacia": "real"
+   }
+  ]
+ },
+ "mexgen": {
+  "aplica": true,
+  "segmentacion": "Punkt en español (xai_metodos.spans_oraciones)",
+  "n_oraciones": 5,
+  "iml_texto": 72.91,
+  "p_falsa_texto": 0.769,
+  "oraciones": [
+   {
+    "indice": 1,
+    "texto": "Boooomm\nMUJERES VACUNADAS DE COVID ESTÁN MOSTRANDO EFECTOS SECUNDARIOS TÍPICOS DE CANCER DE MAMA\nLos médicos de Intermountain Healthcare’s Breast Care Centre de Utah, USA, anuncian nuevas pautas de mamografías para las mujeres vacunadas contra Covid-19 recientemente.",
+    "delta_iml": 26.46,
+    "delta_dimensiones": {
+     "D1": 44.02,
+     "D2": 16.23,
+     "D3": 35.05,
+     "D4": 37.27,
+     "D5": -0.27
+    },
+    "delta_p_falsa": 0.2715
+   },
+   {
+    "indice": 2,
+    "texto": "Los médicos han observado inflamación de los ganglios linfáticos en las mamografías de detección de mujeres que se vacunaron recientemente contra COVID-19.",
+    "delta_iml": 8.73,
+    "delta_dimensiones": {
+     "D1": -3.27,
+     "D2": 0.21,
+     "D3": 52.56,
+     "D4": -0.93,
+     "D5": -4.9
+    },
+    "delta_p_falsa": -0.0676
+   },
+   {
+    "indice": 3,
+    "texto": "\"Siempre que los vemos en una mamografía de detección normal, llamamos a esas pacientes porque puede significar cáncer de mama metastásico que viaja a los ganglios linfáticos o linfoma o leucemia\".",
+    "delta_iml": 3.94,
+    "delta_dimensiones": {
+     "D1": 2.71,
+     "D2": -1.23,
+     "D3": 11.02,
+     "D4": 2.46,
+     "D5": 4.73
+    },
+    "delta_p_falsa": -0.0798
+   },
+   {
+    "indice": 4,
+    "texto": "“Con la vacuna Moderna están habiendo estos síntomas aproximadamente un 11% después de la primera dosis y un 16% después de la segunda dosis.",
+    "delta_iml": -4.96,
+    "delta_dimensiones": {
+     "D1": -5.76,
+     "D2": -1.13,
+     "D3": -10.83,
+     "D4": 0.56,
+     "D5": -7.63
+    },
+    "delta_p_falsa": -0.0615
+   },
+   {
+    "indice": 5,
+    "texto": "Creemos que también es comparable para la vacuna Pfizer.",
+    "delta_iml": -1.4,
+    "delta_dimensiones": {
+     "D1": -1.77,
+     "D2": -2.6,
+     "D3": -9.2,
+     "D4": -0.93,
+     "D5": 7.49
+    },
+    "delta_p_falsa": -0.0384
+   }
+  ],
+  "extremos": {
+   "sube_iml": {
+    "indice": 1,
+    "delta": 26.46
+   },
+   "baja_iml": {
+    "indice": 4,
+    "delta": -4.96
+   },
+   "hacia_falsa": {
+    "indice": 1,
+    "delta": 0.2715
+   },
+   "hacia_real": {
+    "indice": 3,
+    "delta": -0.0798
+   }
+  }
+ },
+ "variables": {
+  "sens_p_documento": 0.9716724753379822,
+  "sens_p_media_oraciones": 0.45643678307533264,
+  "sens_p_max_oraciones": 0.9912312626838684,
+  "sens_sd_oraciones": 0.3235487937927246,
+  "red_sim_max": 0.6454066634178162,
+  "red_sim_media": 0.39039066433906555,
+  "red_sim_top3": 0.5946637988090515,
+  "red_sim_varianza": 0.02352527156472206,
+  "red_consecutivas_media": 0.42927566170692444,
+  "red_consecutivas_min": 0.1532985121011734,
+  "emo_intensidad_media": 0.025000203400850296,
+  "emo_intensidad_max": 0.06794381141662598,
+  "emo_ira_media": 0.001613693661056459,
+  "emo_ira_max": 0.0024425715673714876,
+  "emo_miedo_media": 0.003830753266811371,
+  "emo_miedo_max": 0.006588195450603962,
+  "emo_tristeza_media": 0.002932874718680978,
+  "emo_tristeza_max": 0.0036365892738103867,
+  "emo_alegria_media": 0.002458588220179081,
+  "emo_alegria_max": 0.005158554296940565,
+  "emo_sorpresa_media": 0.013113612309098244,
+  "emo_sorpresa_max": 0.04832799732685089,
+  "ling_atenuadores": 0.0,
+  "ling_intensificadores": 0.0,
+  "orto_comillas": 0.6,
+  "ling_verbos_dicendi": 0.0,
+  "ling_flesch_szigriszt": 47.50491869918701,
+  "ling_guiraud": 7.123190113872715,
+  "ling_hapax": 0.43902439024390244,
+  "ling_adjetivos_sustantivos": 0.4782608695652174,
+  "ling_pronombres_1p": 0.0,
+  "ling_pronombres_3p": 9.75609756097561,
+  "ling_adverbios": 5.691056910569105,
+  "orto_mayusculas_sostenidas": 8.94308943089431,
+  "orto_proporcion_mayusculas": 0.14688427299703263,
+  "orto_exclamaciones": 0.0,
+  "orto_interrogaciones": 0.0,
+  "orto_puntos_suspensivos": 0.0,
+  "ling_cifras": 3.2520325203252036,
+  "ling_porcentajes": 2.0,
+  "ling_referencias_temporales": 0.0,
+  "ling_palabras": 123.0,
+  "ling_oraciones": 5.0
+ },
+ "segundos_auditoria": 16.0,
+ "id": "noticia_1_falsa_salud_mayusculas",
+ "tipo_referencia": "Falsa (clase_num = 1 en el corpus)",
+ "origen": "FakeDeS 2021 (LatAm) (https://huggingface.co/datasets/mariagrandury/fake_news_corpus_spanish)",
+ "en_corpus": true,
+ "indice_csv": 2357,
+ "clase_num": 1,
+ "fuente": "https://huggingface.co/datasets/mariagrandury/fake_news_corpus_spanish",
+ "dataset_origen": "FakeDeS 2021 (LatAm)",
+ "region": "América Latina",
+ "modelo_sobre_variables_fuera_de_pliegue": {
+  "p_falsa_oof": 0.7931914332598686,
+  "umbral_pliegue": 0.46,
+  "pliegue": 4,
+  "prediccion_oof": "falsa",
+  "idx_csv_representante": 2357,
+  "es_representante": true,
+  "nota": "Protocolo original (escenario a de sensibilidad_clasificador.py). Si el texto está duplicado, se usa la predicción del representante conservado por drop_duplicates(keep=first)."
+ }
+}

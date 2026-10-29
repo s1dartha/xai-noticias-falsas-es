@@ -1,0 +1,9 @@
+﻿modelo,comparacion,n_pares,diferencia_media,ic95_inf,ic95_sup,ic_incluye_0
+Sensacionalismo,Expl. por oraciones − LIME-oración,100,-0.0054,-0.0149,0.0029,True
+Sensacionalismo,Expl. por oraciones − SHAP-oración,100,-0.0038,-0.0163,0.0091,True
+Veracidad (SaBERT),Expl. por oraciones − LIME-oración,100,-0.0055,-0.0144,0.003,True
+Veracidad (SaBERT),Expl. por oraciones − SHAP-oración,100,-0.0063,-0.0159,0.0027,True
+Redundancia,Expl. por oraciones − LIME-oración,100,0.0066,0.0022,0.0111,False
+Redundancia,Expl. por oraciones − SHAP-oración,100,0.0069,0.0028,0.0113,False
+Clasificador interpretable,Expl. por oraciones − LIME-oración,100,-0.0034,-0.0067,-0.0004,False
+Clasificador interpretable,Expl. por oraciones − SHAP-oración,100,0.0002,-0.0034,0.0039,True

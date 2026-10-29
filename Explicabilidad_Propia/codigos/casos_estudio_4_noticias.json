@@ -1,0 +1,34 @@
+[
+ {
+  "id": "noticia_1_falsa_salud_mayusculas",
+  "tipo_referencia": "Falsa (Ground Truth = 1)",
+  "titulo": "Bulo de Salud con Mayúsculas Sostenidas y Alarma Oncológica",
+  "origen": "FakeDeS 2021 (Hispanoamérica / Redes Sociales)",
+  "texto": "Boooomm\nMUJERES VACUNADAS DE COVID ESTÁN MOSTRANDO EFECTOS SECUNDARIOS TÍPICOS DE CANCER DE MAMA\nLos médicos de Intermountain Healthcare’s Breast Care Centre de Utah, USA, anuncian nuevas pautas de mamografías para las mujeres vacunadas contra Covid-19 recientemente.\nLos médicos han observado inflamación de los ganglios linfáticos en las mamografías de detección de mujeres que se vacunaron recientemente contra COVID-19.\n\"Siempre que los vemos en una mamografía de detección normal, llamamos a esas pacientes porque puede significar cáncer de mama metastásico que viaja a los ganglios linfáticos o linfoma o leucemia\".\n“Con la vacuna Moderna están habiendo estos síntomas aproximadamente un 11% después de la primera dosis y un 16% después de la segunda dosis. Creemos que también es comparable para la vacuna Pfizer.",
+  "en_corpus": true
+ },
+ {
+  "id": "noticia_2_falsa_conspiracion_coronacirco",
+  "tipo_referencia": "Falsa (Ground Truth = 1)",
+  "titulo": "Desinformación Conspiracionista y Negacionista de Redes",
+  "origen": "Corpus Fact-Checking Hispanoamérica (Redes / Mensajería)",
+  "texto": "Victoria Abril ha dejado a todo el mundo con la boca abierta con su discurso anti-plandemia a la que ha llegado a denominar coronacirco. Más claro y con más lógica no se pueden decir las cosas, se la ha entendido todo perfectamente. Entre otras cosas ha dicho: «Ya no son tesis conspiracionistas, llevamos un año de coronacirco y epidemia de miedo y la tele nos bombardea con muertos y enfermos». Antes iban metiendo miedo para decir que la única solución es la vacuna, pero la vacuna no es la solución, nos están usando como conejillos de indias. Ponemos el vídeo a continuación, no tiene desperdicio.",
+  "en_corpus": false
+ },
+ {
+  "id": "noticia_3_verdadera_puebla_salud",
+  "tipo_referencia": "Verdadera (Ground Truth = 0)",
+  "titulo": "Noticia Oficial de Salud Pública y Medidas Epidemiológicas",
+  "origen": "Prensa Oficial del Estado de Puebla, México (Secretaría de Salud)",
+  "texto": "El Gobierno de Puebla anunció que el confinamiento para evitar que colapse el sistema de salud por la pandemia de coronavirus, se extiende hasta el día 25 de enero. En rueda de prensa, el gobernador Luis Miguel Barbosa indicó que se busca reducir la curva de contagios, pues el estado se mantiene en semáforo naranja con tendencia al alza. Indicó que de esta forma se ratifica el llamado de alerta máxima en Puebla hasta el 25 de enero, fecha en que se determinará el comportamiento de la pandemia. En cuanto a la industria considerada como esencial el aforo permitido es de 30 por ciento con horarios escalonados. Asimismo se advirtió mayor presencia policíaca en las calles para el cumplimiento de las medidas y exhortó a la prudencia ciudadana. Jesús Ramírez, subsecretario de transparencia, indicó que todo el estado se encuentra en color naranja con tendencia ascendente. En la capital y zona metropolitana es rojo. El secretario de salud, José Antonio Martínez, indicó que este es el segundo día con más casos registrados de coronavirus con 353 casos en 24 horas y 37 defunciones en 72 horas. De mantenerse la tendencia, al día 14 de enero estaríamos \"a tope\" y el día 18 la capacidad hospitalaria se vería rebasada, por lo que urgió a acatar los decretos.",
+  "en_corpus": false
+ },
+ {
+  "id": "noticia_4_verdadera_ciencia_efe",
+  "tipo_referencia": "Verdadera (Ground Truth = 0)",
+  "titulo": "Crónica Científica sobre el Megaproyecto NICA de Dubná",
+  "origen": "Agencia EFE (Sección Ciencia y Tecnología / Rusia)",
+  "texto": "Rusia quiere recrear el comienzo del Universo. Redacción DUBNÁ EFE En Dubná, a unos 100 kilómetros al norte de Moscú, se comienza a vislumbrar lo que será un enorme acelerador de partículas destinado a recrear los primeros instantes del Universo tras el Big Bang. La construcción del NICA (Nuclotron based Ion Collider Facility)en el Instituto Conjunto para la Investigación Nuclear (JINR, por sus siglas en inglés) de Dubná avanza a pasos agigantados. El deseo de los aproximadamente mil científicos e ingenieros que trabajan en el megaproyecto es poner en marcha el colisionador en 2022. El objetivo es estudiar la transición de la materia ordinaria al plasma quark-gluón que existía en los primeros microsegundos después de la gran explosión. Para ello en Dubná se harán colisionar haces de iones de oro.",
+  "en_corpus": false
+ }
+]

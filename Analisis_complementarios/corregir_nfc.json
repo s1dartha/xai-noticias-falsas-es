@@ -1,0 +1,187 @@
+{
+ "filas_corregidas": 1252,
+ "por_corpus_de_origen": {
+  "Omdena LATAM (Politics Fake News Detector)": 1249,
+  "Freiren Unified Corpus (España)": 3
+ },
+ "textos_unicos_corregidos": 1252,
+ "variables_que_cambian_pct_filas": {
+  "sens_p_documento": 100.0,
+  "sens_p_media_oraciones": 100.0,
+  "sens_p_max_oraciones": 97.4,
+  "sens_sd_oraciones": 99.9,
+  "red_sim_max": 99.7,
+  "red_sim_media": 99.9,
+  "red_sim_top3": 99.8,
+  "red_sim_varianza": 98.8,
+  "red_consecutivas_media": 99.9,
+  "red_consecutivas_min": 99.8,
+  "orto_mayusculas_sostenidas": 1.1,
+  "ling_atenuadores": 6.7,
+  "ling_intensificadores": 0.4,
+  "ling_verbos_dicendi": 47.3,
+  "ling_flesch_szigriszt": 0.7,
+  "ling_guiraud": 24.8,
+  "ling_hapax": 23.6,
+  "ling_adjetivos_sustantivos": 95.2,
+  "ling_pronombres_1p": 0.2,
+  "ling_pronombres_3p": 5.7,
+  "ling_adverbios": 71.2,
+  "emo_intensidad_media": 69.5,
+  "emo_intensidad_max": 62.5,
+  "emo_ira_media": 58.2,
+  "emo_ira_max": 82.4,
+  "emo_miedo_media": 40.5,
+  "emo_miedo_max": 77.5,
+  "emo_tristeza_media": 67.9,
+  "emo_tristeza_max": 88.5,
+  "emo_alegria_media": 47.5,
+  "emo_alegria_max": 80.3,
+  "emo_sorpresa_media": 54.2,
+  "emo_sorpresa_max": 85.5
+ },
+ "medias_antes_despues": {
+  "sens_p_documento": [
+   0.26255343707104306,
+   0.22054257114243414
+  ],
+  "sens_p_media_oraciones": [
+   0.4285764806705611,
+   0.3220624493876883
+  ],
+  "sens_p_max_oraciones": [
+   0.7812393344983387,
+   0.666110523962624
+  ],
+  "sens_sd_oraciones": [
+   0.24174043809322832,
+   0.21947727679236295
+  ],
+  "red_sim_max": [
+   0.6069301684125722,
+   0.6122414806096864
+  ],
+  "red_sim_media": [
+   0.36823667433383844,
+   0.3658524527431106
+  ],
+  "red_sim_top3": [
+   0.5455153011661068,
+   0.5486904634393567
+  ],
+  "red_sim_varianza": [
+   0.01570326784735644,
+   0.016718550240826628
+  ],
+  "red_consecutivas_media": [
+   0.3829542265992937,
+   0.3829999405799455
+  ],
+  "red_consecutivas_min": [
+   0.2339056923947544,
+   0.22856191493059025
+  ],
+  "orto_mayusculas_sostenidas": [
+   1.1183638032636316,
+   1.115600953774572
+  ],
+  "ling_atenuadores": [
+   0.057058670122830855,
+   0.09622901983925701
+  ],
+  "ling_intensificadores": [
+   0.018823129475016163,
+   0.021762108427373708
+  ],
+  "ling_verbos_dicendi": [
+   0.23405895086931158,
+   0.652798220225167
+  ],
+  "ling_flesch_szigriszt": [
+   49.4053493967872,
+   49.41202255485652
+  ],
+  "ling_guiraud": [
+   7.829202159948618,
+   7.8513666089319
+  ],
+  "ling_hapax": [
+   0.4521018813385568,
+   0.4541779095954299
+  ],
+  "ling_adjetivos_sustantivos": [
+   0.35200861069392647,
+   0.3111403129802981
+  ],
+  "ling_pronombres_1p": [
+   0.3047458784101412,
+   0.30680474428689847
+  ],
+  "ling_pronombres_3p": [
+   10.15501263688429,
+   10.192117545298673
+  ],
+  "ling_adverbios": [
+   2.229411948781054,
+   2.880018670104116
+  ],
+  "emo_intensidad_media": [
+   0.07893348137579871,
+   0.0789322205715048
+  ],
+  "emo_intensidad_max": [
+   0.2764125347335463,
+   0.27641254492080247
+  ],
+  "emo_ira_media": [
+   0.027027102078330673,
+   0.027027010200144898
+  ],
+  "emo_ira_max": [
+   0.11875618091517572,
+   0.11875618541734193
+  ],
+  "emo_miedo_media": [
+   0.00449105045278754,
+   0.004491006263707297
+  ],
+  "emo_miedo_max": [
+   0.016858656346022363,
+   0.01685865596748056
+  ],
+  "emo_tristeza_media": [
+   0.02131397291353834,
+   0.02131398439614888
+  ],
+  "emo_tristeza_max": [
+   0.08649140465061503,
+   0.08649140481620256
+  ],
+  "emo_alegria_media": [
+   0.01624931801535144,
+   0.016248301610873362
+  ],
+  "emo_alegria_max": [
+   0.06315793992121406,
+   0.06315794169834738
+  ],
+  "emo_sorpresa_media": [
+   0.004400087319121406,
+   0.004399989179008977
+  ],
+  "emo_sorpresa_max": [
+   0.013048505026389776,
+   0.0130485059618511
+  ]
+ },
+ "sabert": {
+  "p_falsa_media_antes": 0.2611409438699231,
+  "p_falsa_media_despues": 0.29575899884496804,
+  "predicciones_que_cambian": 59
+ },
+ "respaldos": [
+  "tabla_variables_4418_pre_nfc.csv",
+  "predicciones_sabert_ampliado_4418_pre_nfc.csv"
+ ],
+ "nota": "id_texto y la columna Text no cambian: los pliegues de validación cruzada son los mismos de la tesis."
+}

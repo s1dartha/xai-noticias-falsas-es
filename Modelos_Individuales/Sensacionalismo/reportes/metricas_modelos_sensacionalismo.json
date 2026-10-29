@@ -1,0 +1,2911 @@
+{
+ "metadata": {
+  "clase_positiva": "1 = sensacionalista / clickbait",
+  "sin_ajuste_fino": true,
+  "umbral": "global, maximiza F1 macro en ta1c_validation_cuerpo + salud_calibracion (los conjuntos de prueba no se usan)",
+  "criterio_aceptacion": "F1 macro >= 0.65 en ['ta1c_test_cuerpo', 'salud_prueba', 'amarillismo_humano_cuerpo']",
+  "max_len": {
+   "titular": 128,
+   "cuerpo": 256
+  },
+  "conjuntos": {
+   "ta1c_validation_titular": {
+    "n": 700,
+    "positivos": 206,
+    "rol": "calibracion",
+    "unidad": "titular",
+    "constructo": "clickbait"
+   },
+   "ta1c_validation_cuerpo": {
+    "n": 700,
+    "positivos": 206,
+    "rol": "calibracion",
+    "unidad": "titular+cuerpo",
+    "constructo": "clickbait"
+   },
+   "ta1c_test_titular": {
+    "n": 700,
+    "positivos": 204,
+    "rol": "prueba",
+    "unidad": "titular",
+    "constructo": "clickbait"
+   },
+   "ta1c_test_cuerpo": {
+    "n": 700,
+    "positivos": 204,
+    "rol": "prueba",
+    "unidad": "titular+cuerpo",
+    "constructo": "clickbait"
+   },
+   "salud_calibracion": {
+    "n": 1100,
+    "positivos": 540,
+    "rol": "calibracion",
+    "unidad": "titular",
+    "constructo": "sensacionalismo (procedencia no documentada)"
+   },
+   "salud_prueba": {
+    "n": 1100,
+    "positivos": 540,
+    "rol": "prueba",
+    "unidad": "titular",
+    "constructo": "sensacionalismo (procedencia no documentada)"
+   },
+   "amarillismo_humano_titular": {
+    "n": 114,
+    "positivos": 58,
+    "rol": "prueba",
+    "unidad": "titular",
+    "constructo": "sensacionalismo / amarillismo"
+   },
+   "amarillismo_humano_cuerpo": {
+    "n": 114,
+    "positivos": 58,
+    "rol": "prueba",
+    "unidad": "titular+copete+cuerpo",
+    "constructo": "sensacionalismo / amarillismo"
+   },
+   "ia_sintetico": {
+    "n": 70,
+    "positivos": 35,
+    "rol": "prueba",
+    "unidad": "texto breve",
+    "constructo": "sensacionalismo (sintético, control)"
+   },
+   "noticia_clickbait": {
+    "n": 100,
+    "positivos": 100,
+    "rol": "prueba_solo_recall",
+    "unidad": "titular+cuerpo",
+    "constructo": "clickbait (todos positivos)"
+   }
+  }
+ },
+ "modelos": {
+  "jjneila": {
+   "id": "JJNeila/bert-spanish-sensationalism-oss",
+   "revision": "1b8140efe548c876cfc03357c86100ede9118440",
+   "constructo": "sensacionalismo (etiquetas probablemente generadas con LLM)",
+   "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+   },
+   "regla_indice": "índice 1 fijado (tarjeta del modelo)",
+   "umbral_calibrado": 0.85,
+   "tiempos_s": {
+    "ta1c_validation_titular": 36.13155198097229,
+    "ta1c_validation_cuerpo": 250.33776879310608,
+    "ta1c_test_titular": 27.71442484855652,
+    "ta1c_test_cuerpo": 235.0943489074707,
+    "salud_calibracion": 39.86160326004028,
+    "salud_prueba": 38.1122944355011,
+    "amarillismo_humano_titular": 5.533519744873047,
+    "amarillismo_humano_cuerpo": 37.61194968223572,
+    "ia_sintetico": 3.4590516090393066,
+    "noticia_clickbait": 31.99890112876892
+   },
+   "conjuntos": {
+    "ta1c_validation_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.7718446601941747,
+      "cm": [
+       [
+        93,
+        401
+       ],
+       [
+        47,
+        159
+       ]
+      ],
+      "accuracy": 0.36,
+      "precision": 0.2839285714285714,
+      "f1_positiva": 0.4151436031331593,
+      "f1_macro": 0.35425949872746293,
+      "f1_macro_ic95": [
+       0.31914482136794153,
+       0.3899528454147386
+      ],
+      "roc_auc": 0.5224342596596045,
+      "pr_auc": 0.33337699988774017,
+      "especificidad": 0.1882591093117409
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.85,
+      "recall": 0.5728155339805825,
+      "cm": [
+       [
+        241,
+        253
+       ],
+       [
+        88,
+        118
+       ]
+      ],
+      "accuracy": 0.5128571428571429,
+      "precision": 0.31805929919137466,
+      "f1_positiva": 0.4090121317157712,
+      "f1_macro": 0.4973371715686997,
+      "f1_macro_ic95": [
+       0.4599227443166624,
+       0.5329549677375764
+      ],
+      "roc_auc": 0.5224342596596045,
+      "pr_auc": 0.33337699988774017,
+      "especificidad": 0.48785425101214575
+     }
+    },
+    "ta1c_validation_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.34951456310679613,
+      "cm": [
+       [
+        367,
+        127
+       ],
+       [
+        134,
+        72
+       ]
+      ],
+      "accuracy": 0.6271428571428571,
+      "precision": 0.36180904522613067,
+      "f1_positiva": 0.35555555555555557,
+      "f1_macro": 0.5466219988833054,
+      "f1_macro_ic95": [
+       0.5081671995249825,
+       0.5854925668200371
+      ],
+      "roc_auc": 0.5671357257969419,
+      "pr_auc": 0.33999986537559945,
+      "especificidad": 0.742914979757085
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.85,
+      "recall": 0.25728155339805825,
+      "cm": [
+       [
+        403,
+        91
+       ],
+       [
+        153,
+        53
+       ]
+      ],
+      "accuracy": 0.6514285714285715,
+      "precision": 0.3680555555555556,
+      "f1_positiva": 0.3028571428571429,
+      "f1_macro": 0.5352380952380953,
+      "f1_macro_ic95": [
+       0.49521381844358603,
+       0.5733014113876392
+      ],
+      "roc_auc": 0.5671357257969419,
+      "pr_auc": 0.33999986537559945,
+      "especificidad": 0.8157894736842105
+     }
+    },
+    "ta1c_test_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.8137254901960784,
+      "cm": [
+       [
+        96,
+        400
+       ],
+       [
+        38,
+        166
+       ]
+      ],
+      "accuracy": 0.3742857142857143,
+      "precision": 0.29328621908127206,
+      "f1_positiva": 0.43116883116883115,
+      "f1_macro": 0.36796536796536794,
+      "f1_macro_ic95": [
+       0.33095960429354315,
+       0.40455129574477217
+      ],
+      "roc_auc": 0.5663049493991145,
+      "pr_auc": 0.36568116080898694,
+      "especificidad": 0.1935483870967742
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.85,
+      "recall": 0.6176470588235294,
+      "cm": [
+       [
+        229,
+        267
+       ],
+       [
+        78,
+        126
+       ]
+      ],
+      "accuracy": 0.5071428571428571,
+      "precision": 0.32061068702290074,
+      "f1_positiva": 0.4221105527638191,
+      "f1_macro": 0.4962358492337152,
+      "f1_macro_ic95": [
+       0.4578104116213454,
+       0.5354671430568616
+      ],
+      "roc_auc": 0.5663049493991145,
+      "pr_auc": 0.36568116080898694,
+      "especificidad": 0.46169354838709675
+     }
+    },
+    "ta1c_test_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.35784313725490197,
+      "cm": [
+       [
+        368,
+        128
+       ],
+       [
+        131,
+        73
+       ]
+      ],
+      "accuracy": 0.63,
+      "precision": 0.36318407960199006,
+      "f1_positiva": 0.36049382716049383,
+      "f1_macro": 0.5500961598114027,
+      "f1_macro_ic95": [
+       0.5112393914567263,
+       0.5904175838072582
+      ],
+      "roc_auc": 0.5903107210626186,
+      "pr_auc": 0.3770068961290391,
+      "especificidad": 0.7419354838709677
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.85,
+      "recall": 0.2696078431372549,
+      "cm": [
+       [
+        400,
+        96
+       ],
+       [
+        149,
+        55
+       ]
+      ],
+      "accuracy": 0.65,
+      "precision": 0.36423841059602646,
+      "f1_positiva": 0.30985915492957744,
+      "f1_macro": 0.5377046970820136,
+      "f1_macro_ic95": [
+       0.49904490294771703,
+       0.5792269740978576
+      ],
+      "roc_auc": 0.5903107210626186,
+      "pr_auc": 0.3770068961290391,
+      "especificidad": 0.8064516129032258
+     }
+    },
+    "salud_calibracion": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.9537037037037037,
+      "cm": [
+       [
+        96,
+        464
+       ],
+       [
+        25,
+        515
+       ]
+      ],
+      "accuracy": 0.5554545454545454,
+      "precision": 0.526046986721144,
+      "f1_positiva": 0.6780776826859776,
+      "f1_macro": 0.4800080043385835,
+      "f1_macro_ic95": [
+       0.4511610104406311,
+       0.5049675233461051
+      ],
+      "roc_auc": 0.7001686507936509,
+      "pr_auc": 0.6999992523531253,
+      "especificidad": 0.17142857142857143
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.85,
+      "recall": 0.7444444444444445,
+      "cm": [
+       [
+        292,
+        268
+       ],
+       [
+        138,
+        402
+       ]
+      ],
+      "accuracy": 0.6309090909090909,
+      "precision": 0.6,
+      "f1_positiva": 0.6644628099173554,
+      "f1_macro": 0.6271808999081727,
+      "f1_macro_ic95": [
+       0.600052092757786,
+       0.6548594985131001
+      ],
+      "roc_auc": 0.7001686507936509,
+      "pr_auc": 0.6999992523531253,
+      "especificidad": 0.5214285714285715
+     }
+    },
+    "salud_prueba": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.924074074074074,
+      "cm": [
+       [
+        115,
+        445
+       ],
+       [
+        41,
+        499
+       ]
+      ],
+      "accuracy": 0.5581818181818182,
+      "precision": 0.5286016949152542,
+      "f1_positiva": 0.6725067385444744,
+      "f1_macro": 0.49686789441190204,
+      "f1_macro_ic95": [
+       0.467149667560022,
+       0.5281321404513143
+      ],
+      "roc_auc": 0.6889169973544973,
+      "pr_auc": 0.691227606931071,
+      "especificidad": 0.20535714285714285
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.85,
+      "recall": 0.6962962962962963,
+      "cm": [
+       [
+        315,
+        245
+       ],
+       [
+        164,
+        376
+       ]
+      ],
+      "accuracy": 0.6281818181818182,
+      "precision": 0.605475040257649,
+      "f1_positiva": 0.6477174849267873,
+      "f1_macro": 0.6270348733584851,
+      "f1_macro_ic95": [
+       0.5978816915958854,
+       0.6576385646414371
+      ],
+      "roc_auc": 0.6889169973544973,
+      "pr_auc": 0.691227606931071,
+      "especificidad": 0.5625
+     }
+    },
+    "amarillismo_humano_titular": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.9655172413793104,
+      "cm": [
+       [
+        4,
+        52
+       ],
+       [
+        2,
+        56
+       ]
+      ],
+      "accuracy": 0.5263157894736842,
+      "precision": 0.5185185185185185,
+      "f1_positiva": 0.6746987951807228,
+      "f1_macro": 0.4018655266226195,
+      "f1_macro_ic95": [
+       0.33011029411764703,
+       0.4797619047619047
+      ],
+      "roc_auc": 0.5994458128078817,
+      "pr_auc": 0.651213139320158,
+      "especificidad": 0.07142857142857142
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.85,
+      "recall": 0.7413793103448276,
+      "cm": [
+       [
+        19,
+        37
+       ],
+       [
+        15,
+        43
+       ]
+      ],
+      "accuracy": 0.543859649122807,
+      "precision": 0.5375,
+      "f1_positiva": 0.6231884057971014,
+      "f1_macro": 0.5227053140096618,
+      "f1_macro_ic95": [
+       0.4279409530561604,
+       0.6116426712814441
+      ],
+      "roc_auc": 0.5994458128078817,
+      "pr_auc": 0.651213139320158,
+      "especificidad": 0.3392857142857143
+     }
+    },
+    "amarillismo_humano_cuerpo": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.29310344827586204,
+      "cm": [
+       [
+        46,
+        10
+       ],
+       [
+        41,
+        17
+       ]
+      ],
+      "accuracy": 0.5526315789473685,
+      "precision": 0.6296296296296297,
+      "f1_positiva": 0.4,
+      "f1_macro": 0.5216783216783216,
+      "f1_macro_ic95": [
+       0.427889757301522,
+       0.611370363900744
+      ],
+      "roc_auc": 0.6419334975369457,
+      "pr_auc": 0.6086692549159541,
+      "especificidad": 0.8214285714285714
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.85,
+      "recall": 0.20689655172413793,
+      "cm": [
+       [
+        50,
+        6
+       ],
+       [
+        46,
+        12
+       ]
+      ],
+      "accuracy": 0.543859649122807,
+      "precision": 0.6666666666666666,
+      "f1_positiva": 0.3157894736842105,
+      "f1_macro": 0.4868421052631579,
+      "f1_macro_ic95": [
+       0.39659223744722005,
+       0.5736349620455579
+      ],
+      "roc_auc": 0.6419334975369457,
+      "pr_auc": 0.6086692549159541,
+      "especificidad": 0.8928571428571429
+     }
+    },
+    "ia_sintetico": {
+     "umbral_0_5": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.5,
+      "recall": 1.0,
+      "cm": [
+       [
+        35,
+        0
+       ],
+       [
+        0,
+        35
+       ]
+      ],
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "f1_positiva": 1.0,
+      "f1_macro": 1.0,
+      "f1_macro_ic95": [
+       1.0,
+       1.0
+      ],
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "especificidad": 1.0
+     },
+     "umbral_calibrado": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.85,
+      "recall": 1.0,
+      "cm": [
+       [
+        35,
+        0
+       ],
+       [
+        0,
+        35
+       ]
+      ],
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "f1_positiva": 1.0,
+      "f1_macro": 1.0,
+      "f1_macro_ic95": [
+       1.0,
+       1.0
+      ],
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "especificidad": 1.0
+     }
+    },
+    "noticia_clickbait": {
+     "umbral_0_5": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.5,
+      "recall": 0.32,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        68,
+        32
+       ]
+      ]
+     },
+     "umbral_calibrado": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.85,
+      "recall": 0.26,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        74,
+        26
+       ]
+      ]
+     }
+    }
+   },
+   "f1_macro_medio_principales": 0.5505272252345522,
+   "cumple_criterio": false
+  },
+  "ggcastle_beto_clickbait": {
+   "id": "ggcastle/beto-clickbait-es",
+   "revision": "03c31ac0c288a982fb2aa02755a9bd0abb43078e",
+   "constructo": "clickbait (entrenado con TA1C train)",
+   "id2label": {
+    "0": "Not Clickbait",
+    "1": "Clickbait"
+   },
+   "regla_indice": "id2label[1] = Clickbait",
+   "umbral_calibrado": 0.05,
+   "tiempos_s": {
+    "ta1c_validation_titular": 27.35937190055847,
+    "ta1c_validation_cuerpo": 187.62359261512756,
+    "ta1c_test_titular": 16.015405654907227,
+    "ta1c_test_cuerpo": 170.3938045501709,
+    "salud_calibracion": 30.08774161338806,
+    "salud_prueba": 22.454654455184937,
+    "amarillismo_humano_titular": 3.0798332691192627,
+    "amarillismo_humano_cuerpo": 26.540468454360962,
+    "ia_sintetico": 2.032560348510742,
+    "noticia_clickbait": 24.07406187057495
+   },
+   "conjuntos": {
+    "ta1c_validation_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.7524271844660194,
+      "cm": [
+       [
+        458,
+        36
+       ],
+       [
+        51,
+        155
+       ]
+      ],
+      "accuracy": 0.8757142857142857,
+      "precision": 0.8115183246073299,
+      "f1_positiva": 0.7808564231738035,
+      "f1_macro": 0.8470583212578888,
+      "f1_macro_ic95": [
+       0.8171986002887607,
+       0.8744930946430288
+      ],
+      "roc_auc": 0.9083762430722063,
+      "pr_auc": 0.8608708433444333,
+      "especificidad": 0.9271255060728745
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.05,
+      "recall": 0.7912621359223301,
+      "cm": [
+       [
+        440,
+        54
+       ],
+       [
+        43,
+        163
+       ]
+      ],
+      "accuracy": 0.8614285714285714,
+      "precision": 0.7511520737327189,
+      "f1_positiva": 0.7706855791962175,
+      "f1_macro": 0.8357010291068088,
+      "f1_macro_ic95": [
+       0.8062917828501098,
+       0.8666158536585367
+      ],
+      "roc_auc": 0.9083762430722063,
+      "pr_auc": 0.8608708433444333,
+      "especificidad": 0.8906882591093117
+     }
+    },
+    "ta1c_validation_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.34951456310679613,
+      "cm": [
+       [
+        471,
+        23
+       ],
+       [
+        134,
+        72
+       ]
+      ],
+      "accuracy": 0.7757142857142857,
+      "precision": 0.7578947368421053,
+      "f1_positiva": 0.47840531561461797,
+      "f1_macro": 0.6677740863787376,
+      "f1_macro_ic95": [
+       0.6228055774739797,
+       0.7100782225185484
+      ],
+      "roc_auc": 0.8292028615227388,
+      "pr_auc": 0.667718487272351,
+      "especificidad": 0.9534412955465587
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.05,
+      "recall": 0.49514563106796117,
+      "cm": [
+       [
+        443,
+        51
+       ],
+       [
+        104,
+        102
+       ]
+      ],
+      "accuracy": 0.7785714285714286,
+      "precision": 0.6666666666666666,
+      "f1_positiva": 0.5682451253481894,
+      "f1_macro": 0.7096749161803386,
+      "f1_macro_ic95": [
+       0.6710903154075595,
+       0.7481038424938629
+      ],
+      "roc_auc": 0.8292028615227388,
+      "pr_auc": 0.667718487272351,
+      "especificidad": 0.8967611336032388
+     }
+    },
+    "ta1c_test_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.7892156862745098,
+      "cm": [
+       [
+        462,
+        34
+       ],
+       [
+        43,
+        161
+       ]
+      ],
+      "accuracy": 0.89,
+      "precision": 0.8256410256410256,
+      "f1_positiva": 0.8070175438596491,
+      "f1_macro": 0.8650472334682862,
+      "f1_macro_ic95": [
+       0.8344379388396157,
+       0.892124686643432
+      ],
+      "roc_auc": 0.9308586337760911,
+      "pr_auc": 0.8744104576067406,
+      "especificidad": 0.9314516129032258
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.05,
+      "recall": 0.8431372549019608,
+      "cm": [
+       [
+        437,
+        59
+       ],
+       [
+        32,
+        172
+       ]
+      ],
+      "accuracy": 0.87,
+      "precision": 0.7445887445887446,
+      "f1_positiva": 0.7908045977011494,
+      "f1_macro": 0.8482520397832172,
+      "f1_macro_ic95": [
+       0.8188694808557823,
+       0.8768203411665616
+      ],
+      "roc_auc": 0.9308586337760911,
+      "pr_auc": 0.8744104576067406,
+      "especificidad": 0.8810483870967742
+     }
+    },
+    "ta1c_test_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.3480392156862745,
+      "cm": [
+       [
+        476,
+        20
+       ],
+       [
+        133,
+        71
+       ]
+      ],
+      "accuracy": 0.7814285714285715,
+      "precision": 0.7802197802197802,
+      "f1_positiva": 0.48135593220338985,
+      "f1_macro": 0.6714471968709257,
+      "f1_macro_ic95": [
+       0.6296700369781816,
+       0.7126499833499833
+      ],
+      "roc_auc": 0.8366342504743833,
+      "pr_auc": 0.6968846830421016,
+      "especificidad": 0.9596774193548387
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.05,
+      "recall": 0.5294117647058824,
+      "cm": [
+       [
+        447,
+        49
+       ],
+       [
+        96,
+        108
+       ]
+      ],
+      "accuracy": 0.7928571428571428,
+      "precision": 0.6878980891719745,
+      "f1_positiva": 0.5983379501385041,
+      "f1_macro": 0.7293903417680008,
+      "f1_macro_ic95": [
+       0.6881478998288935,
+       0.7665123613089331
+      ],
+      "roc_auc": 0.8366342504743833,
+      "pr_auc": 0.6968846830421016,
+      "especificidad": 0.9012096774193549
+     }
+    },
+    "salud_calibracion": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.11296296296296296,
+      "cm": [
+       [
+        529,
+        31
+       ],
+       [
+        479,
+        61
+       ]
+      ],
+      "accuracy": 0.5363636363636364,
+      "precision": 0.6630434782608695,
+      "f1_positiva": 0.1930379746835443,
+      "f1_macro": 0.433891436321364,
+      "f1_macro_ic95": [
+       0.4071715956010223,
+       0.4622018150313707
+      ],
+      "roc_auc": 0.5607010582010582,
+      "pr_auc": 0.5667423145872256,
+      "especificidad": 0.9446428571428571
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.05,
+      "recall": 0.1425925925925926,
+      "cm": [
+       [
+        525,
+        35
+       ],
+       [
+        463,
+        77
+       ]
+      ],
+      "accuracy": 0.5472727272727272,
+      "precision": 0.6875,
+      "f1_positiva": 0.2361963190184049,
+      "f1_macro": 0.45724544633090786,
+      "f1_macro_ic95": [
+       0.4297171643658272,
+       0.48533415513183675
+      ],
+      "roc_auc": 0.5607010582010582,
+      "pr_auc": 0.5667423145872256,
+      "especificidad": 0.9375
+     }
+    },
+    "salud_prueba": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.09814814814814815,
+      "cm": [
+       [
+        518,
+        42
+       ],
+       [
+        487,
+        53
+       ]
+      ],
+      "accuracy": 0.519090909090909,
+      "precision": 0.5578947368421052,
+      "f1_positiva": 0.16692913385826771,
+      "f1_macro": 0.4144549822645971,
+      "f1_macro_ic95": [
+       0.3865547232327972,
+       0.4410203516892657
+      ],
+      "roc_auc": 0.5537863756613757,
+      "pr_auc": 0.5475579401554249,
+      "especificidad": 0.925
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.05,
+      "recall": 0.14629629629629629,
+      "cm": [
+       [
+        499,
+        61
+       ],
+       [
+        461,
+        79
+       ]
+      ],
+      "accuracy": 0.5254545454545455,
+      "precision": 0.5642857142857143,
+      "f1_positiva": 0.2323529411764706,
+      "f1_macro": 0.4444659442724458,
+      "f1_macro_ic95": [
+       0.41476113612407284,
+       0.4718897044984001
+      ],
+      "roc_auc": 0.5537863756613757,
+      "pr_auc": 0.5475579401554249,
+      "especificidad": 0.8910714285714286
+     }
+    },
+    "amarillismo_humano_titular": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.3448275862068966,
+      "cm": [
+       [
+        41,
+        15
+       ],
+       [
+        38,
+        20
+       ]
+      ],
+      "accuracy": 0.5350877192982456,
+      "precision": 0.5714285714285714,
+      "f1_positiva": 0.43010752688172044,
+      "f1_macro": 0.5187574671445639,
+      "f1_macro_ic95": [
+       0.43153947368421053,
+       0.6079674124321377
+      ],
+      "roc_auc": 0.5113916256157636,
+      "pr_auc": 0.510802937410956,
+      "especificidad": 0.7321428571428571
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.05,
+      "recall": 0.4482758620689655,
+      "cm": [
+       [
+        37,
+        19
+       ],
+       [
+        32,
+        26
+       ]
+      ],
+      "accuracy": 0.5526315789473685,
+      "precision": 0.5777777777777777,
+      "f1_positiva": 0.5048543689320388,
+      "f1_macro": 0.5484271844660193,
+      "f1_macro_ic95": [
+       0.4554850833920602,
+       0.639017525168757
+      ],
+      "roc_auc": 0.5113916256157636,
+      "pr_auc": 0.510802937410956,
+      "especificidad": 0.6607142857142857
+     }
+    },
+    "amarillismo_humano_cuerpo": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.20689655172413793,
+      "cm": [
+       [
+        48,
+        8
+       ],
+       [
+        46,
+        12
+       ]
+      ],
+      "accuracy": 0.5263157894736842,
+      "precision": 0.6,
+      "f1_positiva": 0.3076923076923077,
+      "f1_macro": 0.47384615384615386,
+      "f1_macro_ic95": [
+       0.38692917692097345,
+       0.5569413563145346
+      ],
+      "roc_auc": 0.5197044334975369,
+      "pr_auc": 0.5512845363529131,
+      "especificidad": 0.8571428571428571
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.05,
+      "recall": 0.3448275862068966,
+      "cm": [
+       [
+        37,
+        19
+       ],
+       [
+        38,
+        20
+       ]
+      ],
+      "accuracy": 0.5,
+      "precision": 0.5128205128205128,
+      "f1_positiva": 0.41237113402061853,
+      "f1_macro": 0.48862831510191235,
+      "f1_macro_ic95": [
+       0.401782250126621,
+       0.5777821198409433
+      ],
+      "roc_auc": 0.5197044334975369,
+      "pr_auc": 0.5512845363529131,
+      "especificidad": 0.6607142857142857
+     }
+    },
+    "ia_sintetico": {
+     "umbral_0_5": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.5,
+      "recall": 0.2857142857142857,
+      "cm": [
+       [
+        34,
+        1
+       ],
+       [
+        25,
+        10
+       ]
+      ],
+      "accuracy": 0.6285714285714286,
+      "precision": 0.9090909090909091,
+      "f1_positiva": 0.43478260869565216,
+      "f1_macro": 0.5790934320074006,
+      "f1_macro_ic95": [
+       0.4582043343653251,
+       0.7017045454545454
+      ],
+      "roc_auc": 0.9453061224489796,
+      "pr_auc": 0.9350850085087687,
+      "especificidad": 0.9714285714285714
+     },
+     "umbral_calibrado": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.05,
+      "recall": 0.5714285714285714,
+      "cm": [
+       [
+        34,
+        1
+       ],
+       [
+        15,
+        20
+       ]
+      ],
+      "accuracy": 0.7714285714285715,
+      "precision": 0.9523809523809523,
+      "f1_positiva": 0.7142857142857143,
+      "f1_macro": 0.7619047619047619,
+      "f1_macro_ic95": [
+       0.6392496392496392,
+       0.8652406417112299
+      ],
+      "roc_auc": 0.9453061224489796,
+      "pr_auc": 0.9350850085087687,
+      "especificidad": 0.9714285714285714
+     }
+    },
+    "noticia_clickbait": {
+     "umbral_0_5": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.5,
+      "recall": 0.28,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        72,
+        28
+       ]
+      ]
+     },
+     "umbral_calibrado": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.05,
+      "recall": 0.51,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        49,
+        51
+       ]
+      ]
+     }
+    }
+   },
+   "f1_macro_medio_principales": 0.5541615337141197,
+   "cumple_criterio": false
+  },
+  "dcere_ta1c_base": {
+   "id": "dcere/ta1c-Clickbait-Detector-es",
+   "revision": "8e4fd589e0d139bf290102499f28e1da632031c0",
+   "constructo": "clickbait (IberLEF 2025 TA1C)",
+   "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+   },
+   "regla_indice": "id2label sin nombres; índice 1 elegido con TA1C validation (AUC por índice: {0: 0.112, 1: 0.888})",
+   "umbral_calibrado": 0.05,
+   "tiempos_s": {
+    "ta1c_validation_titular": 15.232608556747437,
+    "ta1c_validation_cuerpo": 181.43901896476746,
+    "ta1c_test_titular": 15.521415710449219,
+    "ta1c_test_cuerpo": 176.28634095191956,
+    "salud_calibracion": 21.434086799621582,
+    "salud_prueba": 25.02425718307495,
+    "amarillismo_humano_titular": 3.1862692832946777,
+    "amarillismo_humano_cuerpo": 31.20542573928833,
+    "ia_sintetico": 2.135970115661621,
+    "noticia_clickbait": 28.28893494606018
+   },
+   "conjuntos": {
+    "ta1c_validation_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.8203883495145631,
+      "cm": [
+       [
+        469,
+        25
+       ],
+       [
+        37,
+        169
+       ]
+      ],
+      "accuracy": 0.9114285714285715,
+      "precision": 0.8711340206185567,
+      "f1_positiva": 0.845,
+      "f1_macro": 0.8915,
+      "f1_macro_ic95": [
+       0.8637589855747774,
+       0.9167428213082938
+      ],
+      "roc_auc": 0.9505915647969811,
+      "pr_auc": 0.916902802967744,
+      "especificidad": 0.9493927125506073
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.05,
+      "recall": 0.912621359223301,
+      "cm": [
+       [
+        411,
+        83
+       ],
+       [
+        18,
+        188
+       ]
+      ],
+      "accuracy": 0.8557142857142858,
+      "precision": 0.6937269372693727,
+      "f1_positiva": 0.7882599580712788,
+      "f1_macro": 0.8394170862945776,
+      "f1_macro_ic95": [
+       0.8092211229056737,
+       0.866604973524773
+      ],
+      "roc_auc": 0.9505915647969811,
+      "pr_auc": 0.916902802967744,
+      "especificidad": 0.8319838056680162
+     }
+    },
+    "ta1c_validation_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.5679611650485437,
+      "cm": [
+       [
+        471,
+        23
+       ],
+       [
+        89,
+        117
+       ]
+      ],
+      "accuracy": 0.84,
+      "precision": 0.8357142857142857,
+      "f1_positiva": 0.6763005780346821,
+      "f1_macro": 0.7850193592260697,
+      "f1_macro_ic95": [
+       0.7472952655859942,
+       0.818312689480599
+      ],
+      "roc_auc": 0.8876321685468338,
+      "pr_auc": 0.808319715526395,
+      "especificidad": 0.9534412955465587
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.05,
+      "recall": 0.7961165048543689,
+      "cm": [
+       [
+        397,
+        97
+       ],
+       [
+        42,
+        164
+       ]
+      ],
+      "accuracy": 0.8014285714285714,
+      "precision": 0.6283524904214559,
+      "f1_positiva": 0.702355460385439,
+      "f1_macro": 0.7766868405892897,
+      "f1_macro_ic95": [
+       0.7407581661763056,
+       0.8098159146480335
+      ],
+      "roc_auc": 0.8876321685468338,
+      "pr_auc": 0.808319715526395,
+      "especificidad": 0.8036437246963563
+     }
+    },
+    "ta1c_test_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.8823529411764706,
+      "cm": [
+       [
+        466,
+        30
+       ],
+       [
+        24,
+        180
+       ]
+      ],
+      "accuracy": 0.9228571428571428,
+      "precision": 0.8571428571428571,
+      "f1_positiva": 0.8695652173913043,
+      "f1_macro": 0.9073992415556927,
+      "f1_macro_ic95": [
+       0.8831214501026576,
+       0.9295773272354642
+      ],
+      "roc_auc": 0.9556748102466792,
+      "pr_auc": 0.9300776962759606,
+      "especificidad": 0.9395161290322581
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.05,
+      "recall": 0.9362745098039216,
+      "cm": [
+       [
+        411,
+        85
+       ],
+       [
+        13,
+        191
+       ]
+      ],
+      "accuracy": 0.86,
+      "precision": 0.6920289855072463,
+      "f1_positiva": 0.7958333333333333,
+      "f1_macro": 0.8446557971014492,
+      "f1_macro_ic95": [
+       0.816120728954863,
+       0.8717371236986328
+      ],
+      "roc_auc": 0.9556748102466792,
+      "pr_auc": 0.9300776962759606,
+      "especificidad": 0.8286290322580645
+     }
+    },
+    "ta1c_test_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.6666666666666666,
+      "cm": [
+       [
+        476,
+        20
+       ],
+       [
+        68,
+        136
+       ]
+      ],
+      "accuracy": 0.8742857142857143,
+      "precision": 0.8717948717948718,
+      "f1_positiva": 0.7555555555555555,
+      "f1_macro": 0.8354700854700854,
+      "f1_macro_ic95": [
+       0.8026037516000326,
+       0.8686529071208238
+      ],
+      "roc_auc": 0.9111914927261228,
+      "pr_auc": 0.8568068539687629,
+      "especificidad": 0.9596774193548387
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.05,
+      "recall": 0.8627450980392157,
+      "cm": [
+       [
+        402,
+        94
+       ],
+       [
+        28,
+        176
+       ]
+      ],
+      "accuracy": 0.8257142857142857,
+      "precision": 0.6518518518518519,
+      "f1_positiva": 0.7426160337552743,
+      "f1_macro": 0.8054332868560389,
+      "f1_macro_ic95": [
+       0.7698714202220924,
+       0.8363119010740441
+      ],
+      "roc_auc": 0.9111914927261228,
+      "pr_auc": 0.8568068539687629,
+      "especificidad": 0.8104838709677419
+     }
+    },
+    "salud_calibracion": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.11296296296296296,
+      "cm": [
+       [
+        524,
+        36
+       ],
+       [
+        479,
+        61
+       ]
+      ],
+      "accuracy": 0.5318181818181819,
+      "precision": 0.6288659793814433,
+      "f1_positiva": 0.19152276295133439,
+      "f1_macro": 0.4310141006055456,
+      "f1_macro_ic95": [
+       0.40284425134023377,
+       0.45933599665910235
+      ],
+      "roc_auc": 0.5165575396825397,
+      "pr_auc": 0.5305043321879668,
+      "especificidad": 0.9357142857142857
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.05,
+      "recall": 0.2,
+      "cm": [
+       [
+        494,
+        66
+       ],
+       [
+        432,
+        108
+       ]
+      ],
+      "accuracy": 0.5472727272727272,
+      "precision": 0.6206896551724138,
+      "f1_positiva": 0.3025210084033613,
+      "f1_macro": 0.48369657418822176,
+      "f1_macro_ic95": [
+       0.45269809393383137,
+       0.5134040807236724
+      ],
+      "roc_auc": 0.5165575396825397,
+      "pr_auc": 0.5305043321879668,
+      "especificidad": 0.8821428571428571
+     }
+    },
+    "salud_prueba": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.09814814814814815,
+      "cm": [
+       [
+        522,
+        38
+       ],
+       [
+        487,
+        53
+       ]
+      ],
+      "accuracy": 0.5227272727272727,
+      "precision": 0.5824175824175825,
+      "f1_positiva": 0.16798732171156894,
+      "f1_macro": 0.41668964555941734,
+      "f1_macro_ic95": [
+       0.3906979636249612,
+       0.4413488162955041
+      ],
+      "roc_auc": 0.5086309523809525,
+      "pr_auc": 0.523156055370714,
+      "especificidad": 0.9321428571428572
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.05,
+      "recall": 0.2037037037037037,
+      "cm": [
+       [
+        493,
+        67
+       ],
+       [
+        430,
+        110
+       ]
+      ],
+      "accuracy": 0.5481818181818182,
+      "precision": 0.6214689265536724,
+      "f1_positiva": 0.3068340306834031,
+      "f1_macro": 0.4858512702304406,
+      "f1_macro_ic95": [
+       0.4555949367874694,
+       0.515420405121088
+      ],
+      "roc_auc": 0.5086309523809525,
+      "pr_auc": 0.523156055370714,
+      "especificidad": 0.8803571428571428
+     }
+    },
+    "amarillismo_humano_titular": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.25862068965517243,
+      "cm": [
+       [
+        33,
+        23
+       ],
+       [
+        43,
+        15
+       ]
+      ],
+      "accuracy": 0.42105263157894735,
+      "precision": 0.39473684210526316,
+      "f1_positiva": 0.3125,
+      "f1_macro": 0.40625,
+      "f1_macro_ic95": [
+       0.32197429393487903,
+       0.48976982097186705
+      ],
+      "roc_auc": 0.44365763546798026,
+      "pr_auc": 0.4742811271608449,
+      "especificidad": 0.5892857142857143
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.05,
+      "recall": 0.6206896551724138,
+      "cm": [
+       [
+        16,
+        40
+       ],
+       [
+        22,
+        36
+       ]
+      ],
+      "accuracy": 0.45614035087719296,
+      "precision": 0.47368421052631576,
+      "f1_positiva": 0.5373134328358209,
+      "f1_macro": 0.4388694823753573,
+      "f1_macro_ic95": [
+       0.3342592274729442,
+       0.5332560586873684
+      ],
+      "roc_auc": 0.44365763546798026,
+      "pr_auc": 0.4742811271608449,
+      "especificidad": 0.2857142857142857
+     }
+    },
+    "amarillismo_humano_cuerpo": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.29310344827586204,
+      "cm": [
+       [
+        42,
+        14
+       ],
+       [
+        41,
+        17
+       ]
+      ],
+      "accuracy": 0.5175438596491229,
+      "precision": 0.5483870967741935,
+      "f1_positiva": 0.38202247191011235,
+      "f1_macro": 0.4931695093363512,
+      "f1_macro_ic95": [
+       0.4030312148644357,
+       0.576387012012012
+      ],
+      "roc_auc": 0.5,
+      "pr_auc": 0.526598789648335,
+      "especificidad": 0.75
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.05,
+      "recall": 0.6724137931034483,
+      "cm": [
+       [
+        19,
+        37
+       ],
+       [
+        19,
+        39
+       ]
+      ],
+      "accuracy": 0.5087719298245614,
+      "precision": 0.5131578947368421,
+      "f1_positiva": 0.582089552238806,
+      "f1_macro": 0.49317243569387104,
+      "f1_macro_ic95": [
+       0.4019262391355415,
+       0.580466385814368
+      ],
+      "roc_auc": 0.5,
+      "pr_auc": 0.526598789648335,
+      "especificidad": 0.3392857142857143
+     }
+    },
+    "ia_sintetico": {
+     "umbral_0_5": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.5,
+      "recall": 0.34285714285714286,
+      "cm": [
+       [
+        34,
+        1
+       ],
+       [
+        23,
+        12
+       ]
+      ],
+      "accuracy": 0.6571428571428571,
+      "precision": 0.9230769230769231,
+      "f1_positiva": 0.5,
+      "f1_macro": 0.6195652173913043,
+      "f1_macro_ic95": [
+       0.5022222222222222,
+       0.7349334693084693
+      ],
+      "roc_auc": 0.8293877551020408,
+      "pr_auc": 0.850328860673341,
+      "especificidad": 0.9714285714285714
+     },
+     "umbral_calibrado": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.05,
+      "recall": 0.5142857142857142,
+      "cm": [
+       [
+        32,
+        3
+       ],
+       [
+        17,
+        18
+       ]
+      ],
+      "accuracy": 0.7142857142857143,
+      "precision": 0.8571428571428571,
+      "f1_positiva": 0.6428571428571429,
+      "f1_macro": 0.7023809523809523,
+      "f1_macro_ic95": [
+       0.5955343258891647,
+       0.8077049330043284
+      ],
+      "roc_auc": 0.8293877551020408,
+      "pr_auc": 0.850328860673341,
+      "especificidad": 0.9142857142857143
+     }
+    },
+    "noticia_clickbait": {
+     "umbral_0_5": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.5,
+      "recall": 0.64,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        36,
+        64
+       ]
+      ]
+     },
+     "umbral_calibrado": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.05,
+      "recall": 0.85,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        15,
+        85
+       ]
+      ]
+     }
+    }
+   },
+   "f1_macro_medio_principales": 0.5948189975934501,
+   "cumple_criterio": false
+  },
+  "dcere_ta1c_large": {
+   "id": "dcere/ta1c-Clickbait-Detector-es-large",
+   "revision": "25e713a0d7e3c27eb7dc0e3dd9c169bd187a500a",
+   "constructo": "clickbait (IberLEF 2025 TA1C, RoBERTa-large-BNE)",
+   "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+   },
+   "regla_indice": "id2label sin nombres; índice 1 elegido con TA1C validation (AUC por índice: {0: 0.107, 1: 0.893})",
+   "umbral_calibrado": 0.05,
+   "tiempos_s": {
+    "ta1c_validation_titular": 61.920342445373535,
+    "ta1c_validation_cuerpo": 674.0940871238708,
+    "ta1c_test_titular": 56.060184955596924,
+    "ta1c_test_cuerpo": 645.3574721813202,
+    "salud_calibracion": 74.84307217597961,
+    "salud_prueba": 80.81933736801147,
+    "amarillismo_humano_titular": 9.259725332260132,
+    "amarillismo_humano_cuerpo": 114.93371915817261,
+    "ia_sintetico": 6.89835000038147,
+    "noticia_clickbait": 88.34037065505981
+   },
+   "conjuntos": {
+    "ta1c_validation_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.8106796116504854,
+      "cm": [
+       [
+        474,
+        20
+       ],
+       [
+        39,
+        167
+       ]
+      ],
+      "accuracy": 0.9157142857142857,
+      "precision": 0.893048128342246,
+      "f1_positiva": 0.8498727735368957,
+      "f1_macro": 0.8956414513166107,
+      "f1_macro_ic95": [
+       0.8696710871515649,
+       0.9199166978203763
+      ],
+      "roc_auc": 0.944508863645297,
+      "pr_auc": 0.9050315261171247,
+      "especificidad": 0.9595141700404858
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.05,
+      "recall": 0.8786407766990292,
+      "cm": [
+       [
+        416,
+        78
+       ],
+       [
+        25,
+        181
+       ]
+      ],
+      "accuracy": 0.8528571428571429,
+      "precision": 0.6988416988416989,
+      "f1_positiva": 0.7784946236559139,
+      "f1_macro": 0.8341670979242137,
+      "f1_macro_ic95": [
+       0.8025597119603987,
+       0.8625803762137139
+      ],
+      "roc_auc": 0.944508863645297,
+      "pr_auc": 0.9050315261171247,
+      "especificidad": 0.8421052631578947
+     }
+    },
+    "ta1c_validation_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.5,
+      "cm": [
+       [
+        480,
+        14
+       ],
+       [
+        103,
+        103
+       ]
+      ],
+      "accuracy": 0.8328571428571429,
+      "precision": 0.8803418803418803,
+      "f1_positiva": 0.6377708978328174,
+      "f1_macro": 0.7645679001698906,
+      "f1_macro_ic95": [
+       0.7246353632716905,
+       0.800076110119053
+      ],
+      "roc_auc": 0.8930171769977595,
+      "pr_auc": 0.8167274771910741,
+      "especificidad": 0.97165991902834
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.05,
+      "recall": 0.7524271844660194,
+      "cm": [
+       [
+        442,
+        52
+       ],
+       [
+        51,
+        155
+       ]
+      ],
+      "accuracy": 0.8528571428571429,
+      "precision": 0.748792270531401,
+      "f1_positiva": 0.7506053268765133,
+      "f1_macro": 0.8231243453024917,
+      "f1_macro_ic95": [
+       0.7910749785777892,
+       0.8519387358230923
+      ],
+      "roc_auc": 0.8930171769977595,
+      "pr_auc": 0.8167274771910741,
+      "especificidad": 0.8947368421052632
+     }
+    },
+    "ta1c_test_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.8382352941176471,
+      "cm": [
+       [
+        472,
+        24
+       ],
+       [
+        33,
+        171
+       ]
+      ],
+      "accuracy": 0.9185714285714286,
+      "precision": 0.8769230769230769,
+      "f1_positiva": 0.8571428571428571,
+      "f1_macro": 0.9000999000999002,
+      "f1_macro_ic95": [
+       0.8759335118900736,
+       0.9232383065869912
+      ],
+      "roc_auc": 0.9578194180898166,
+      "pr_auc": 0.9229026086220101,
+      "especificidad": 0.9516129032258065
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.05,
+      "recall": 0.9313725490196079,
+      "cm": [
+       [
+        410,
+        86
+       ],
+       [
+        14,
+        190
+       ]
+      ],
+      "accuracy": 0.8571428571428571,
+      "precision": 0.6884057971014492,
+      "f1_positiva": 0.7916666666666666,
+      "f1_macro": 0.8414855072463767,
+      "f1_macro_ic95": [
+       0.811366339577758,
+       0.8698253158371608
+      ],
+      "roc_auc": 0.9578194180898166,
+      "pr_auc": 0.9229026086220101,
+      "especificidad": 0.8266129032258065
+     }
+    },
+    "ta1c_test_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.5980392156862745,
+      "cm": [
+       [
+        480,
+        16
+       ],
+       [
+        82,
+        122
+       ]
+      ],
+      "accuracy": 0.86,
+      "precision": 0.8840579710144928,
+      "f1_positiva": 0.7134502923976608,
+      "f1_macro": 0.8104113465769023,
+      "f1_macro_ic95": [
+       0.7764560887036599,
+       0.8452626627242539
+      ],
+      "roc_auc": 0.8996975806451614,
+      "pr_auc": 0.8303843305546403,
+      "especificidad": 0.967741935483871
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.05,
+      "recall": 0.7794117647058824,
+      "cm": [
+       [
+        426,
+        70
+       ],
+       [
+        45,
+        159
+       ]
+      ],
+      "accuracy": 0.8357142857142857,
+      "precision": 0.6943231441048034,
+      "f1_positiva": 0.7344110854503464,
+      "f1_macro": 0.807743288330137,
+      "f1_macro_ic95": [
+       0.7707155733901675,
+       0.840279481027257
+      ],
+      "roc_auc": 0.8996975806451614,
+      "pr_auc": 0.8303843305546403,
+      "especificidad": 0.8588709677419355
+     }
+    },
+    "salud_calibracion": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.12222222222222222,
+      "cm": [
+       [
+        526,
+        34
+       ],
+       [
+        474,
+        66
+       ]
+      ],
+      "accuracy": 0.5381818181818182,
+      "precision": 0.66,
+      "f1_positiva": 0.20625,
+      "f1_macro": 0.4403044871794872,
+      "f1_macro_ic95": [
+       0.4127753875796945,
+       0.46722543125024735
+      ],
+      "roc_auc": 0.5825661375661375,
+      "pr_auc": 0.5817747072922419,
+      "especificidad": 0.9392857142857143
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.05,
+      "recall": 0.19814814814814816,
+      "cm": [
+       [
+        513,
+        47
+       ],
+       [
+        433,
+        107
+       ]
+      ],
+      "accuracy": 0.5636363636363636,
+      "precision": 0.6948051948051948,
+      "f1_positiva": 0.30835734870317005,
+      "f1_macro": 0.49481612455078816,
+      "f1_macro_ic95": [
+       0.463652480419835,
+       0.5233248243759592
+      ],
+      "roc_auc": 0.5825661375661375,
+      "pr_auc": 0.5817747072922419,
+      "especificidad": 0.9160714285714285
+     }
+    },
+    "salud_prueba": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.12777777777777777,
+      "cm": [
+       [
+        518,
+        42
+       ],
+       [
+        471,
+        69
+       ]
+      ],
+      "accuracy": 0.5336363636363637,
+      "precision": 0.6216216216216216,
+      "f1_positiva": 0.2119815668202765,
+      "f1_macro": 0.44040007973034484,
+      "f1_macro_ic95": [
+       0.4145667011400283,
+       0.466368426507631
+      ],
+      "roc_auc": 0.5952546296296297,
+      "pr_auc": 0.575316003092453,
+      "especificidad": 0.925
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.05,
+      "recall": 0.20185185185185187,
+      "cm": [
+       [
+        506,
+        54
+       ],
+       [
+        431,
+        109
+       ]
+      ],
+      "accuracy": 0.5590909090909091,
+      "precision": 0.6687116564417178,
+      "f1_positiva": 0.310099573257468,
+      "f1_macro": 0.49305913866614215,
+      "f1_macro_ic95": [
+       0.4628557572059548,
+       0.5217139243174871
+      ],
+      "roc_auc": 0.5952546296296297,
+      "pr_auc": 0.575316003092453,
+      "especificidad": 0.9035714285714286
+     }
+    },
+    "amarillismo_humano_titular": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.27586206896551724,
+      "cm": [
+       [
+        38,
+        18
+       ],
+       [
+        42,
+        16
+       ]
+      ],
+      "accuracy": 0.47368421052631576,
+      "precision": 0.47058823529411764,
+      "f1_positiva": 0.34782608695652173,
+      "f1_macro": 0.4533248081841432,
+      "f1_macro_ic95": [
+       0.3593984962406015,
+       0.5410628019323671
+      ],
+      "roc_auc": 0.5061576354679803,
+      "pr_auc": 0.5003779824740425,
+      "especificidad": 0.6785714285714286
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.05,
+      "recall": 0.5344827586206896,
+      "cm": [
+       [
+        31,
+        25
+       ],
+       [
+        27,
+        31
+       ]
+      ],
+      "accuracy": 0.543859649122807,
+      "precision": 0.5535714285714286,
+      "f1_positiva": 0.543859649122807,
+      "f1_macro": 0.543859649122807,
+      "f1_macro_ic95": [
+       0.44999083070728285,
+       0.627516585581601
+      ],
+      "roc_auc": 0.5061576354679803,
+      "pr_auc": 0.5003779824740425,
+      "especificidad": 0.5535714285714286
+     }
+    },
+    "amarillismo_humano_cuerpo": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.20689655172413793,
+      "cm": [
+       [
+        45,
+        11
+       ],
+       [
+        46,
+        12
+       ]
+      ],
+      "accuracy": 0.5,
+      "precision": 0.5217391304347826,
+      "f1_positiva": 0.2962962962962963,
+      "f1_macro": 0.45427059712774,
+      "f1_macro_ic95": [
+       0.36534764650161233,
+       0.5404517037381488
+      ],
+      "roc_auc": 0.49168719211822665,
+      "pr_auc": 0.5128482298633753,
+      "especificidad": 0.8035714285714286
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.05,
+      "recall": 0.43103448275862066,
+      "cm": [
+       [
+        32,
+        24
+       ],
+       [
+        33,
+        25
+       ]
+      ],
+      "accuracy": 0.5,
+      "precision": 0.5102040816326531,
+      "f1_positiva": 0.4672897196261682,
+      "f1_macro": 0.4981076697304395,
+      "f1_macro_ic95": [
+       0.40332512315270935,
+       0.5838446601941747
+      ],
+      "roc_auc": 0.49168719211822665,
+      "pr_auc": 0.5128482298633753,
+      "especificidad": 0.5714285714285714
+     }
+    },
+    "ia_sintetico": {
+     "umbral_0_5": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.5,
+      "recall": 0.4,
+      "cm": [
+       [
+        35,
+        0
+       ],
+       [
+        21,
+        14
+       ]
+      ],
+      "accuracy": 0.7,
+      "precision": 1.0,
+      "f1_positiva": 0.5714285714285714,
+      "f1_macro": 0.6703296703296704,
+      "f1_macro_ic95": [
+       0.5468673726410563,
+       0.7871345029239767
+      ],
+      "roc_auc": 0.9151020408163264,
+      "pr_auc": 0.9212590995724637,
+      "especificidad": 1.0
+     },
+     "umbral_calibrado": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.05,
+      "recall": 0.5714285714285714,
+      "cm": [
+       [
+        33,
+        2
+       ],
+       [
+        15,
+        20
+       ]
+      ],
+      "accuracy": 0.7571428571428571,
+      "precision": 0.9090909090909091,
+      "f1_positiva": 0.7017543859649122,
+      "f1_macro": 0.7484675544282393,
+      "f1_macro_ic95": [
+       0.6328671328671329,
+       0.8511904761904762
+      ],
+      "roc_auc": 0.9151020408163264,
+      "pr_auc": 0.9212590995724637,
+      "especificidad": 0.9428571428571428
+     }
+    },
+    "noticia_clickbait": {
+     "umbral_0_5": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.5,
+      "recall": 0.45,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        55,
+        45
+       ]
+      ]
+     },
+     "umbral_calibrado": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.05,
+      "recall": 0.78,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        22,
+        78
+       ]
+      ]
+     }
+    }
+   },
+   "f1_macro_medio_principales": 0.5996366989089063,
+   "cumple_criterio": false
+  },
+  "christinacdl_xlmr_clickbait": {
+   "id": "christinacdl/XLM_RoBERTa-Multilingual-Clickbait-Detection",
+   "revision": "1a02f7ac01f4086375525e9653227a0bbd8e13a1",
+   "constructo": "clickbait (titulares en inglés traducidos)",
+   "id2label": {
+    "0": "NOT",
+    "1": "CLICKBAIT"
+   },
+   "regla_indice": "id2label[1] = CLICKBAIT",
+   "umbral_calibrado": 0.91,
+   "tiempos_s": {
+    "ta1c_validation_titular": 144.55339646339417,
+    "ta1c_validation_cuerpo": 1169.223875761032,
+    "ta1c_test_titular": 130.6271390914917,
+    "ta1c_test_cuerpo": 1215.0636599063873,
+    "salud_calibracion": 169.83857536315918,
+    "salud_prueba": 164.99907612800598,
+    "amarillismo_humano_titular": 20.29019546508789,
+    "amarillismo_humano_cuerpo": 210.9313449859619,
+    "ia_sintetico": 15.69291353225708,
+    "noticia_clickbait": 156.99408507347107
+   },
+   "conjuntos": {
+    "ta1c_validation_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.6893203883495146,
+      "cm": [
+       [
+        419,
+        75
+       ],
+       [
+        64,
+        142
+       ]
+      ],
+      "accuracy": 0.8014285714285714,
+      "precision": 0.6543778801843319,
+      "f1_positiva": 0.6713947990543735,
+      "f1_macro": 0.7645612685138807,
+      "f1_macro_ic95": [
+       0.7293502724242027,
+       0.7998693155709525
+      ],
+      "roc_auc": 0.8301806139695768,
+      "pr_auc": 0.6797017806476472,
+      "especificidad": 0.8481781376518218
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.91,
+      "recall": 0.6844660194174758,
+      "cm": [
+       [
+        419,
+        75
+       ],
+       [
+        65,
+        141
+       ]
+      ],
+      "accuracy": 0.8,
+      "precision": 0.6527777777777778,
+      "f1_positiva": 0.6682464454976303,
+      "f1_macro": 0.7625485806220258,
+      "f1_macro_ic95": [
+       0.7281080601375506,
+       0.7983160801466452
+      ],
+      "roc_auc": 0.8301806139695768,
+      "pr_auc": 0.6797017806476472,
+      "especificidad": 0.8481781376518218
+     }
+    },
+    "ta1c_validation_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.5,
+      "recall": 0.8155339805825242,
+      "cm": [
+       [
+        296,
+        198
+       ],
+       [
+        38,
+        168
+       ]
+      ],
+      "accuracy": 0.6628571428571428,
+      "precision": 0.45901639344262296,
+      "f1_positiva": 0.5874125874125874,
+      "f1_macro": 0.6511942164116077,
+      "f1_macro_ic95": [
+       0.6123708281751357,
+       0.68603874266283
+      ],
+      "roc_auc": 0.7739524782830864,
+      "pr_auc": 0.5708273260666379,
+      "especificidad": 0.5991902834008097
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 206,
+      "umbral": 0.91,
+      "recall": 0.8058252427184466,
+      "cm": [
+       [
+        305,
+        189
+       ],
+       [
+        40,
+        166
+       ]
+      ],
+      "accuracy": 0.6728571428571428,
+      "precision": 0.4676056338028169,
+      "f1_positiva": 0.5918003565062389,
+      "f1_macro": 0.6594281877882804,
+      "f1_macro_ic95": [
+       0.6219123258328215,
+       0.6924515411599101
+      ],
+      "roc_auc": 0.7739524782830864,
+      "pr_auc": 0.5708273260666379,
+      "especificidad": 0.6174089068825911
+     }
+    },
+    "ta1c_test_titular": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.7009803921568627,
+      "cm": [
+       [
+        416,
+        80
+       ],
+       [
+        61,
+        143
+       ]
+      ],
+      "accuracy": 0.7985714285714286,
+      "precision": 0.6412556053811659,
+      "f1_positiva": 0.6697892271662763,
+      "f1_macro": 0.7624382929253786,
+      "f1_macro_ic95": [
+       0.7248604769152714,
+       0.7956517967446708
+      ],
+      "roc_auc": 0.8343562223276406,
+      "pr_auc": 0.7013855959806825,
+      "especificidad": 0.8387096774193549
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.91,
+      "recall": 0.7009803921568627,
+      "cm": [
+       [
+        419,
+        77
+       ],
+       [
+        61,
+        143
+       ]
+      ],
+      "accuracy": 0.8028571428571428,
+      "precision": 0.65,
+      "f1_positiva": 0.6745283018867925,
+      "f1_macro": 0.7665674296319208,
+      "f1_macro_ic95": [
+       0.7296820251236326,
+       0.7986413742904535
+      ],
+      "roc_auc": 0.8343562223276406,
+      "pr_auc": 0.7013855959806825,
+      "especificidad": 0.844758064516129
+     }
+    },
+    "ta1c_test_cuerpo": {
+     "umbral_0_5": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.5,
+      "recall": 0.8480392156862745,
+      "cm": [
+       [
+        286,
+        210
+       ],
+       [
+        31,
+        173
+       ]
+      ],
+      "accuracy": 0.6557142857142857,
+      "precision": 0.4516971279373368,
+      "f1_positiva": 0.5894378194207837,
+      "f1_macro": 0.6465024275455702,
+      "f1_macro_ic95": [
+       0.6089589725568368,
+       0.6840376596074441
+      ],
+      "roc_auc": 0.7821098197343455,
+      "pr_auc": 0.5582075149496132,
+      "especificidad": 0.5766129032258065
+     },
+     "umbral_calibrado": {
+      "n": 700,
+      "positivos": 204,
+      "umbral": 0.91,
+      "recall": 0.8382352941176471,
+      "cm": [
+       [
+        293,
+        203
+       ],
+       [
+        33,
+        171
+       ]
+      ],
+      "accuracy": 0.6628571428571428,
+      "precision": 0.4572192513368984,
+      "f1_positiva": 0.5916955017301038,
+      "f1_macro": 0.6522954394295288,
+      "f1_macro_ic95": [
+       0.6151051938946586,
+       0.6902491332512543
+      ],
+      "roc_auc": 0.7821098197343455,
+      "pr_auc": 0.5582075149496132,
+      "especificidad": 0.5907258064516129
+     }
+    },
+    "salud_calibracion": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.15185185185185185,
+      "cm": [
+       [
+        522,
+        38
+       ],
+       [
+        458,
+        82
+       ]
+      ],
+      "accuracy": 0.5490909090909091,
+      "precision": 0.6833333333333333,
+      "f1_positiva": 0.24848484848484848,
+      "f1_macro": 0.4632034632034632,
+      "f1_macro_ic95": [
+       0.4340069471646635,
+       0.4935318817619839
+      ],
+      "roc_auc": 0.6153621031746033,
+      "pr_auc": 0.593490069958727,
+      "especificidad": 0.9321428571428572
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.91,
+      "recall": 0.15,
+      "cm": [
+       [
+        523,
+        37
+       ],
+       [
+        459,
+        81
+       ]
+      ],
+      "accuracy": 0.5490909090909091,
+      "precision": 0.6864406779661016,
+      "f1_positiva": 0.24620060790273557,
+      "f1_macro": 0.4622702131601875,
+      "f1_macro_ic95": [
+       0.4333078631383215,
+       0.49308831118362795
+      ],
+      "roc_auc": 0.6153621031746033,
+      "pr_auc": 0.593490069958727,
+      "especificidad": 0.9339285714285714
+     }
+    },
+    "salud_prueba": {
+     "umbral_0_5": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.5,
+      "recall": 0.1388888888888889,
+      "cm": [
+       [
+        517,
+        43
+       ],
+       [
+        465,
+        75
+       ]
+      ],
+      "accuracy": 0.5381818181818182,
+      "precision": 0.635593220338983,
+      "f1_positiva": 0.22796352583586627,
+      "f1_macro": 0.4492606215430952,
+      "f1_macro_ic95": [
+       0.4207904204641913,
+       0.47698044992655614
+      ],
+      "roc_auc": 0.6232093253968254,
+      "pr_auc": 0.5877181975501313,
+      "especificidad": 0.9232142857142858
+     },
+     "umbral_calibrado": {
+      "n": 1100,
+      "positivos": 540,
+      "umbral": 0.91,
+      "recall": 0.13703703703703704,
+      "cm": [
+       [
+        517,
+        43
+       ],
+       [
+        466,
+        74
+       ]
+      ],
+      "accuracy": 0.5372727272727272,
+      "precision": 0.6324786324786325,
+      "f1_positiva": 0.2252663622526636,
+      "f1_macro": 0.44769474949963056,
+      "f1_macro_ic95": [
+       0.4192703376033634,
+       0.47583589552897737
+      ],
+      "roc_auc": 0.6232093253968254,
+      "pr_auc": 0.5877181975501313,
+      "especificidad": 0.9232142857142858
+     }
+    },
+    "amarillismo_humano_titular": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.4482758620689655,
+      "cm": [
+       [
+        31,
+        25
+       ],
+       [
+        32,
+        26
+       ]
+      ],
+      "accuracy": 0.5,
+      "precision": 0.5098039215686274,
+      "f1_positiva": 0.47706422018348627,
+      "f1_macro": 0.4990363117724154,
+      "f1_macro_ic95": [
+       0.4019243794534492,
+       0.5914469602977667
+      ],
+      "roc_auc": 0.5035406403940887,
+      "pr_auc": 0.5534643028720734,
+      "especificidad": 0.5535714285714286
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.91,
+      "recall": 0.43103448275862066,
+      "cm": [
+       [
+        31,
+        25
+       ],
+       [
+        33,
+        25
+       ]
+      ],
+      "accuracy": 0.49122807017543857,
+      "precision": 0.5,
+      "f1_positiva": 0.46296296296296297,
+      "f1_macro": 0.4898148148148148,
+      "f1_macro_ic95": [
+       0.39429871626309837,
+       0.5805015110557018
+      ],
+      "roc_auc": 0.5035406403940887,
+      "pr_auc": 0.5534643028720734,
+      "especificidad": 0.5535714285714286
+     }
+    },
+    "amarillismo_humano_cuerpo": {
+     "umbral_0_5": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.5,
+      "recall": 0.8448275862068966,
+      "cm": [
+       [
+        10,
+        46
+       ],
+       [
+        9,
+        49
+       ]
+      ],
+      "accuracy": 0.5175438596491229,
+      "precision": 0.5157894736842106,
+      "f1_positiva": 0.6405228758169934,
+      "f1_macro": 0.45359477124183,
+      "f1_macro_ic95": [
+       0.3644811085974165,
+       0.5464774231904231
+      ],
+      "roc_auc": 0.5501847290640394,
+      "pr_auc": 0.542297731273011,
+      "especificidad": 0.17857142857142858
+     },
+     "umbral_calibrado": {
+      "n": 114,
+      "positivos": 58,
+      "umbral": 0.91,
+      "recall": 0.8275862068965517,
+      "cm": [
+       [
+        10,
+        46
+       ],
+       [
+        10,
+        48
+       ]
+      ],
+      "accuracy": 0.5087719298245614,
+      "precision": 0.5106382978723404,
+      "f1_positiva": 0.631578947368421,
+      "f1_macro": 0.4473684210526315,
+      "f1_macro_ic95": [
+       0.36261741659092656,
+       0.5391913165800001
+      ],
+      "roc_auc": 0.5501847290640394,
+      "pr_auc": 0.542297731273011,
+      "especificidad": 0.17857142857142858
+     }
+    },
+    "ia_sintetico": {
+     "umbral_0_5": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.5,
+      "recall": 0.9142857142857143,
+      "cm": [
+       [
+        32,
+        3
+       ],
+       [
+        3,
+        32
+       ]
+      ],
+      "accuracy": 0.9142857142857143,
+      "precision": 0.9142857142857143,
+      "f1_positiva": 0.9142857142857143,
+      "f1_macro": 0.9142857142857143,
+      "f1_macro_ic95": [
+       0.8425550645088572,
+       0.9714052287581699
+      ],
+      "roc_auc": 0.970204081632653,
+      "pr_auc": 0.9630585057967775,
+      "especificidad": 0.9142857142857143
+     },
+     "umbral_calibrado": {
+      "n": 70,
+      "positivos": 35,
+      "umbral": 0.91,
+      "recall": 0.9142857142857143,
+      "cm": [
+       [
+        32,
+        3
+       ],
+       [
+        3,
+        32
+       ]
+      ],
+      "accuracy": 0.9142857142857143,
+      "precision": 0.9142857142857143,
+      "f1_positiva": 0.9142857142857143,
+      "f1_macro": 0.9142857142857143,
+      "f1_macro_ic95": [
+       0.8425550645088572,
+       0.9714052287581699
+      ],
+      "roc_auc": 0.970204081632653,
+      "pr_auc": 0.9630585057967775,
+      "especificidad": 0.9142857142857143
+     }
+    },
+    "noticia_clickbait": {
+     "umbral_0_5": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.5,
+      "recall": 0.94,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        6,
+        94
+       ]
+      ]
+     },
+     "umbral_calibrado": {
+      "n": 100,
+      "positivos": 100,
+      "umbral": 0.91,
+      "recall": 0.94,
+      "cm": [
+       [
+        0,
+        0
+       ],
+       [
+        6,
+        94
+       ]
+      ]
+     }
+    }
+   },
+   "f1_macro_medio_principales": 0.5157862033272637,
+   "cumple_criterio": false
+  }
+ }
+}

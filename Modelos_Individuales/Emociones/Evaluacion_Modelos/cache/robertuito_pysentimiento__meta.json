@@ -1,0 +1,29 @@
+{
+ "revision": "bcd6835f4d1ab1a061bd7437c9d762623c8437ad",
+ "id2label": {
+  "0": "others",
+  "1": "joy",
+  "2": "sadness",
+  "3": "anger",
+  "4": "surprise",
+  "5": "disgust",
+  "6": "fear"
+ },
+ "orden_reindexado": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "max_len_efectivo": {
+  "emoevent_test": 128,
+  "noticias_muestra": 128
+ },
+ "tiempos_s": {
+  "emoevent_test": 133.55576944351196,
+  "noticias_muestra": 62.6154899597168
+ }
+}

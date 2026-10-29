@@ -1,0 +1,19 @@
+{
+ "revision": "25e713a0d7e3c27eb7dc0e3dd9c169bd187a500a",
+ "id2label": {
+  "0": "LABEL_0",
+  "1": "LABEL_1"
+ },
+ "tiempos_s": {
+  "ta1c_validation_titular": 61.920342445373535,
+  "ta1c_validation_cuerpo": 674.0940871238708,
+  "ta1c_test_titular": 56.060184955596924,
+  "ta1c_test_cuerpo": 645.3574721813202,
+  "salud_calibracion": 74.84307217597961,
+  "salud_prueba": 80.81933736801147,
+  "amarillismo_humano_titular": 9.259725332260132,
+  "amarillismo_humano_cuerpo": 114.93371915817261,
+  "ia_sintetico": 6.89835000038147,
+  "noticia_clickbait": 88.34037065505981
+ }
+}
